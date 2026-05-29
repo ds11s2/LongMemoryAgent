@@ -13,7 +13,6 @@ from llm_client import LLMClient
 from memory_agent.memory.store import MemoryStore
 
 
-
 # 将最近 100 条记忆喂给 LLM，生成 3 个高层次问题
 REFLECT_PROMPT = """You are given the following recent memories:
 
