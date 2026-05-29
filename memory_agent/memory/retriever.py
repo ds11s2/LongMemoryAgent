@@ -12,24 +12,23 @@ import numpy as np
 from memory_agent.memory.store import MemoryStore, MemoryUnit
 
 
-# Recency 衰减系数
-# 论文采用指数衰减函数：decay_factor^Δt，其中 Δt 是距上次访问的小时数
-DECAY_FACTOR = 0.995
-
 class MemoryRetriever:
-    def __init__(self, store: MemoryStore, embed_model=None):
+    def __init__(self, store: MemoryStore, embed_model=None, writer=None, decay_factor: float = 0.995):
         self.store = store
         self.embed_model = embed_model
-
+        self.writer = writer
+        self.decay_factor = decay_factor
+        
     # Recency（近期性 / 衰减度）
     # 越近发生或越近被访问的记忆，得分越高
     # 公式：0.995 ^ Δt，Δt = (当前时间 - last_access_timestamp) / 3600（转为小时）
     """
     此计算方法在本次实验不太合理，需要后期进行优化
     """
-    def _recency_score(self, mem: MemoryUnit, current_time: float) -> float:
+    def _recency_score(self, mem: MemoryUnit) -> float:
+        current_time = self.writer.latest_time
         delta_t_hours = (current_time - mem.last_access_timestamp) / 3600.0
-        return DECAY_FACTOR ** delta_t_hours
+        return self.decay_factor ** delta_t_hours
 
 
     # Importance（重要性）
@@ -59,19 +58,15 @@ class MemoryRetriever:
 
     # 综合检索
     # retrieval 方法主入口
-    # 2. Min-Max 归一化到 [0,1]
-    # 3. Final_Score = 1.0×Recency + 1.0×Importance + 1.0×Relevance
-    # 4. 降序排序取 top_k，同时更新被检索记忆的 last_access_timestamp
-    def retrieve(self, query: str, query_embedding: np.ndarray, top_k: int = 10,
-                 current_time: Optional[float] = None) -> list[tuple[MemoryUnit, float]]:
-        if current_time is None:
-            current_time = time.time()
+    def retrieve(self, query: str, query_embedding: np.ndarray, top_k: int = 5) -> list[tuple[MemoryUnit, float]]:
+        
+        current_time = self.writer.latest_time
         # 从数据库获取所有记忆
         memories = self.store.get_all()
         if not memories:
             return []
         # 对所有记忆分别计算 Recency、Importance、Relevance 三个分数
-        recency_scores = [self._recency_score(m, current_time) for m in memories]
+        recency_scores = [self._recency_score(m) for m in memories]
         importance_scores = [self._importance_score(m) for m in memories]
         relevance_scores = [self._relevance_score(query_embedding, m) for m in memories]
 
@@ -91,6 +86,9 @@ class MemoryRetriever:
         results = []
         for mem, score in final_scores[:top_k]:
              # 更新被检索记忆的 last_access_timestamp
+            """
+            此处直接将access_time更新为latest_time，后续可能需要优化
+            """
             self.store.update_access_time(mem.id, current_time)
             results.append((mem, score))
 

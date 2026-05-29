@@ -1,13 +1,22 @@
 """
-本文件提供三个子工具，用于记忆的提取、评分和向量化，并记录最新记忆的时间戳用于三因子检索
+本文件提供四个子工具，用于记忆的提取、评分、向量化和更新记录最新时间戳
 """
 
 import sys
 import os
+from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "eval_kit", "eval_kit"))
 from llm_client import LLMClient
 from sentence_transformers import SentenceTransformer
 import numpy as np
+
+
+# 时间解析 
+# 解析为 Unix 时间戳，作为 Recency 计算的基准
+_DATE_FORMAT = "%I:%M %p on %d %B, %Y"
+
+def _parse_date_time(date_str: str) -> float:
+    return datetime.strptime(date_str, _DATE_FORMAT).timestamp()
 
 
 # 调用 LLM 对记忆片段进行重要性评分（1-10分）
@@ -74,3 +83,8 @@ class MemoryWriter:
     def embed_batch(self, texts: list[str]) -> np.ndarray:
         vecs = self.embed_model.encode(texts, normalize_embeddings=True)
         return np.array(vecs, dtype=np.float32)
+    
+    # 更新 latest_time
+    def update_latest_time(self, timestamp: float):
+        self.latest_time = timestamp
+    

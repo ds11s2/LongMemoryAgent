@@ -13,23 +13,23 @@ from llm_client import LLMClient
 from memory_agent.memory.store import MemoryStore
 
 
-# 将最近 100 条记忆喂给 LLM，生成 3 个高层次问题
+# 将最近记忆喂给 LLM，生成高层次问题
 REFLECT_PROMPT = """You are given the following recent memories:
 
 {memory_list}
 
-From these statements, generate exactly 3 high-level insightful questions that could be answered by synthesizing the information above.
+From these statements, generate exactly {reflection_question_count} high-level insightful questions that could be answered by synthesizing the information above.
 
 Format: one question per line, no numbering.
 Just return the questions, don't contain any other text.
 """
 
 
-# 对每个问题检索到的信息，LLM 总结出 3 条高层次洞察
+# 对每个问题检索到的信息，LLM 总结出高层次洞察
 # 格式示例："Klaus Mueller is dedicated to his research on gentrification (because 1,2,8,15)"
 REFLECT_INSIGHT_PROMPT = """Based on the following retrieved information:
 {retrieved_info}
-From the above, infer exactly 3 high-level insights. Format each as:
+From the above, infer exactly {reflection_insight_per_q} high-level insights. Format each as:
 "Insight (because 1,2,3)" where the numbers reference the statements above.
 
 Example: "Klaus Mueller is dedicated to his research on gentrification (because 1,2,8,15)"
@@ -38,32 +38,42 @@ Just return the insights, don't contain any other text.
 """
 
 
-# 累计重要性超过 150 时触发 reflect
-REFLECTION_THRESHOLD = 150
+
+
 
 class MemoryUpdater:
-    def __init__(self, store: MemoryStore, retriever=None, writer=None):
+    def __init__(self, store: MemoryStore, retriever=None, writer=None,
+                 reflection_threshold: int = 150,
+                 reflection_memory_limit: int = 100,
+                 reflection_question_count: int = 3,
+                 reflection_insight_per_q: int = 3,
+                 reflection_retrieval_top_k: int = 20,
+                 reflection_max_tokens: int = 256,
+                 reflection_temperature: float = 0.2):
         self.store = store
         self.retriever = retriever
         self.writer = writer
         self.llm = LLMClient()
         # 累加每条新记忆的重要性分数
         self._accumulated_importance: float = 0.0
+        # 反思相关参数（来自 Settings）
+        self.reflection_threshold = reflection_threshold
+        self.reflection_memory_limit = reflection_memory_limit
+        self.reflection_question_count = reflection_question_count
+        self.reflection_insight_per_q = reflection_insight_per_q
+        self.reflection_retrieval_top_k = reflection_retrieval_top_k
+        self.reflection_max_tokens = reflection_max_tokens
+        self.reflection_temperature = reflection_temperature
 
     # 当 sum_score >= 150 时触发
-    def check_and_reflect(self, current_time: float = None) -> bool:
-        if self._accumulated_importance < REFLECTION_THRESHOLD:
+    def check_and_reflect(self) -> bool:
+        if self._accumulated_importance < self.reflection_threshold:
             return False
         if self.retriever is None or self.writer is None:
             return False
-
-        import time
-        if current_time is None:
-            current_time = time.time()
-
         #  取最近 100 条记忆，按创建时间倒序
         memories = self.store.get_all()
-        recent_memories = sorted(memories, key=lambda m: m.creation_timestamp, reverse=True)[:100]
+        recent_memories = sorted(memories, key=lambda m: m.creation_timestamp, reverse=True)[:self.reflection_memory_limit]
 
         if not recent_memories:
             return False
@@ -74,29 +84,29 @@ class MemoryUpdater:
 
         # reflect_agent 输出3 个高层次问题
         questions_raw = self.llm.generate(
-            REFLECT_PROMPT.format(memory_list=memory_list),
-            max_tokens=256, temperature=0.2,
+            REFLECT_PROMPT.format(memory_list=memory_list, reflection_question_count=self.reflection_question_count),
+            max_tokens=self.reflection_max_tokens, temperature=self.reflection_temperature,
         )
-        questions = [q.strip() for q in questions_raw.strip().split("\n") if q.strip()][:3]
+        questions = [q.strip() for q in questions_raw.strip().split("\n") if q.strip()][:self.reflection_question_count]
 
         # 对每个问题做检索再总结洞察
         all_insights = []
         for question in questions:
-            # 对问题调用 retrieval 工具进行三因子检索，检索 20 条记忆
+            # 对问题调用 retrieval 工具进行三因子检索
             query_emb = self.writer.embed_text(question)
-            retrieved = self.retriever.retrieve(question, query_emb, top_k=20, current_time=current_time)
+            retrieved = self.retriever.retrieve(question, query_emb, top_k=self.reflection_retrieval_top_k)
             retrieved_info = "\n".join(f"{i+1}. {m.text_description}" for i, (m, _) in enumerate(retrieved))
             
-            # 基于检索结果总结 3 条高层次洞察
+            # 基于检索结果总结高层次洞察
             # 格式如："Klaus Mueller 致力于他关于绅士化的研究（因为 1,2,8,15）"
             insights_raw = self.llm.generate(
-                REFLECT_INSIGHT_PROMPT.format(retrieved_info=retrieved_info),
-                max_tokens=256, temperature=0.2,
+                REFLECT_INSIGHT_PROMPT.format(retrieved_info=retrieved_info, reflection_insight_per_q=self.reflection_insight_per_q),
+                max_tokens=self.reflection_max_tokens, temperature=self.reflection_temperature,
             )
-            insight_lines = [l.strip() for l in insights_raw.strip().split("\n") if l.strip()][:3]
+            insight_lines = [l.strip() for l in insights_raw.strip().split("\n") if l.strip()][:self.reflection_insight_per_q]
             all_insights.extend(insight_lines)
 
-        # 将 9 条反思记忆写入数据库
+        # 将反思记忆写入数据库
         # 存入时 type 标记为 "reflection"
         for insight_text in all_insights:
             importance = self.writer.score_importance(insight_text)
@@ -106,18 +116,15 @@ class MemoryUpdater:
                 memory_type="reflection",
                 importance_score=importance,
                 embedding=embedding,
-                timestamp=current_time,
+                timestamp=self.writer.latest_time,
             )
 
         # 触发反思后减150
-        self._accumulated_importance -= REFLECTION_THRESHOLD
+        self._accumulated_importance -= self.reflection_threshold
         return True
 
     # 每写入一条记忆就累加其 importance 到 sum_score
     # 然后自动检查是否触发 reflect
-    def add_importance(self, score: float, current_time: float = None):
+    def add_importance(self, score: float):
         self._accumulated_importance += score
-        if current_time is None:
-            import time
-            current_time = time.time()
-        self.check_and_reflect(current_time)
+        self.check_and_reflect()
