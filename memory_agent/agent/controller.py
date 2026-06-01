@@ -23,12 +23,8 @@ class Settings:
     """answer 阶段检索多少条相关记忆用于生成答案"""
     retrieval_top_k: int = 30
 
-    # ── 检索算法参数 ──
-    """Recency 指数衰减系数，越大近期记忆权重越高，范围 (0, 1)"""
-    decay_factor: float = 1
-
     # ── 反思触发参数 ──
-    reflection_threshold: int = 250
+    reflection_threshold: int = 25000
     """累计新增记忆的 importance_score 超过此值触发一次反思"""
 
     # ── 反思流程参数 ──
@@ -79,7 +75,6 @@ class MemoryAgent:
             store=self.store,
             embed_model=self.writer.embed_model,
             writer=self.writer,
-            decay_factor=settings.decay_factor,
         )
         self.updater = MemoryUpdater(
             store=self.store,

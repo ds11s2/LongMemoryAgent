@@ -4,13 +4,28 @@
 
 import sys
 import os
+import time
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "eval_kit", "eval_kit"))
 from llm_client import LLMClient
 from sentence_transformers import SentenceTransformer
 import numpy as np
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+from app.core.config import settings
+from langchain_core.output_parsers import StrOutputParser
+# 基础大语言模型配置，可供各类 Agent 复用
+llm = ChatOpenAI(
+    api_key="sk-97a50281d2b442ab84408c6c9d73be41",
+    base_url="https://api.deepseek.com/v1",
+    model="deepseek-v4-flash",
+    temperature=0
+)
 
+parser = StrOutputParser()
+chain = prompt | llm | parser
 
 # 时间解析 
 # 解析为 Unix 时间戳，作为 Recency 计算的基准
@@ -42,7 +57,7 @@ class MemoryWriter:
     def __init__(self, embed_model_name: str = "BAAI/bge-small-zh-v1.5"):
         # 使用 sentence-transformers 加载 embedding 模型
         self.embed_model = SentenceTransformer(embed_model_name)
-        self.mark_agent = LLMClient()
+        self.agent = chain
         self.latest_time = None
 
     # 输入：完整的多会话对话 conversation dict
@@ -61,37 +76,71 @@ class MemoryWriter:
             lines.append(line)
 
         executor_results = [None] * num_sessions
+        print_lock = threading.Lock()
+        max_workers = min(num_sessions, 30)
+
+        _SYSTEM_MSG = (
+            "You are a research assistant performing academic dialogue analysis. "
+            "Your task is to extract factual statements from conversation transcripts "
+            "for a university research project on long-term memory systems. "
+            "Extract all relevant facts regardless of topic."
+        )
 
         def _process_one(idx: int):
-            llm = LLMClient()
-            prompt = (f"""You are an expert dialogue memory extractor. Your task is to extract comprehensive, atomic memory units from the following conversation between speakers.
-                        Context:
-                        - Current Session Time: {date_str_list[idx]}
-                        Extraction Rules:
-                        1. Coreference Resolution (CRITICAL): NEVER use pronouns (I, you, he, she, it, they). Replace all pronouns with the explicit names of the speakers or specific entities. 
-                        (e.g., Instead of "She likes painting", write "Melanie likes painting".)
-                        2. Atomic Facts: Each extracted statement must contain ONLY ONE core idea, making it suitable for vector retrieval.
-                        3. Comprehensiveness: You must extract information across the following dimensions:
-                        - Personal Background & Identity (e.g., LGBTQ status, job, family members)
-                        - Events & Experiences (What did they do? Include time anchors based on the Current Session Time)
-                        - Opinions, Preferences & Sentiments (e.g., likes, dislikes, how they feel about something)
-                        - Future Plans & Intentions (e.g., careers, trips, adoptions)
-                        4. Temporal Anchoring: If a relative time is mentioned (e.g., "yesterday", "last year"), translate it to an absolute or roughly absolute time context based on the Current Session Time.
-                        5. Conciseness: Keep statements concise but fully context-independent.
+            prompt = (
+                "You are an expert dialogue memory extractor. Your task is to extract comprehensive, "
+                "atomic memory units from the following conversation between speakers.\n\n"
+                "Context:\n"
+                f"- Current Session Time: {date_str_list[idx]}\n\n"
+                "Extraction Rules:\n"
+                "1. Coreference Resolution (CRITICAL): NEVER use pronouns (I, you, he, she, it, they). "
+                "Replace all pronouns with the explicit names of the speakers or specific entities.\n"
+                "2. Atomic Facts: Each extracted statement must contain ONLY ONE core idea.\n"
+                "3. Comprehensiveness: Extract information across the following dimensions:\n"
+                "   - Personal Background & Identity\n"
+                "   - Events & Experiences (with time anchors based on Current Session Time)\n"
+                "   - Opinions, Preferences & Sentiments\n"
+                "   - Future Plans & Intentions\n"
+                "4. Temporal Anchoring: Translate relative times (e.g., 'yesterday', 'last year') "
+                "to absolute context based on Current Session Time.\n"
+                "5. Conciseness: Keep statements concise but fully context-independent.\n\n"
+                "Output ONLY raw statements, one per line. No numbering, no bullet points, no extra text.\n\n"
+                f"Conversation:\n{lines[idx]}\n"
+            )
+            sessions_str = f"[session {idx+1}/{num_sessions}]"
 
-                        Output Format:
-                        Output ONLY a raw list of strings, one statement per line. Do not use numbering, bullet points, or extra explanations.
+            response = ""
+            max_retries = 5
+            for retry in range(max_retries):
+                try:
+                    response = self.agent.invoke(prompt).strip()
+                except Exception as e:
+                    if retry < max_retries - 1:
+                        with print_lock:
+                            print(f"  {sessions_str} 调用异常，重试 {retry+2}/{max_retries}: {e}")
+                        time.sleep(2 ** retry)
+                        continue
+                    with print_lock:
+                        print(f"  {sessions_str} 提取 0 条记忆 (LLM 调用失败)")
+                    return idx, []
 
-                        Conversation:\n{lines[idx]}\n""")
-            response = llm.generate(prompt, max_tokens=2048, temperature=0).strip()
+                if response:
+                    break
+                if retry < max_retries - 1:
+                    with print_lock:
+                        print(f"  {sessions_str} 返回为空，重试 {retry+2}/{max_retries}")
+                    time.sleep(2 ** retry)
+
             memories = []
             if response:
                 for stmt in response.split("\n"):
                     stmt = stmt.strip()
                     if not stmt:
                         continue
-                    if stmt[0].isdigit() and (len(stmt) < 3 or stmt[1] in ".、)）"):
-                        stmt = stmt[2:].strip()
+                    while stmt and stmt[0].isdigit():
+                        stmt = stmt[1:]
+                    if stmt and stmt[0] in ".、)）":
+                        stmt = stmt[1:].strip()
                     if len(stmt) < 5:
                         continue
                     memories.append({
@@ -100,13 +149,18 @@ class MemoryWriter:
                         "creation_timestamp": date_ts_list[idx],
                         "type": "observation"
                     })
+
+            with print_lock:
+                print(f"  {sessions_str} 提取 {len(memories)} 条记忆")
             return idx, memories
 
-        with ThreadPoolExecutor(max_workers=num_sessions) as ex:
+        print(f"  正在并发处理 {num_sessions} 个 session（max_workers={max_workers}）...")
+        with ThreadPoolExecutor(max_workers=max_workers) as ex:
             futures = {ex.submit(_process_one, i): i for i in range(num_sessions)}
             for fut in as_completed(futures):
                 idx, memories = fut.result()
                 executor_results[idx] = memories
+        print(f"  全部 {num_sessions} 个 session 处理完成")
 
         all_memories = []
         for memories in executor_results:
@@ -118,7 +172,7 @@ class MemoryWriter:
     # 解析失败时默认返回 5 分
     def score_importance(self, memory_text: str) -> int:
         prompt = IMPORTANCE_PROMPT.format(memory_text=memory_text)
-        raw = self.mark_agent.generate(prompt, max_tokens=20, temperature=0.1).strip()
+        raw = self.agent.invoke(prompt).strip()
         try:
             # 从原始输出中提取整数评分
             score = int("".join(c for c in raw if c.isdigit()))

@@ -5,7 +5,6 @@
 每次创建 MemoryStore 实例时自动清空旧数据，保证每个 Agent 实例状态独立。
 """
 
-import time
 import os
 import numpy as np
 from dataclasses import dataclass, field
@@ -115,15 +114,6 @@ class MemoryStore:
         if not results["ids"]:
             return None
         return self._row_to_memory(results["metadatas"], results["embeddings"], results["ids"], 0)
-
-    # 检索命中后将 last_access_timestamp 更新为当前时间
-    # ChromaDB update 为部分更新，只覆盖指定字段，其余保留
-    def update_access_time(self, memory_id: int, timestamp: Optional[float] = None):
-        ts = timestamp
-        self.collection.update(
-            ids=[self._id_str(memory_id)],
-            metadatas=[{"last_access_timestamp": ts}],
-        )
 
     def remove(self, memory_id: int):
         self.collection.delete(ids=[self._id_str(memory_id)])
