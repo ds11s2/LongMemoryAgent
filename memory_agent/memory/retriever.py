@@ -2,7 +2,7 @@
 本文件实现了基于双因子打分的记忆检索
 - 维度 A：Importance（重要性）—— LLM 打分
 - 维度 B：Relevance（相关性）—— 余弦相似度
-- Min-Max 归一化后等权求和，排序取 top_k
+- Min-Max 归一化后加权求和（Relevance 占 80%，Importance 占 20%），排序取 top_k
 """
 
 import numpy as np
@@ -28,7 +28,7 @@ class MemoryRetriever:
         return max(0.0, sim)
 
     # Min-Max 归一化
-    # 三个维度的值域不同（Relevance 0-1, Importance 1-10），
+    # 两个维度的值域不同（Relevance 0-1, Importance 1-10），
     @staticmethod
     def _min_max_normalize(values: list[float]) -> list[float]:
         if not values:
@@ -44,16 +44,16 @@ class MemoryRetriever:
         memories = self.store.get_all()
         if not memories:
             return []
-        # 对所有记忆分别计算Importance、Relevance 三个分数
+        # 对所有记忆分别计算Importance、Relevance 分数
         importance_scores = [self._importance_score(m) for m in memories]
         relevance_scores = [self._relevance_score(query_embedding, m) for m in memories]
         # 对Importance、Relevance 分数进行 Min-Max 归一化
         norm_importance = self._min_max_normalize(importance_scores)
         norm_relevance = self._min_max_normalize(relevance_scores)
-        # 对所有记忆的Importance、Relevance 分数进行等权求和
+        # 对所有记忆的Importance、Relevance 分数进行加权求和（Relevance:Importance = 8:2）
         final_scores = []
         for i, mem in enumerate(memories):
-            score = norm_importance[i] + norm_relevance[i]
+            score = 0.2 * norm_importance[i] + 0.8 * norm_relevance[i]
             final_scores.append((mem, score))
         # 按综合分数排序，取 top_k 个记忆单位
         final_scores.sort(key=lambda x: x[1], reverse=True)

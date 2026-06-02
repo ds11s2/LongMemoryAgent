@@ -118,7 +118,7 @@ class MemoryStore:
     def remove(self, memory_id: int):
         self.collection.delete(ids=[self._id_str(memory_id)])
 
-    #获取并返回所有记忆，用于三因子检索
+    #获取并返回所有记忆，用于检索
     def get_all(self) -> list[MemoryUnit]:
         results = self.collection.get(include=["embeddings", "metadatas"])
         if not results["ids"]:

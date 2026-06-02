@@ -4,6 +4,9 @@
 
 import sys
 import os
+from dotenv import load_dotenv
+load_dotenv()
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
 import time
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -13,19 +16,19 @@ from llm_client import LLMClient
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from app.core.config import settings
 from langchain_core.output_parsers import StrOutputParser
-# 基础大语言模型配置，可供各类 Agent 复用
+
+
+# 基础大语言模型配置
 llm = ChatOpenAI(
-    api_key="sk-97a50281d2b442ab84408c6c9d73be41",
-    base_url="https://api.deepseek.com/v1",
-    model="deepseek-v4-flash",
+    api_key=os.getenv("AGENT_API_KEY"),
+    base_url=os.getenv("AGENT_URL"),
+    model=os.getenv("AGENT_MODEL"),
     temperature=0
 )
 
 parser = StrOutputParser()
-chain = prompt | llm | parser
+chain = llm | parser
 
 # 时间解析 
 # 解析为 Unix 时间戳，作为 Recency 计算的基准
@@ -59,6 +62,7 @@ class MemoryWriter:
         self.embed_model = SentenceTransformer(embed_model_name)
         self.agent = chain
         self.latest_time = None
+        self.llm_client = LLMClient()
 
     # 输入：完整的多会话对话 conversation dict
     # 输出：list[dict]，每个 dict 包含 {text, timestamp, type}
@@ -72,40 +76,35 @@ class MemoryWriter:
 
         lines = []
         for sess in sessions:
-            line = "".join(f"{turn['speaker']} say:{turn['text']} " for turn in sess["turns"])
+            line = "\n".join(f"{turn['speaker']}: {turn['text']}" for turn in sess["turns"])
             lines.append(line)
 
         executor_results = [None] * num_sessions
         print_lock = threading.Lock()
         max_workers = min(num_sessions, 30)
 
-        _SYSTEM_MSG = (
-            "You are a research assistant performing academic dialogue analysis. "
-            "Your task is to extract factual statements from conversation transcripts "
-            "for a university research project on long-term memory systems. "
-            "Extract all relevant facts regardless of topic."
-        )
-
+        
         def _process_one(idx: int):
             prompt = (
                 "You are an expert dialogue memory extractor. Your task is to extract comprehensive, "
-                "atomic memory units from the following conversation between speakers.\n\n"
-                "Context:\n"
-                f"- Current Session Time: {date_str_list[idx]}\n\n"
-                "Extraction Rules:\n"
-                "1. Coreference Resolution (CRITICAL): NEVER use pronouns (I, you, he, she, it, they). "
-                "Replace all pronouns with the explicit names of the speakers or specific entities.\n"
-                "2. Atomic Facts: Each extracted statement must contain ONLY ONE core idea.\n"
-                "3. Comprehensiveness: Extract information across the following dimensions:\n"
-                "   - Personal Background & Identity\n"
-                "   - Events & Experiences (with time anchors based on Current Session Time)\n"
-                "   - Opinions, Preferences & Sentiments\n"
-                "   - Future Plans & Intentions\n"
-                "4. Temporal Anchoring: Translate relative times (e.g., 'yesterday', 'last year') "
-                "to absolute context based on Current Session Time.\n"
-                "5. Conciseness: Keep statements concise but fully context-independent.\n\n"
-                "Output ONLY raw statements, one per line. No numbering, no bullet points, no extra text.\n\n"
-                f"Conversation:\n{lines[idx]}\n"
+            "but strictly non-redundant memory units from the following conversation.\n\n"
+            "Context:\n"
+            f"- Current Session Time: {date_str_list[idx]}\n\n"
+            "Extraction Rules:\n"
+            "1. Coreference Resolution (CRITICAL): NEVER use pronouns (I, you, he, she, it, they). "
+            "Replace all pronouns with the explicit names of the speakers or specific entities.\n"
+            "2. Atomic but Cohesive: Do NOT over-fragment. 'Melanie painted a lake sunrise last year' "
+            "is ONE fact. Do not split it into three separate statements.\n"
+            "3. Deduplication & Filtering (CRITICAL): Do NOT repeat the same fact in different ways. "
+            "Ignore greetings, pleasantries, passing agreements, and meaningless filler talk.\n"
+            "4. Comprehensiveness: Extract information across: Personal Background, Events (with absolute time), "
+            "Opinions/Sentiments, and Future Plans.\n"
+            "5. Temporal Anchoring: Translate relative times (e.g., 'yesterday', 'last year') "
+            "to absolute context based on Current Session Time.\n\n"
+            "Constraint: Aim for high-quality, dense facts. A typical session should yield 10 to 20 statements. "
+            "DO NOT exceed 25 statements unless absolutely necessary.\n\n"
+            "Output ONLY raw statements, one per line. No numbering, no bullet points, no extra text.\n\n"
+            f"Conversation:\n{lines[idx]}\n"
             )
             sessions_str = f"[session {idx+1}/{num_sessions}]"
 
@@ -179,6 +178,35 @@ class MemoryWriter:
             return max(1, min(10, score))
         except ValueError:
             return 5
+
+    # 并发批量评分，max_workers 控制最大并发数
+    # 每条记忆独立调用 LLM 打分，大幅缩短总体耗时
+    def score_importance_batch(self, texts: list[str], max_workers: int = 500) -> list[int]:
+        num = len(texts)
+        scores = [5] * num
+        print_lock = threading.Lock()
+        print(f"  正在并发评分 {num} 条记忆（max_workers={min(num, max_workers)}）...")
+        completed = [0]
+
+        def _score_one(idx: int):
+            try:
+                prompt = IMPORTANCE_PROMPT.format(memory_text=texts[idx])
+                raw = self.agent.invoke(prompt).strip()
+                score = int("".join(c for c in raw if c.isdigit()))
+                scores[idx] = max(1, min(10, score))
+            except Exception:
+                scores[idx] = 5
+            with print_lock:
+                completed[0] += 1
+                if completed[0] % 100 == 0 or completed[0] == num:
+                    print(f"  评分进度: {completed[0]}/{num}")
+
+        with ThreadPoolExecutor(max_workers=min(num, max_workers)) as ex:
+            futures = [ex.submit(_score_one, i) for i in range(num)]
+            for fut in as_completed(futures):
+                fut.result()
+        print(f"  评分完成: {num}/{num}")
+        return scores
 
  
     # 使用 bge-small-zh-v1.5，输出为 float32 numpy 数组
