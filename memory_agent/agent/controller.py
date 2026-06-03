@@ -21,7 +21,7 @@ from memory_agent.memory.updater import MemoryUpdater
 class Settings:
     # ── 检索参数 ──
     """answer 阶段检索多少条相关记忆用于生成答案"""
-    retrieval_top_k: int = 30
+    retrieval_top_k: int = 150
 
     # ── 反思触发参数 ──
     reflection_threshold: int = 25000
@@ -41,7 +41,7 @@ class Settings:
     """反思检索时为每个问题检索多少条相关记忆"""
 
     # ── 反思 LLM 生成参数 ──
-    reflection_max_tokens: int = 1024
+    reflection_max_tokens: int = 256
     """反思时 LLM 单次生成的最大 token 数"""
 
     reflection_temperature: float = 0
@@ -52,7 +52,7 @@ ANSWER_PROMPT = """You are an assistant with access to memories from a past conv
 Answer the user's question using only information from the retrieved memories below.
 Keep the answer short (a phrase or one sentence).
 If the memories do not contain the answer, reply 'unknown'.
-
+You can make inferences and guesses about the answer based on the memories.
 === Retrieved memories ===
 {context}
 === Question ===
@@ -98,9 +98,10 @@ class MemoryAgent:
         # 向量化工具
         texts = [m["text"] for m in raw_memories]
         embeddings = self.writer.embed_batch(texts)
-        # 逐条评分 → 存库 → 累加 sum_score
+        # 并发评分 → 存库 → 累加 sum_score
+        scores = self.writer.score_importance_batch(texts, max_workers=500)
         for i, mem in enumerate(raw_memories):
-            importance = self.writer.score_importance(mem["text"])
+            importance = scores[i]
             self.store.add(
                 text=mem["text"],
                 memory_type=mem["type"],
@@ -123,4 +124,4 @@ class MemoryAgent:
         context = "\n".join(f"- {mem.text_description}" for mem, _ in results)
         prompt = ANSWER_PROMPT.format(context=context, question=question)
         # 喂给 LLM 生成答案
-        return self.llm.generate(prompt, max_tokens=64).strip()
+        return self.llm.generate(prompt, max_tokens=256).strip()
