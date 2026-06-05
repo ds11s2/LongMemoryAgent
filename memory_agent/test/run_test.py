@@ -109,16 +109,25 @@ ANSWER_PROMPT = """You are an expert psychological detective answering questions
 
 Question: {question}
 
-OUTPUT FORMAT - YOU MUST FOLLOW THIS STRUCTURE EXACTLY:
-First, output <think> followed by your step-by-step reasoning and deduction process. Explain what clues you found in the profile and memory, and how you arrived at your educated guess. 
-Then, output <content> followed by your final, definitive answer.
-
-CRITICAL INSTRUCTIONS TO MAXIMIZE SCORE:
-1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the Persona Profile.
-2. DEDUCE IMPLICIT ANSWERS: If the exact word isn't there, deduce it. (e.g., if they like the outdoors, guess they would prefer a national park; if they play violin, guess they like classical music).
-3. PARTIAL INFORMATION IS GOOD: If you don't know the exact date, provide the month or year. If you don't know the exact item, provide the category.
-4. BE DESCRIPTIVE: Your final answer in <content> must be a complete, descriptive sentence that presents your deduced answer as a confident statement. All reasoning and justification must be in the <think> section.
+CRITICAL INSTRUCTIONS:
+1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the context.
+2. DEDUCE IMPLICIT ANSWERS: If the exact word isn't there, deduce it (e.g., if they play violin, guess they like classical music). Partial info is acceptable (e.g., just the month if the day is missing).
+3. DO NOT LIST ALL MEMORIES: In your reasoning, DO NOT evaluate or list every single memory log. Only extract and mention the 1 or 2 most relevant clues.
+OUTPUT FORMAT:
+You MUST output ONLY a valid JSON object. Do not include any other text, markdown formatting, or tags outside the JSON.
+{
+  "thinking": "Your logical reasoning process",
+  "answer": "The shortest possible direct answer (e.g., 'The Friday before 14 August 2023', 'Classical music', 'Yes').Since you have already explained your reasoning in the thinking section, your final answer in the answer section MUST BE AS SHORT AS POSSIBLE."
+}
+EXAMPLE:
+Question: What kind of music does John like?
+Output:
+{
+  "thinking": "The memory logs mention John practicing the violin every weekend and attending a symphony orchestra. Although his specific favorite genre isn't explicitly named, violin and symphonies strongly indicate a preference for classical music.",
+  "answer": "Classical music"
+}
 """
+
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -211,10 +220,12 @@ def run_all(concurrency: int):
                     question=qa["question"],
                     persona_context=ctx["persona"],
                 )
-                raw = llm.generate(prompt, max_tokens=256).strip()
-                import re
-                m = re.search(r"<content>\s*(.+)$", raw, re.DOTALL)
-                pred = m.group(1).strip() if m else raw
+                raw = llm.generate(prompt, max_tokens=1024).strip()
+                try:
+                    data = json.loads(raw)
+                    pred = data.get("answer", raw)
+                except (json.JSONDecodeError, TypeError):
+                    pred = raw
             err = None
         except Exception as e:
             pred = ""
