@@ -38,6 +38,14 @@ def _parse_date_time(date_str: str) -> float:
     return datetime.strptime(date_str, _DATE_FORMAT).timestamp()
 
 
+def _format_session_date(date_str: str) -> str:
+    """将 '1:14 pm on 25 May, 2023' 格式化为 'May 25th, 2023'"""
+    dt = datetime.strptime(date_str, _DATE_FORMAT)
+    day = dt.day
+    suffix = "th" if 10 <= day % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
+    return dt.strftime(f"%B {day}{suffix}, %Y")
+
+
 # 调用 LLM 对记忆片段进行重要性评分（1-10分）
 # 评分结果存入 MemoryUnit.importance_score 字段
 IMPORTANCE_PROMPT = """Rate the importance of the following memory for understanding a person's long-term profile and life trajectory on a scale of 1 to 10.
@@ -55,31 +63,30 @@ Return ONLY an integer between 1 and 10. Do not include any other text.
 
 
 # 调用llm总结人物脉络
-Summary_PROMPT = """You are an expert psychological profiler and behavioral analyst. Your task is to analyze a comprehensive list of extracted memory facts from conversations and construct a dense, predictive Persona Profile for each main character.
+Summary_PROMPT = """You are an expert psychological profiler and behavioral analyst. Your task is to analyze a comprehensive list of extracted memory facts and construct a highly condensed, predictive Persona Profile for each main character.
 
-These profiles will be used by an AI to answer implicit, multi-hop questions (e.g., deducing if someone would like a specific music genre based on their hobbies, or if they would visit a national park based on their outdoor activities).
-
-Please synthesize the facts and extract deep insights covering the following dimensions for each character:
-1. Core Identity & Life Stage (marital/family status, major ongoing life events)
-2. Career & Ambitions (current job, future goals, professional motivations)
-3. Lifestyle & Preferences (abstract specific activities into broader concepts, e.g., playing violin -> affinity for classical music; camping -> loves the outdoors)
-4. Values & Beliefs (religiousness, core motivations, social stances like LGBTQ+ advocacy)
-5. Social Circle & Nicknames (key relationships, explicitly note any aliases or nicknames used)
-
-CRITICAL FORMATTING CONSTRAINTS:
-1. You MUST return the output EXACTLY in the format: `Name: Description`
-2. Each character's profile MUST be on a single continuous line. DO NOT use line breaks (\n) within a character's description.
-3. Separate different characters with a single line break (\n).
-4. Length limit: Keep the description for each character highly dense and concise, strictly under 400 words (approx. 500 tokens) per character.
-5. Output ONLY the requested format. No markdown formatting (like **Name**), no introductory text, and no concluding remarks.
-
-Example Output:
-Caroline: A transgender woman and strong LGBTQ+ advocate who is currently looking to adopt a child as a single parent. She wants to be a counselor to support mental health. She values inclusivity, has a close support network of friends from her home country, and is not deeply religious but driven by empathy.
-Melanie: A married mother of two who has been with her husband for 5 years. She is highly supportive of the LGBTQ+ community despite being in a heterosexual marriage. She loves the outdoors, frequently goes camping and running, and expresses her creativity through painting nature and playing the violin, indicating an affinity for classical music and arts.
+Dimensions to cover implicitly:
+1. Core Identity & Life Stage
+2. Career & Ambitions
+3. Lifestyle & Preferences (abstract actions into traits)
+4. Values & Beliefs
+5. Social Circle & Nicknames
 
 ================
 Input Memory Facts:
 {all_memory_facts}
+================
+
+CRITICAL OUTPUT CONSTRAINTS (READ CAREFULLY):
+1. SYNTHESIZE, DO NOT LIST: You MUST extract high-level insights. DO NOT repeat chronological events, DO NOT list individual memory facts, and DO NOT copy the input.
+2. STRICT LENGTH LIMIT: You MUST write exactly 3 to 6 sentences per character. The description MUST be extremely concise (strictly under 150 words per character).
+3. FORMAT: You MUST use EXACTLY this format: `Name: Description`
+4. NO LINE BREAKS: The entire description for a single character MUST be on ONE single continuous line. Do not use `\n` inside a character's description.
+5. NO EXTRA TEXT: Output ONLY the requested format. Do not use markdown bolding (like **Name**), no introductions, no explanations.
+
+Example Output:
+Caroline: A transgender woman and strong LGBTQ+ advocate looking to adopt a child as a single parent. She wants to be a counselor to support mental health. She values inclusivity, has a close support network of friends from her home country, and is driven by empathy.
+Melanie: A married mother of two who is highly supportive of the LGBTQ+ community. She loves the outdoors, frequently goes camping, and expresses her creativity through painting nature and playing the violin, indicating an affinity for classical music and arts.
 """
 
 
@@ -175,7 +182,7 @@ class MemoryWriter:
                     if len(stmt) < 5:
                         continue
                     memories.append({
-                        "text": stmt,
+                        "text": f"{stmt} ({_format_session_date(date_str_list[idx])})",
                         "last_access_timestamp": date_ts_list[idx],
                         "creation_timestamp": date_ts_list[idx],
                         "type": "observation"

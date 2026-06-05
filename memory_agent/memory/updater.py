@@ -56,7 +56,7 @@ Just return the insights, don't contain any other text.
 
 class MemoryUpdater:
     def __init__(self, store: MemoryStore, retriever=None, writer=None,
-                 reflection_threshold: int = 150,
+                 reflection_threshold: int = 300,
                  reflection_memory_limit: int = 100,
                  reflection_question_count: int = 3,
                  reflection_insight_per_q: int = 3,
@@ -78,7 +78,7 @@ class MemoryUpdater:
         self.reflection_max_tokens = reflection_max_tokens
         self.reflection_temperature = reflection_temperature
         self.chain = chain
-    # 当 sum_score >= 150 时触发
+        # 当 sum_score >= 300 时触发
     def check_and_reflect(self) -> bool:
         if self._accumulated_importance < self.reflection_threshold:
             return False
@@ -130,7 +130,7 @@ class MemoryUpdater:
                 timestamp=self.writer.latest_time,
             )
 
-        # 触发反思后减150
+                # 触发反思后减300
         self._accumulated_importance -= self.reflection_threshold
         return True
 

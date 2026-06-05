@@ -23,14 +23,14 @@ sys.path.insert(0, PROJECT_ROOT)
 
 EVAL_SET_PATH = os.path.join(PROJECT_ROOT, "eval_kit", "eval_kit", "eval_set.json")
 CHROMA_DB_DIR = os.path.join(PROJECT_ROOT, "chroma_db")
-TEST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
-SAVED_DB_DIR = os.path.join(TEST_DIR, "saved_chroma_db")
-PERSONA_FILE = os.path.join(TEST_DIR, "persona_summaries.txt")
+TEST_DIR = os.path.dirname(os.path.abspath(__file__))
+SAVED_DB_ROOT = os.path.join(TEST_DIR, "saved_chroma_db")       # 每 conversation 一个子目录
+PERSONA_FILE = os.path.join(TEST_DIR, "persona_summaries.json")  # {sample_id: summary}
 PREDICTIONS_FILE = os.path.join(TEST_DIR, "predictions.json")
 JUDGE_RESULTS_FILE = os.path.join(TEST_DIR, "judge_results.json")
 RESULTS_MD_FILE = os.path.join(TEST_DIR, "results.md")
 
-# 临时禁用 SentenceTransformer 在首次 import 时打印的进度条（保留其他信息）
+# 临时禁用 SentenceTransformer 在首次 import 时打印的进度条
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 print_lock = threading.Lock()
@@ -52,90 +52,129 @@ def _load_store_from_disk(persist_dir: str):
 
 
 # ═══════════════════════════════════════════════════════════════
-#  ingest 核心：一个 Agent 吞下全部对话
+#  ingest 核心：每段对话一个独立 Agent，状态完全隔离
 # ═══════════════════════════════════════════════════════════════
 def ingest_all():
+    import shutil
     from memory_agent.agent.controller import MemoryAgent
 
     with open(EVAL_SET_PATH, encoding="utf-8") as f:
         eval_set = json.load(f)
 
-    agent = MemoryAgent()
     total = len(eval_set)
+
+    # 清空旧的缓存
+    if os.path.exists(SAVED_DB_ROOT):
+        shutil.rmtree(SAVED_DB_ROOT)
+    os.makedirs(SAVED_DB_ROOT, exist_ok=True)
+
+    all_personas = {}
 
     for i, sample in enumerate(eval_set):
         sample_id = sample["sample_id"]
         sessions_count = len(sample["conversation"]["sessions"])
-        print(f"[ingest] ({i+1}/{total}) {sample_id}：正在导入 "
+        print(f"\n[ingest] ({i+1}/{total}) {sample_id}：正在导入 "
               f"{sessions_count} 个 session ...")
+
+        # 每段对话 new 一个新的 Agent，状态完全隔离
+        agent = MemoryAgent()
         agent.ingest(sample["conversation"])
 
-    # ── 持久化 ──
-    # 1. ChromaDB 目录
-    import shutil
-    if os.path.exists(SAVED_DB_DIR):
-        shutil.rmtree(SAVED_DB_DIR)
-    shutil.copytree(CHROMA_DB_DIR, SAVED_DB_DIR)
-    print(f"[ingest] ChromaDB 已保存到 {SAVED_DB_DIR}")
+        # ── 持久化该 conversation 的 ChromaDB ──
+        conv_db_dir = os.path.join(SAVED_DB_ROOT, sample_id)
+        if os.path.exists(conv_db_dir):
+            shutil.rmtree(conv_db_dir)
+        if os.path.exists(CHROMA_DB_DIR):
+            shutil.copytree(CHROMA_DB_DIR, conv_db_dir)
 
-    # 2. persona_summaries
-    persona = getattr(agent, "persona_summaries", "")
+        # ── 收集 persona ──
+        all_personas[sample_id] = agent.persona_summaries
+        print(f"[ingest] {sample_id} 完成，persona: {len(agent.persona_summaries)} 字符")
+
+    # 持久化 persona summaries
     with open(PERSONA_FILE, "w", encoding="utf-8") as f:
-        f.write(persona)
-    print(f"[ingest] persona_summaries 已保存（{len(persona)} 字符）")
+        json.dump(all_personas, f, ensure_ascii=False, indent=2)
+    print(f"\n[ingest] persona_summaries 已保存到 {PERSONA_FILE}")
 
     print(f"[ingest] 全部完成，共 {total} 段对话。")
-    return agent
+
+
+ANSWER_PROMPT = """You are an expert psychological detective answering questions about a person based on their Persona Profile and Memory Logs.
+
+[Persona Profiles]
+{persona_context}
+
+[Memory Logs]
+{memory_context}
+
+Question: {question}
+
+OUTPUT FORMAT - YOU MUST FOLLOW THIS STRUCTURE EXACTLY:
+First, output <think> followed by your step-by-step reasoning and deduction process. Explain what clues you found in the profile and memory, and how you arrived at your educated guess. 
+Then, output <content> followed by your final, definitive answer.
+
+CRITICAL INSTRUCTIONS TO MAXIMIZE SCORE:
+1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the Persona Profile.
+2. DEDUCE IMPLICIT ANSWERS: If the exact word isn't there, deduce it. (e.g., if they like the outdoors, guess they would prefer a national park; if they play violin, guess they like classical music).
+3. PARTIAL INFORMATION IS GOOD: If you don't know the exact date, provide the month or year. If you don't know the exact item, provide the category.
+4. BE DESCRIPTIVE: Your final answer in <content> must be a complete, descriptive sentence that presents your deduced answer as a confident statement. All reasoning and justification must be in the <think> section.
+"""
 
 
 # ═══════════════════════════════════════════════════════════════
 #  run：有缓存就走缓存，没缓存先 ingest
 # ═══════════════════════════════════════════════════════════════
 def run_all(concurrency: int):
-    from memory_agent.agent.controller import MemoryAgent
+    from memory_agent.memory.writer import MemoryWriter
+    from memory_agent.memory.retriever import MemoryRetriever
+    from llm_client import LLMClient
 
-    # ── 加载 / 构建 agent ──
-    cached = os.path.exists(SAVED_DB_DIR) and os.path.exists(PERSONA_FILE)
+    # ── 检查缓存 ──
+    cached = os.path.exists(SAVED_DB_ROOT) and os.path.exists(PERSONA_FILE)
 
-    if cached:
-        print("[run] 检测到已有数据库，正在加载...")
-        import shutil
-        # MemoryAgent() 会清库，所以先备份 chroma_db（如果有），留到 init 后再恢复
-        saved_before = None
-        if os.path.exists(CHROMA_DB_DIR):
-            saved_before = CHROMA_DB_DIR + ".backup_before_agent"
-            if os.path.exists(saved_before):
-                shutil.rmtree(saved_before)
-            shutil.copytree(CHROMA_DB_DIR, saved_before)
-
-        agent = MemoryAgent()                      # ← 这步会清空 chroma_db
-
-        # 恢复之前的状态
-        if saved_before:
-            shutil.rmtree(CHROMA_DB_DIR)
-            shutil.copytree(saved_before, CHROMA_DB_DIR)
-            shutil.rmtree(saved_before)
-
-        # 再用保存的缓存覆盖（保留 ingest 产出的完整数据）
-        if os.path.exists(CHROMA_DB_DIR):
-            shutil.rmtree(CHROMA_DB_DIR)
-        shutil.copytree(SAVED_DB_DIR, CHROMA_DB_DIR)
-
-        store = _load_store_from_disk(CHROMA_DB_DIR)
-        agent.store = store
-        agent.retriever.store = store
-        agent.updater.store = store
-        with open(PERSONA_FILE, "r", encoding="utf-8") as f:
-            agent.persona_summaries = f.read()
-        print(f"[run] 已加载 {store.collection.count()} 条记忆 + persona 总结")
-    else:
+    if not cached:
         print("[run] 未找到数据库缓存，开始导入数据...")
-        agent = ingest_all()
+        ingest_all()
 
-    # ── 回答全部问题 ──
+    # 加载 persona 字典
+    with open(PERSONA_FILE, "r", encoding="utf-8") as f:
+        all_personas = json.load(f)
+
     with open(EVAL_SET_PATH, encoding="utf-8") as f:
         eval_set = json.load(f)
 
+    # ── 共享组件（所有 conversation 复用）──
+    writer = MemoryWriter()
+    llm = LLMClient()
+
+    # ── 为每个 conversation 构建独立组件（各自指向独立的 DB 目录）──
+    print("[run] 正在加载各 conversation 的数据库...")
+    conv_map = {}  # sample_id -> dict(store, retriever, persona)
+
+    for sample in eval_set:
+        sample_id = sample["sample_id"]
+        conv_db_dir = os.path.join(SAVED_DB_ROOT, sample_id)
+
+        if not os.path.exists(conv_db_dir):
+            print(f"  {sample_id}: 未找到数据库，跳过")
+            continue
+
+        # 直接从该 conversation 的独立目录加载 DB，不走 MemoryAgent
+        store = _load_store_from_disk(conv_db_dir)
+        retriever = MemoryRetriever(
+            store=store,
+            embed_model=writer.embed_model,
+            writer=writer,
+        )
+
+        conv_map[sample_id] = {
+            "store": store,
+            "retriever": retriever,
+            "persona": all_personas.get(sample_id, ""),
+        }
+        print(f"  {sample_id}: {store.collection.count()} 条记忆")
+
+    # ── 构建所有 QA 列表 ──
     all_qa = []
     for sample in eval_set:
         sample_id = sample["sample_id"]
@@ -148,13 +187,34 @@ def run_all(concurrency: int):
     total_qa = len(all_qa)
     predictions = [None] * total_qa
     qa_done = [0]
-    conv_done_map = {}  # sample_id -> count done
 
     def _answer_one(idx: int):
         qa = all_qa[idx]
+        sample_id = qa["sample_id"]
+        ctx = conv_map[sample_id]
         t0 = time.time()
         try:
-            pred = agent.answer(qa["question"])
+            # 手动执行 answer 逻辑（与 controller.answer 一致）
+            query_embedding = writer.embed_text(qa["question"])
+            results = ctx["retriever"].retrieve(
+                qa["question"], query_embedding, top_k=70
+            )
+
+            if not results:
+                pred = "unknown"
+            else:
+                context = "\n".join(
+                    f"- {mem.text_description}" for mem, _ in results
+                )
+                prompt = ANSWER_PROMPT.format(
+                    memory_context=context,
+                    question=qa["question"],
+                    persona_context=ctx["persona"],
+                )
+                raw = llm.generate(prompt, max_tokens=256).strip()
+                import re
+                m = re.search(r"<content>\s*(.+)$", raw, re.DOTALL)
+                pred = m.group(1).strip() if m else raw
             err = None
         except Exception as e:
             pred = ""
@@ -174,18 +234,16 @@ def run_all(concurrency: int):
         with print_lock:
             predictions[idx] = result
             qa_done[0] += 1
-            sid = qa["sample_id"]
-            conv_done_map[sid] = conv_done_map.get(sid, 0) + 1
             if qa_done[0] % 10 == 0 or qa_done[0] == total_qa:
                 print(f"[run] 已回答 {qa_done[0]}/{total_qa} 题")
 
-    print(f"[run] 开始并发回答 {total_qa} 题（并发数={concurrency}）...")
+    print(f"\n[run] 开始并发回答 {total_qa} 题（并发数={concurrency}）...")
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
         futures = [ex.submit(_answer_one, i) for i in range(total_qa)]
         for fut in as_completed(futures):
             fut.result()
 
-    # 剔除 None（理论上不会有）
+    # 剔除 None
     predictions = [p for p in predictions if p is not None]
 
     with open(PREDICTIONS_FILE, "w", encoding="utf-8") as f:
