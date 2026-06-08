@@ -62,22 +62,16 @@ Question: {question}
 
 CRITICAL INSTRUCTIONS:
 1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the context.
-2. DEDUCE IMPLICIT ANSWERS: If the exact word isn't there, deduce it (e.g., if they play violin, guess they like classical music). Partial info is acceptable (e.g., just the month if the day is missing).
-3. DO NOT LIST ALL MEMORIES: In your reasoning, DO NOT evaluate or list every single memory log. Only extract and mention the 1 or 2 most relevant clues.
+2. DEDUCE PREFERENCES, BUT DO NOT INVENT FACTS: You should deduce implicit preferences (e.g., if they play violin, deduce they like classical music). HOWEVER, DO NOT hallucinate specific names, bands, brands, or exact dates that do not exist in the memories. 
+3. PARTIAL INFO IS BETTER THAN GUESSING BLINDLY: If you know the month but not the exact day, just state the month. If you know the category but not the specific item, state the category.
+4. DO NOT LIST ALL MEMORIES: In your reasoning, focus only on the 1 or 2 most relevant clues.
+
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object. Do not include any other text, markdown formatting, or tags outside the JSON.
-{
-  "thinking": "Your logical reasoning process",
-  "answer": "The shortest possible direct answer (e.g., 'The Friday before 14 August 2023', 'Classical music', 'Yes').Since you have already explained your reasoning in the thinking section, your final answer in the answer section MUST BE AS SHORT AS POSSIBLE."
-}
-EXAMPLE:
-Question: What kind of music does John like?
-Output:
-{
-  "thinking": "The memory logs mention John practicing the violin every weekend and attending a symphony orchestra. Although his specific favorite genre isn't explicitly named, violin and symphonies strongly indicate a preference for classical music.",
-  "answer": "Classical music"
-}
-"""
+{{
+  "thinking": "Your logical reasoning process. Explain what clues you found and how you deduced the answer.",
+  "answer": "A concise, complete sentence that directly answers the question AND briefly includes the core reason or context. (e.g., 'Yes, she would likely enjoy it because she is a fan of classical music.' or 'She attended Summer Sounds, but other specific artists are not mentioned.')"
+}}"""
 
 
 class MemoryAgent:
@@ -153,9 +147,14 @@ class MemoryAgent:
         context = "\n".join(f"- {mem.text_description}" for mem, _ in results)
         prompt = ANSWER_PROMPT.format(memory_context=context, question=question, persona_context=self.persona_summaries)
         # 喂给 LLM 生成答案，解析 JSON 提取 answer 字段
-        raw = self.llm.generate(prompt, max_tokens=1024).strip()
+        raw = self.llm.generate(prompt, max_tokens=4096).strip()
+        import re
         try:
             data = json.loads(raw)
             return data.get("answer", raw)
         except (json.JSONDecodeError, TypeError):
+            # JSON 被截断时，正则兜底提取 "answer" 字段的值
+            m = re.search(r'"answer"\s*:\s*"((?:[^"\\]|\\.)*)"', raw)
+            if m:
+                return m.group(1)
             return raw

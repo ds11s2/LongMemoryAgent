@@ -29,6 +29,8 @@ PERSONA_FILE = os.path.join(TEST_DIR, "persona_summaries.json")  # {sample_id: s
 PREDICTIONS_FILE = os.path.join(TEST_DIR, "predictions.json")
 JUDGE_RESULTS_FILE = os.path.join(TEST_DIR, "judge_results.json")
 RESULTS_MD_FILE = os.path.join(TEST_DIR, "results.md")
+SUMMARY_DIR = os.path.join(PROJECT_ROOT, "文档", "结果汇总")
+SUMMARY_MD = os.path.join(SUMMARY_DIR, "result_summary.md")
 
 # 临时禁用 SentenceTransformer 在首次 import 时打印的进度条
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
@@ -111,22 +113,16 @@ Question: {question}
 
 CRITICAL INSTRUCTIONS:
 1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the context.
-2. DEDUCE IMPLICIT ANSWERS: If the exact word isn't there, deduce it (e.g., if they play violin, guess they like classical music). Partial info is acceptable (e.g., just the month if the day is missing).
-3. DO NOT LIST ALL MEMORIES: In your reasoning, DO NOT evaluate or list every single memory log. Only extract and mention the 1 or 2 most relevant clues.
+2. DEDUCE PREFERENCES, BUT DO NOT INVENT FACTS: You should deduce implicit preferences (e.g., if they play violin, deduce they like classical music). HOWEVER, DO NOT hallucinate specific names, bands, brands, or exact dates that do not exist in the memories. 
+3. PARTIAL INFO IS BETTER THAN GUESSING BLINDLY: If you know the month but not the exact day, just state the month. If you know the category but not the specific item, state the category.
+4. DO NOT LIST ALL MEMORIES: In your reasoning, focus only on the 1 or 2 most relevant clues.
+5. DISTINGUISH EVENT DATE VS. CONVERSATION DATE: Memories may contain a Conversation Date (e.g., [Conversation Date: May 25th, 2023]). If the memory text explicitly states when an event happened (e.g., "ran a race on 20 May 2023"), THAT is the actual event date. Always prioritize the specific event date over the conversation date.
+
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object. Do not include any other text, markdown formatting, or tags outside the JSON.
-{
-  "thinking": "Your logical reasoning process",
-  "answer": "The shortest possible direct answer (e.g., 'The Friday before 14 August 2023', 'Classical music', 'Yes').Since you have already explained your reasoning in the thinking section, your final answer in the answer section MUST BE AS SHORT AS POSSIBLE."
-}
-EXAMPLE:
-Question: What kind of music does John like?
-Output:
-{
-  "thinking": "The memory logs mention John practicing the violin every weekend and attending a symphony orchestra. Although his specific favorite genre isn't explicitly named, violin and symphonies strongly indicate a preference for classical music.",
-  "answer": "Classical music"
-}
-"""
+{{
+  "thinking": "Your logical reasoning process. Explain what clues you found and how you deduced the answer. If dealing with dates, explicitly state why you chose a specific date.",
+  "answer": "The absolute shortest possible answer. Just the core entity, name, date, or Yes/No. Do not write a full sentence.}}"""
 
 
 
@@ -206,7 +202,7 @@ def run_all(concurrency: int):
             # 手动执行 answer 逻辑（与 controller.answer 一致）
             query_embedding = writer.embed_text(qa["question"])
             results = ctx["retriever"].retrieve(
-                qa["question"], query_embedding, top_k=70
+                qa["question"], query_embedding, top_k=30
             )
 
             if not results:
@@ -220,12 +216,15 @@ def run_all(concurrency: int):
                     question=qa["question"],
                     persona_context=ctx["persona"],
                 )
-                raw = llm.generate(prompt, max_tokens=1024).strip()
+                raw = llm.generate(prompt, max_tokens=4096).strip()
+                import re
                 try:
                     data = json.loads(raw)
                     pred = data.get("answer", raw)
                 except (json.JSONDecodeError, TypeError):
-                    pred = raw
+                    # JSON 被截断时，正则兜底提取 "answer" 字段的值
+                    m = re.search(r'"answer"\s*:\s*"((?:[^"\\]|\\.)*)"', raw)
+                    pred = m.group(1) if m else raw
             err = None
         except Exception as e:
             pred = ""
@@ -268,6 +267,9 @@ def run_all(concurrency: int):
     # ── 写 MD ──
     write_results_md()
 
+    # ── 归档结果 ──
+    archive_results()
+
     print(f"[run] 全部完成！结果见 {RESULTS_MD_FILE}")
 
 
@@ -281,6 +283,11 @@ def run_judge_subprocess():
     env = os.environ.copy()
     pythonpath = env.get("PYTHONPATH", "")
     env["PYTHONPATH"] = PROJECT_ROOT + (os.pathsep + pythonpath if pythonpath else "")
+
+    # 强制 Judge 使用云端 deepseek-v4-flash，不受本地 vllm 环境影响
+    env["LLM_MODEL"] = "deepseek-v4-flash"
+    env["LLM_BASE_URL"] = "https://api.deepseek.com/v1"
+    env["LLM_API_KEY"] = "sk-97a50281d2b442ab84408c6c9d73be41"
 
     cmd = [
         sys.executable, os.path.join(eval_kit_dir, "run_judge.py"),
@@ -336,6 +343,68 @@ def write_results_md():
     with open(RESULTS_MD_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
     print(f"[run] 结果 MD 已写入 -> {RESULTS_MD_FILE}")
+
+
+# ═══════════════════════════════════════════════════════════════
+#  归档结果到 文档/结果汇总
+# ═══════════════════════════════════════════════════════════════
+def archive_results():
+    import shutil
+
+    os.makedirs(SUMMARY_DIR, exist_ok=True)
+
+    # ── 1. 确定当前测试编号 ──
+    test_num = 5
+    if os.path.exists(SUMMARY_DIR):
+        existing = [f for f in os.listdir(SUMMARY_DIR) if f.startswith("test") and f.endswith("_answer.json")]
+        nums = []
+        for f in existing:
+            try:
+                num_str = f[len("test"):-len("_answer.json")]
+                nums.append(int(num_str))
+            except ValueError:
+                pass
+        if nums:
+            test_num = max(nums) + 1
+
+    # ── 2. 保存 predictions.json -> testX_answer.json ──
+    answer_json = os.path.join(SUMMARY_DIR, f"test{test_num}_answer.json")
+    shutil.copy2(PREDICTIONS_FILE, answer_json)
+    print(f"[run] 预测结果已归档 -> {answer_json}")
+
+    # ── 3. 生成符合格式的汇总内容追加到 result_summary.md ──
+    with open(JUDGE_RESULTS_FILE, encoding="utf-8") as f:
+        jr = json.load(f)
+
+    overall = jr["overall"]
+    by_cat = jr["by_category"]
+    model = jr.get("judge_model", "unknown")
+
+    lines = []
+    lines.append(f"## test{test_num}")
+    lines.append(f"")
+    lines.append(f"- **生成时间**：{time.strftime('%Y-%m-%d %H:%M:%S')}")
+    lines.append(f"- **Judge 模型**：{model}")
+    lines.append(f"- **总题数**：{overall['n']}")
+    lines.append(f"")
+    lines.append(f"平均回答耗时:  {overall.get('avg_latency_sec', 0)}s ")
+    lines.append(f"")
+    lines.append(f"| 类别 | 题数 | 得分 | F1 | EM | 正确 | 部分 | 错误 |")
+    lines.append(f"|------|------|------|----|----|------|------|------|")
+    for name in sorted(by_cat.keys()):
+        d = by_cat[name]
+        lines.append(
+            f"| {name} | {d['n']} | {d['score']:.3f} | {d['f1']:.3f} | "
+            f"{d['em']:.3f} | {d.get('correct', 0)} | "
+            f"{d.get('partial', 0)} | {d.get('wrong', 0)} |"
+        )
+    lines.append(f"| **总体** | {overall['n']} | {overall['score']:.3f} | "
+                 f"{overall['f1']:.3f} | {overall['em']:.3f} | | | |")
+    lines.append("")
+
+    with open(SUMMARY_MD, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"[run] 评测结果已追加 -> {SUMMARY_MD}")
 
 
 # ═══════════════════════════════════════════════════════════════
