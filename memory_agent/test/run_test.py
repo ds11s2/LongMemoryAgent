@@ -12,6 +12,7 @@
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import threading
@@ -101,8 +102,8 @@ def ingest_all():
     print(f"[ingest] 全部完成，共 {total} 段对话。")
 
 
-ANSWER_PROMPT = """You are an expert psychological detective answering questions about a person based on their Persona Profile and Memory Logs.
-
+ANSWER_PROMPT = """
+You are a fact extractor. Your task is to find the exact answer from the Memory Logs.
 [Persona Profiles]
 {persona_context}
 
@@ -111,19 +112,27 @@ ANSWER_PROMPT = """You are an expert psychological detective answering questions
 
 Question: {question}
 
-CRITICAL INSTRUCTIONS:
-1. NEVER SAY UNKNOWN: You are strictly forbidden from answering "unknown", "I don't know", or "not mentioned". You MUST make an educated guess based on the context.
-2. DEDUCE PREFERENCES, BUT DO NOT INVENT FACTS: You should deduce implicit preferences (e.g., if they play violin, deduce they like classical music). HOWEVER, DO NOT hallucinate specific names, bands, brands, or exact dates that do not exist in the memories. 
-3. PARTIAL INFO IS BETTER THAN GUESSING BLINDLY: If you know the month but not the exact day, just state the month. If you know the category but not the specific item, state the category.
-4. DO NOT LIST ALL MEMORIES: In your reasoning, focus only on the 1 or 2 most relevant clues.
-5. DISTINGUISH EVENT DATE VS. CONVERSATION DATE: Memories may contain a Conversation Date (e.g., [Conversation Date: May 25th, 2023]). If the memory text explicitly states when an event happened (e.g., "ran a race on 20 May 2023"), THAT is the actual event date. Always prioritize the specific event date over the conversation date.
+RULES:
+1. ONLY use the information directly written in the memories.
+2. If the question asks for a specific fact (e.g., date, name, item), find the sentence that exactly answers it and copy that fact.
+3. Output ONLY the answer, no extra words.
 
-OUTPUT FORMAT:
-You MUST output ONLY a valid JSON object. Do not include any other text, markdown formatting, or tags outside the JSON.
-{{
-  "thinking": "Your logical reasoning process. Explain what clues you found and how you deduced the answer. If dealing with dates, explicitly state why you chose a specific date.",
-  "answer": "The absolute shortest possible answer. Just the core entity, name, date, or Yes/No. Do not write a full sentence.}}"""
+Answer:"""
 
+
+FILTER_PROMPT = """
+Your task is to keep only the memories that help answer the question. Delete all others.
+
+Memories:
+{memory_context}
+
+Question: {question}
+
+Rules:
+- If a memory contains information directly related to the question, keep it.
+- If it does not, delete it.
+- Output only the kept memories, exactly as they appear. Do not add anything. Do not explain.
+"""
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -202,29 +211,35 @@ def run_all(concurrency: int):
             # 手动执行 answer 逻辑（与 controller.answer 一致）
             query_embedding = writer.embed_text(qa["question"])
             results = ctx["retriever"].retrieve(
-                qa["question"], query_embedding, top_k=30
+                qa["question"], query_embedding, top_k=25
             )
 
             if not results:
                 pred = "unknown"
             else:
-                context = "\n".join(
-                    f"- {mem.text_description}" for mem, _ in results
-                )
-                prompt = ANSWER_PROMPT.format(
+                # ── 格式化：仅去掉开头的 [Conversation Date: xxx] ──
+                context_lines = []
+                for mem, _ in results:
+                    text = mem.text_description
+                    # 去掉开头的日期标签 "[Conversation Date: ...]"
+                    cleaned = re.sub(r'^\[Conversation Date: [^\]]+\]\s*', '', text)
+                    context_lines.append(f"- {cleaned}")
+                context = "\n".join(context_lines)
+
+                # ── 第一阶段：精简记忆单元 ──
+                filter_prompt = FILTER_PROMPT.format(
                     memory_context=context,
+                    question=qa["question"],
+                )
+                filtered_context = llm.generate(filter_prompt, max_tokens=512).strip()
+
+                # ── 第二阶段：用精简后的记忆回答问题 ──
+                prompt = ANSWER_PROMPT.format(
+                    memory_context=filtered_context,
                     question=qa["question"],
                     persona_context=ctx["persona"],
                 )
-                raw = llm.generate(prompt, max_tokens=4096).strip()
-                import re
-                try:
-                    data = json.loads(raw)
-                    pred = data.get("answer", raw)
-                except (json.JSONDecodeError, TypeError):
-                    # JSON 被截断时，正则兜底提取 "answer" 字段的值
-                    m = re.search(r'"answer"\s*:\s*"((?:[^"\\]|\\.)*)"', raw)
-                    pred = m.group(1) if m else raw
+                pred = llm.generate(prompt, max_tokens=64).strip()
             err = None
         except Exception as e:
             pred = ""

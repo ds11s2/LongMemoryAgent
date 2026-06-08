@@ -1,0 +1,1602 @@
+[
+  {
+    "qa_id": "conv-26_q6",
+    "question": "When is Melanie planning on going camping?",
+    "reference": "June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 2023",
+    "error": null,
+    "latency_sec": 6.756
+  },
+  {
+    "qa_id": "conv-26_q15",
+    "question": "What activities does Melanie partake in?",
+    "reference": "pottery, camping, painting, swimming",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "painting, clarinet, pottery, nature, camping",
+    "error": null,
+    "latency_sec": 5.161
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 10, 2023",
+    "error": null,
+    "latency_sec": 4.504
+  },
+  {
+    "qa_id": "conv-26_q26",
+    "question": "When did Melanie read the book \"nothing is impossible\"?",
+    "reference": 2022,
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 7.442
+  },
+  {
+    "qa_id": "conv-26_q29",
+    "question": "When did Melanie go to the pottery workshop?",
+    "reference": "The Friday before 15 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 14, 2023",
+    "error": null,
+    "latency_sec": 3.7
+  },
+  {
+    "qa_id": "conv-26_q31",
+    "question": "When did Melanie go camping in June?",
+    "reference": "The week before 27 June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 27, 2023",
+    "error": null,
+    "latency_sec": 3.903
+  },
+  {
+    "qa_id": "conv-26_q42",
+    "question": "Would Melanie be more interested in going to a national park or a theme park?",
+    "reference": "National park; she likes the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, July 2023",
+    "error": null,
+    "latency_sec": 4.487
+  },
+  {
+    "qa_id": "conv-26_q43",
+    "question": "What kind of art does Caroline make?",
+    "reference": "abstract art",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "abstract art",
+    "error": null,
+    "latency_sec": 5.879
+  },
+  {
+    "qa_id": "conv-26_q45",
+    "question": "When did Caroline attend a pride parade in August?",
+    "reference": "The Friday before 14 August 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 15, 2023",
+    "error": null,
+    "latency_sec": 3.712
+  },
+  {
+    "qa_id": "conv-26_q59",
+    "question": "Would Caroline be considered religious?",
+    "reference": "Somewhat, but not extremely religious",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 4.296
+  },
+  {
+    "qa_id": "conv-26_q61",
+    "question": "What musical artists/bands has Melanie seen?",
+    "reference": "Summer Sounds, Matt Patterson",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Summer Sounds",
+    "error": null,
+    "latency_sec": 4.513
+  },
+  {
+    "qa_id": "conv-26_q64",
+    "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+    "reference": "Yes; it's classical music",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 7.041
+  },
+  {
+    "qa_id": "conv-26_q69",
+    "question": "What personality traits might Melanie say Caroline has?",
+    "reference": "Thoughtful, authentic, driven",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "active LGBTQ+ advocate, passionate about creating a safe place for people to grow, committed to a career in mental health counseling to help transgender individuals",
+    "error": null,
+    "latency_sec": 4.943
+  },
+  {
+    "qa_id": "conv-26_q71",
+    "question": "What book did Melanie read from Caroline's suggestion?",
+    "reference": "\"Becoming Nicole\"",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Becoming Nicole",
+    "error": null,
+    "latency_sec": 3.407
+  },
+  {
+    "qa_id": "conv-26_q81",
+    "question": "Would Caroline want to move back to her home country soon?",
+    "reference": "No; she's in the process of adopting children.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 4.017
+  },
+  {
+    "qa_id": "conv-26_q82",
+    "question": "What did the charity race raise awareness for?",
+    "reference": "mental health",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "mental health on 20 May 2023",
+    "error": null,
+    "latency_sec": 3.735
+  },
+  {
+    "qa_id": "conv-26_q85",
+    "question": "What are Caroline's plans for the summer?",
+    "reference": "researching adoption agencies",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Caroline and Melanie plan a special summer outing in August 2023",
+    "error": null,
+    "latency_sec": 5.169
+  },
+  {
+    "qa_id": "conv-26_q101",
+    "question": "Did Melanie make the black and white bowl in the photo?",
+    "reference": "Yes",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 4.099
+  },
+  {
+    "qa_id": "conv-26_q141",
+    "question": "What does Caroline's drawing symbolize for her?",
+    "reference": "Freedom and being true to herself.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "freedom and embracing her womanhood, October 13th, 2023",
+    "error": null,
+    "latency_sec": 4.503
+  },
+  {
+    "qa_id": "conv-30_q3",
+    "question": "What do Jon and Gina both have in common?",
+    "reference": "They lost their jobs and decided to start their own businesses.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 5.048
+  },
+  {
+    "qa_id": "conv-30_q5",
+    "question": "What Jon thinks the ideal dance studio should look like?",
+    "reference": "By the water, with natural light and Marley flooring",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "by the water",
+    "error": null,
+    "latency_sec": 4.386
+  },
+  {
+    "qa_id": "conv-30_q12",
+    "question": "When did Jon start to go to the gym?",
+    "reference": "March, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "March 2023",
+    "error": null,
+    "latency_sec": 4.095
+  },
+  {
+    "qa_id": "conv-30_q15",
+    "question": "When did Jon host a dance competition?",
+    "reference": "May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 2023",
+    "error": null,
+    "latency_sec": 4.197
+  },
+  {
+    "qa_id": "conv-30_q19",
+    "question": "When did Gina interview for a design internship?",
+    "reference": "10 May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 11th, 2023",
+    "error": null,
+    "latency_sec": 4.371
+  },
+  {
+    "qa_id": "conv-30_q22",
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "reference": "June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 13th, 2023",
+    "error": null,
+    "latency_sec": 3.51
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "20 June 2023",
+    "error": null,
+    "latency_sec": 4.419
+  },
+  {
+    "qa_id": "conv-30_q75",
+    "question": "What does Gina say to Jon about the grand opening?",
+    "reference": "Let's live it up and make some great memories",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Will attend the grand opening on 20 June 2023",
+    "error": null,
+    "latency_sec": 4.307
+  },
+  {
+    "qa_id": "conv-41_q7",
+    "question": "What items des John mention having as a child?",
+    "reference": "A doll, a film camera",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "doll, January 28th, 2023",
+    "error": null,
+    "latency_sec": 6.098
+  },
+  {
+    "qa_id": "conv-41_q14",
+    "question": "Would John be considered a patriotic person?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 4.929
+  },
+  {
+    "qa_id": "conv-41_q17",
+    "question": "What might John's degree be in?",
+    "reference": "Political science, Public administration, Public affairs",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, John's degree is in education.",
+    "error": null,
+    "latency_sec": 8.859
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "March 2023",
+    "error": null,
+    "latency_sec": 3.81
+  },
+  {
+    "qa_id": "conv-41_q26",
+    "question": "What has Maria done to feel closer to her faith?",
+    "reference": "Join a local church, buy a cross necklace",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria bought a cross necklace on April 10th, 2023 to feel closer to her faith.",
+    "error": null,
+    "latency_sec": 3.649
+  },
+  {
+    "qa_id": "conv-41_q29",
+    "question": "What events is Maria planning for the homeless shelter funraiser?",
+    "reference": "Chili cook-off, ring-toss tournament",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "ring-toss tournament, late May 2023",
+    "error": null,
+    "latency_sec": 4.467
+  },
+  {
+    "qa_id": "conv-41_q41",
+    "question": "Does John live close to a beach or the mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 6.442
+  },
+  {
+    "qa_id": "conv-41_q48",
+    "question": "When did John have his first firefighter call-out?",
+    "reference": "The sunday before 3` July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "30 July 2023",
+    "error": null,
+    "latency_sec": 3.61
+  },
+  {
+    "qa_id": "conv-41_q52",
+    "question": "Who have written notes of gratitude to Maria?",
+    "reference": "Cindy, Laura",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Cindy, August 3rd, 2023",
+    "error": null,
+    "latency_sec": 6.152
+  },
+  {
+    "qa_id": "conv-41_q53",
+    "question": "When did John help renovate his hometown community center?",
+    "reference": "2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 5th, 2022",
+    "error": null,
+    "latency_sec": 4.546
+  },
+  {
+    "qa_id": "conv-41_q57",
+    "question": "What causes has John done events for?",
+    "reference": "Toy drive, Community food drive, veterans, domestic violence",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Events: toy drive, children's activities, fundraisers, volunteers",
+    "error": null,
+    "latency_sec": 8.077
+  },
+  {
+    "qa_id": "conv-41_q62",
+    "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 3.624
+  },
+  {
+    "qa_id": "conv-41_q64",
+    "question": "What job might Maria pursue in the future?",
+    "reference": "Shelter coordinator, Counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "charity worker or communications specialist",
+    "error": null,
+    "latency_sec": 5.62
+  },
+  {
+    "qa_id": "conv-41_q65",
+    "question": "What is John's main focus in local politics?",
+    "reference": "Improving education and infrastructure",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "education and infrastructure",
+    "error": null,
+    "latency_sec": 7.599
+  },
+  {
+    "qa_id": "conv-41_q108",
+    "question": "What did Maria say it was like being at the waterfall in Oregon?",
+    "reference": "Like being in a fairy tale",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Was in a fairy tale at the waterfall and bridge on June 12th, 2023.",
+    "error": null,
+    "latency_sec": 4.856
+  },
+  {
+    "qa_id": "conv-41_q113",
+    "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+    "reference": "self-doubt",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Was promoted to assistant manager on June 16th, 2023",
+    "error": null,
+    "latency_sec": 3.251
+  },
+  {
+    "qa_id": "conv-41_q117",
+    "question": "What event did John participate in to show support for veterans' rights?",
+    "reference": "marching event",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "3 July 2023",
+    "error": null,
+    "latency_sec": 4.349
+  },
+  {
+    "qa_id": "conv-41_q134",
+    "question": "How did John describe his kids' reaction at the military memorial?",
+    "reference": "awestruck and humbled",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "awestruck and humbled, August 3rd, 2023",
+    "error": null,
+    "latency_sec": 5.645
+  },
+  {
+    "qa_id": "conv-42_q0",
+    "question": "Is it likely that Nate has friends besides Joanna?",
+    "reference": "Yesteammates on hisvideo game team.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 3.921
+  },
+  {
+    "qa_id": "conv-42_q14",
+    "question": "What nickname does Nate use for Joanna?",
+    "reference": "Jo",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nate: Compensates for allergies",
+    "error": null,
+    "latency_sec": 4.969
+  },
+  {
+    "qa_id": "conv-42_q19",
+    "question": "How many times has Joanna found new hiking trails?",
+    "reference": "twice",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 4.623
+  },
+  {
+    "qa_id": "conv-42_q20",
+    "question": "When did Nate adopt Max?",
+    "reference": "May 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 20th, 2022",
+    "error": null,
+    "latency_sec": 4.655
+  },
+  {
+    "qa_id": "conv-42_q30",
+    "question": "What kind of writings does Joanna do?",
+    "reference": "Screenplays,books, online blog posts, journal",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "screenplays",
+    "error": null,
+    "latency_sec": 4.799
+  },
+  {
+    "qa_id": "conv-42_q32",
+    "question": "Where did Joanna travel to in July 2022?",
+    "reference": "Woodhaven",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 10th, 2022",
+    "error": null,
+    "latency_sec": 5.727
+  },
+  {
+    "qa_id": "conv-42_q33",
+    "question": "When did someone write Joanna a touching letter?",
+    "reference": "The week before 14August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 14, 2022",
+    "error": null,
+    "latency_sec": 3.871
+  },
+  {
+    "qa_id": "conv-42_q35",
+    "question": "When did Nate take time off to chill with his pets?",
+    "reference": "The weekend of 22August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "27-28 August 2022",
+    "error": null,
+    "latency_sec": 5.473
+  },
+  {
+    "qa_id": "conv-42_q37",
+    "question": "When did Nate win an international tournament?",
+    "reference": "21 August, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "21 August 2022",
+    "error": null,
+    "latency_sec": 3.491
+  },
+  {
+    "qa_id": "conv-42_q43",
+    "question": "How long did it take for Joanna to finish writing her book?",
+    "reference": "four months",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "late September 2022",
+    "error": null,
+    "latency_sec": 4.564
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "5 November 2022",
+    "error": null,
+    "latency_sec": 4.662
+  },
+  {
+    "qa_id": "conv-42_q66",
+    "question": "What alternative career might Nate consider after gaming?",
+    "reference": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Esports management or event planning",
+    "error": null,
+    "latency_sec": 6.821
+  },
+  {
+    "qa_id": "conv-42_q81",
+    "question": "What recipes has Joanna made?",
+    "reference": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "old recipe revised on September 5th, 2022; new recipe from Nate planned for August 14th, 2022",
+    "error": null,
+    "latency_sec": 4.71
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"The first memory tagged as [direct evidence] is on August 14th, 2022, which mentions someone wrote Joanna a letter after reading Joanna's online blog post. This suggests Joanna's online presence was active in August 2022. The second memory tagged as [direct evidence] is on October 6th, 2022, which mentions Joanna made a bookmark for a lady in her writing club. This indicates that Joanna was busy with her writing and social activities in September 2022. The third memory tagged as [background] is on July 10th, 2022, which mentions Joanna started working on a book after her movie did well. This suggests that Joanna's writing career was active in July 2022 and continued into September 2022. The fourth memory tagged as [background] is on August 22nd, 2022, which mentions Joanna shared her book with her writers group and received great feedback. This indicates that Joanna's writing career was active in August 2022 and continued into September 2022. The fifth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The sixth memory tagged as [background] is on September 14th, 2022, which mentions Joanna is a writer. This indicates that Joanna's writing career was active in September 2022. The seventh memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The eighth memory tagged as [background] is on October 6th, 2022, which mentions Joanna made a bookmark for a lady in her writing club. This indicates that Joanna's writing career was active in October 2022 and continued into September 2022. The ninth memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The tenth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The eleventh memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The twelfth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2022. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The thirteenth memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The fourteenth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The fifteenth memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The sixteenth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The seventeenth memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The eighteenth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2022. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The nineteenth memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The twentieth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The twenty-first memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The twenty-second memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The twenty-third memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The twenty-fourth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2022. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The twenty-fifth memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The twenty-sixth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The twenty-seventh memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The twenty-eighth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The twenty-ninth memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The thirtieth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2022. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The thirty-first memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The thirty-second memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The thirty-third memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The thirty-fourth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The thirty-fifth memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The thirty-sixth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2022. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The thirty-seventh memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The thirty-eighth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The thirty-ninth memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The fortieth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The forty-first memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The forty-second memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2222. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The forty-third memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The forty-fourth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The forty-fifth memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The forty-sixth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The forty-seventh memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The forty-eighth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2222. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The forty-ninth memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The fiftieth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The fifty-first memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The fifty-second memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The fifty-third memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The fifty-fourth memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2222. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The fifty-fifth memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The fifty-sixth memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The fifty-seventh memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 2022 and continued into September 2022. The fifty-eighth memory tagged as [background] is on September 5th, 2022, which mentions Joanna makes dairy-free desserts. This indicates that Joanna's culinary arts career was active in September 2022 and continued into September 2022. The fifty-ninth memory tagged as [background] is on March 18th, 2022, which mentions Joanna finished writing her second script and feels a mix of relief, excitement, and anxiety about its future. This suggests that Joanna's writing career was active in March 2022 and continued into September 2022. The sixty-first memory tagged as [background] is on January 23rd, 2022, which mentions Joanna finished writing her first full screenplay and printed it on Friday, January 21, 2222. This suggests that Joanna's writing career was active in January 2022 and continued into September 2022. The sixty-second memory tagged as [background] is on August 14th, 2022, which mentions Joanna's book explores themes of loss, redemption, and forgiveness. This suggests that Joanna's writing career was active in August 2022 and continued into September 2022. The sixty-third memory tagged as [background] is on October 25th, 2022, which mentions Joanna's book was shown on a big screen for the third time. This suggests that Joanna's writing career was active in October 2022 and continued into September 2022. The sixty-fourth memory tagged as [background] is on May 20th, 2022, which mentions Joanna made a dessert with almond milk. This indicates that Joanna's culinary arts career was active in May 202",
+    "error": null,
+    "latency_sec": 104.031
+  },
+  {
+    "qa_id": "conv-42_q87",
+    "question": "What state did Nate visit?",
+    "reference": "Florida",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "California",
+    "error": null,
+    "latency_sec": 4.147
+  },
+  {
+    "qa_id": "conv-42_q91",
+    "question": "What is Nate's favorite book series about?",
+    "reference": "dragons",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "fantasy book series",
+    "error": null,
+    "latency_sec": 3.78
+  },
+  {
+    "qa_id": "conv-42_q133",
+    "question": "How many people attended the gaming party hosted by Nate in June 2022?",
+    "reference": "7",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "7 attendees",
+    "error": null,
+    "latency_sec": 3.804
+  },
+  {
+    "qa_id": "conv-42_q157",
+    "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+    "reference": "chocolate raspberry tart",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The chocolate raspberry tart with almond flour crust",
+    "error": null,
+    "latency_sec": 4.549
+  },
+  {
+    "qa_id": "conv-42_q161",
+    "question": "What did Joanna make for one of the ladies at her writing club?",
+    "reference": "a bookmark",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Joanna made a bookmark for a lady in her writing club on October 6th, 2022.",
+    "error": null,
+    "latency_sec": 4.813
+  },
+  {
+    "qa_id": "conv-42_q188",
+    "question": "What is Nate creating for YouTube on 9 November, 2022?",
+    "reference": "gaming content",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "gaming content, YouTube, November 9th, 2022",
+    "error": null,
+    "latency_sec": 4.212
+  },
+  {
+    "qa_id": "conv-42_q193",
+    "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+    "reference": "The incredible sunset and surrounding beauty",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "summer 2022",
+    "error": null,
+    "latency_sec": 3.833
+  },
+  {
+    "qa_id": "conv-43_q1",
+    "question": "What are John's goals for his career that are not related to his basketball skills?",
+    "reference": "get endorsements, build his brand, do charity work",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Personal improvement, community impact, and championship success",
+    "error": null,
+    "latency_sec": 4.338
+  },
+  {
+    "qa_id": "conv-43_q8",
+    "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+    "reference": "Under Armour",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The renowned outdoor gear company",
+    "error": null,
+    "latency_sec": 4.346
+  },
+  {
+    "qa_id": "conv-43_q11",
+    "question": "What sports does John like besides basketball?",
+    "reference": "surfing",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 4.554
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Anthony: August 2nd, 2023",
+    "error": null,
+    "latency_sec": 3.606
+  },
+  {
+    "qa_id": "conv-43_q22",
+    "question": "When did John meet with his teammates after returning from Chicago?",
+    "reference": "August 15, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 15, 2023",
+    "error": null,
+    "latency_sec": 3.972
+  },
+  {
+    "qa_id": "conv-43_q27",
+    "question": "Which popular time management technique does Tim use to prepare for exams?",
+    "reference": "Pomodoro technique",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "25 minutes studying followed by 5 minutes break, November 16th, 2023",
+    "error": null,
+    "latency_sec": 4.04
+  },
+  {
+    "qa_id": "conv-43_q30",
+    "question": "Which cities has John been to?",
+    "reference": "Seattle, Chicago, New York, and Paris.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Edinburgh",
+    "error": null,
+    "latency_sec": 3.466
+  },
+  {
+    "qa_id": "conv-43_q34",
+    "question": "What could John do after his basketball career?",
+    "reference": "become a basketball coach since he likes giving back and leadership",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"John's basketball career is driven by personal growth, meaningful relationships with teammates, and a desire to use his platform for community impact and championship success (8,9,11,17,18,21,25,26,27,31,36,38,43,44,48). He has a strong desire to make a positive impact off the court (2,10,50). He is a professional basketball player who has won a trophy before December 2023 (December 6th, 2023). He has been practicing basketball every day since early 2023 (January 2nd, 2024). He has a strong passion for basketball and has been playing professionally for just under a year (December 6th, 2023). He has a pair of lucky basketball shoes that have been with him since the beginning of his basketball journey (August 11th, 2023). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (23,25,26,27,31,35,38,43,44,48). He has a strong desire to make a positive impact off the court and has been involved in community impact projects (",
+    "error": null,
+    "latency_sec": 101.156
+  },
+  {
+    "qa_id": "conv-43_q36",
+    "question": "Who is Tim and John's favorite basketball player?",
+    "reference": "LeBron James",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim's favorite basketball player is LeBron James",
+    "error": null,
+    "latency_sec": 4.847
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 10, 2023",
+    "error": null,
+    "latency_sec": 3.442
+  },
+  {
+    "qa_id": "conv-43_q40",
+    "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+    "reference": "Yes",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 3.611
+  },
+  {
+    "qa_id": "conv-43_q49",
+    "question": "How many times has John injured his ankle?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 4.177
+  },
+  {
+    "qa_id": "conv-43_q50",
+    "question": "Which book was John reading during his recovery from an ankle injury?",
+    "reference": "The Alchemist",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "an inspiring book that reminds him to keep dreaming",
+    "error": null,
+    "latency_sec": 4.659
+  },
+  {
+    "qa_id": "conv-43_q57",
+    "question": "What instruments does Tim play?",
+    "reference": "piano, violin",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "violin",
+    "error": null,
+    "latency_sec": 2.989
+  },
+  {
+    "qa_id": "conv-43_q66",
+    "question": "What is a Star Wars book that Tim might enjoy?",
+    "reference": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Star Wars: Episode IV - A New Hope",
+    "error": null,
+    "latency_sec": 4.579
+  },
+  {
+    "qa_id": "conv-43_q67",
+    "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+    "reference": "Writing a travel blog.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, reading fantasy novels",
+    "error": null,
+    "latency_sec": 5.163
+  },
+  {
+    "qa_id": "conv-43_q70",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "reference": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Cliffs of Moher, Ireland",
+    "error": null,
+    "latency_sec": 5.516
+  },
+  {
+    "qa_id": "conv-43_q74",
+    "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+    "reference": "characters, spells, magical creatures",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Harry Potter characters, spells, and magical creatures",
+    "error": null,
+    "latency_sec": 14.286
+  },
+  {
+    "qa_id": "conv-43_q91",
+    "question": "When did John meet back up with his teammates after his trip in August 2023?",
+    "reference": "Aug 15th",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "August 15, 2023",
+    "error": null,
+    "latency_sec": 3.577
+  },
+  {
+    "qa_id": "conv-43_q108",
+    "question": "What does John want to do after his basketball career?",
+    "reference": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Use his platform to inspire others, start a foundation, and do charity work (September 21st, 2023)",
+    "error": null,
+    "latency_sec": 3.719
+  },
+  {
+    "qa_id": "conv-43_q131",
+    "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+    "reference": "a basketball signed by his favorite player",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "J.K. Rowling's works, recorded on October 21st, 2023",
+    "error": null,
+    "latency_sec": 4.199
+  },
+  {
+    "qa_id": "conv-43_q142",
+    "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+    "reference": "made him think again about following dreams and searching for personal legends",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The Alchemist motivated John to trust the process and follow his dreams.",
+    "error": null,
+    "latency_sec": 4.296
+  },
+  {
+    "qa_id": "conv-44_q19",
+    "question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+    "reference": "cook dog treats",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "hiking",
+    "error": null,
+    "latency_sec": 4.398
+  },
+  {
+    "qa_id": "conv-44_q20",
+    "question": "Which meat does Audrey prefer eating more than others?",
+    "reference": "chicken",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Roasted Chicken",
+    "error": null,
+    "latency_sec": 4.077
+  },
+  {
+    "qa_id": "conv-44_q33",
+    "question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+    "reference": "Change to a hybrid or remote job so he can move away from the city to the suburbs to have a larger living space and be closer to nature.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Andrew is determined to adopt a dog and find pet-friendly housing but faces ongoing challenges (1,2,4,9,15,48). He previously hiked with his dog at an unspecified date (October 28th, 2023). He enjoys hiking and considers it his favorite outdoor activity (August 4th, 2023). He wants to find a dog-friendly spot to get a dog and explore again (April 2nd, 2023). He cannot find dog-friendly spots to rent (July 3rd, 2023). He enjoys hiking with dogs (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his family's dog (April 2nd, 2023). He enjoys hiking on nature trails with his",
+    "error": null,
+    "latency_sec": 105.952
+  },
+  {
+    "qa_id": "conv-44_q38",
+    "question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+    "reference": "the weekend before October 24, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 21-22, 2023",
+    "error": null,
+    "latency_sec": 3.614
+  },
+  {
+    "qa_id": "conv-44_q39",
+    "question": "What did Audrey get wtih having so many dogs?",
+    "reference": "Companionship",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Audrey finds joy and meaning in having multiple dogs.",
+    "error": null,
+    "latency_sec": 3.993
+  },
+  {
+    "qa_id": "conv-44_q46",
+    "question": "How many pets did Andrew have, as of September 2023?",
+    "reference": "one",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 3.595
+  },
+  {
+    "qa_id": "conv-44_q49",
+    "question": "What does Audrey view her pets as?",
+    "reference": "Family",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "companions, bringing joy and meaning",
+    "error": null,
+    "latency_sec": 3.253
+  },
+  {
+    "qa_id": "conv-44_q55",
+    "question": "When did Andrew make his dogs a fun indoor area?",
+    "reference": "few days before November 22, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 8th, 2023",
+    "error": null,
+    "latency_sec": 3.927
+  },
+  {
+    "qa_id": "conv-44_q88",
+    "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+    "reference": "Grooming slowly and gently, paying attention to sensitive areas like ears and paws. And remember to stay patient and positive throughout the grooming process.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "August 24th, 2023, offered tips on taking care of Toby",
+    "error": null,
+    "latency_sec": 3.663
+  },
+  {
+    "qa_id": "conv-44_q107",
+    "question": "How do Audrey's dogs react to snow?",
+    "reference": "Confused",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "hate",
+    "error": null,
+    "latency_sec": 3.62
+  },
+  {
+    "qa_id": "conv-47_q11",
+    "question": "How was John feeling on April 10, 2022?",
+    "reference": "seeking solitude",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Stressed, September 10, 2022",
+    "error": null,
+    "latency_sec": 4.846
+  },
+  {
+    "qa_id": "conv-47_q17",
+    "question": "What is the board game where you have to find the imposter that John mentions to James?",
+    "reference": "Mafia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The game where John mentions finding the imposter is the game he played with friends on April 29th, 2022.",
+    "error": null,
+    "latency_sec": 4.955
+  },
+  {
+    "qa_id": "conv-47_q19",
+    "question": "Was James feeling lonely before meeting Samantha?",
+    "reference": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 7.621
+  },
+  {
+    "qa_id": "conv-47_q36",
+    "question": "Who is Jill?",
+    "reference": "Most likely John's partner.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jill",
+    "error": null,
+    "latency_sec": 2.646
+  },
+  {
+    "qa_id": "conv-47_q39",
+    "question": "When did John start his job in IT?",
+    "reference": "2019",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "2019",
+    "error": null,
+    "latency_sec": 4.449
+  },
+  {
+    "qa_id": "conv-47_q40",
+    "question": "What kind of tricks do James's pets know?",
+    "reference": "swimming, catching frisbees, balancing on a skateboard, sit, stay, paw, and rollover",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, James's pets can perform sit, stay, paw, and rollover.",
+    "error": null,
+    "latency_sec": 3.76
+  },
+  {
+    "qa_id": "conv-47_q87",
+    "question": "What type of pizza is John's favorite?",
+    "reference": "Hawaiian",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 5.758
+  },
+  {
+    "qa_id": "conv-47_q99",
+    "question": "What is the main focus of the organization that James volunteered with?",
+    "reference": "providing necessary items to those who are less fortunate",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The organization is a social cause organization, event date: May 11th, 2022.",
+    "error": null,
+    "latency_sec": 4.644
+  },
+  {
+    "qa_id": "conv-47_q106",
+    "question": "What online game did John start playing recently for improving strategy?",
+    "reference": "Chess",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"John kept his mobile game development a secret because he would have been upset if he had told James in advance and the game hadn't worked out (September 20th, 2022). John is committed to improving his gaming skills and setting new goals (March 27th, 2022). John is a driven technologist and community organizer (September 1st, 2022). John is a driven technologist and community organizer who loves strategy games like Civilization and Total War (September 1st, 2022). John is a driven technologist and community organizer who wants to become an organizer of tournaments for computer games such as CS:GO and Fortnite (August 6th, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is committed to improving his gaming skills and setting new goals (March 27th, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact (September 1st, 2022). John is a driven technologist and community organizer who is dedicated to community service and making a positive impact",
+    "error": null,
+    "latency_sec": 104.873
+  },
+  {
+    "qa_id": "conv-47_q130",
+    "question": "What instrument did James used to play when he was younger?",
+    "reference": "guitar",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "guitar, September 18th, 2022",
+    "error": null,
+    "latency_sec": 3.339
+  },
+  {
+    "qa_id": "conv-47_q139",
+    "question": "What sparked James' passion for gaming when he was a kid?",
+    "reference": "Super Mario and The Legend of Zelda games",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Super Mario and The Legend of Zelda on a Nintendo, October 21st, 2022",
+    "error": null,
+    "latency_sec": 4.054
+  },
+  {
+    "qa_id": "conv-48_q0",
+    "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+    "reference": "electricity engineering project",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "an electrical engineering project on 22 January 2023",
+    "error": null,
+    "latency_sec": 3.835
+  },
+  {
+    "qa_id": "conv-48_q3",
+    "question": "When did Jolene`s mother pass away?",
+    "reference": "in 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "2022",
+    "error": null,
+    "latency_sec": 3.387
+  },
+  {
+    "qa_id": "conv-48_q13",
+    "question": "What places give Deborah peace?",
+    "reference": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "a place by the water near her mother's old house, August 21st, 2023",
+    "error": null,
+    "latency_sec": 4.457
+  },
+  {
+    "qa_id": "conv-48_q18",
+    "question": "In what country did Jolene buy snake Seraphim?",
+    "reference": "In France",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Paris, 2022",
+    "error": null,
+    "latency_sec": 3.373
+  },
+  {
+    "qa_id": "conv-48_q19",
+    "question": "How many times has Jolene been to France?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1 time",
+    "error": null,
+    "latency_sec": 3.614
+  },
+  {
+    "qa_id": "conv-48_q28",
+    "question": "In what country was Jolene during summer 2022?",
+    "reference": "Colombia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Paris",
+    "error": null,
+    "latency_sec": 4.501
+  },
+  {
+    "qa_id": "conv-48_q31",
+    "question": "When was the last photo of Deborah and Karlie taken?",
+    "reference": "in summer 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "summer 2022",
+    "error": null,
+    "latency_sec": 3.172
+  },
+  {
+    "qa_id": "conv-48_q43",
+    "question": "When did Deborah go for a bicycle ride with Anna?",
+    "reference": "first week of April, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "April 2023",
+    "error": null,
+    "latency_sec": 3.309
+  },
+  {
+    "qa_id": "conv-48_q48",
+    "question": "Which US state did Jolene visit during her internship?",
+    "reference": "Alaska",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene's internship was in a US state.",
+    "error": null,
+    "latency_sec": 6.058
+  },
+  {
+    "qa_id": "conv-48_q73",
+    "question": "Did Jolene teach herself how to play the console?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 3.186
+  },
+  {
+    "qa_id": "conv-48_q79",
+    "question": "Has Deborah tried surfing?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 4.531
+  },
+  {
+    "qa_id": "conv-48_q80",
+    "question": "Has Jolene tried surfing?",
+    "reference": "no",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, March 22nd, 2023",
+    "error": null,
+    "latency_sec": 3.543
+  },
+  {
+    "qa_id": "conv-48_q123",
+    "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+    "reference": "They realized they inspire each other",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "March 22nd, 2023",
+    "error": null,
+    "latency_sec": 3.077
+  },
+  {
+    "qa_id": "conv-48_q133",
+    "question": "What is Jolene currently doing in June 2023?",
+    "reference": "interning at a well-known engineering firm",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "interning at a well-known engineering firm, June 2023",
+    "error": null,
+    "latency_sec": 6.213
+  },
+  {
+    "qa_id": "conv-48_q150",
+    "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+    "reference": "Zelda BOTW",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Zelda: Breath of the Wild",
+    "error": null,
+    "latency_sec": 3.478
+  },
+  {
+    "qa_id": "conv-48_q164",
+    "question": "How old is Max?",
+    "reference": "8 years old",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "5",
+    "error": null,
+    "latency_sec": 5.508
+  },
+  {
+    "qa_id": "conv-48_q166",
+    "question": "What type of place does Jolene visit to meditate?",
+    "reference": "A tranquil spot by a pond",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "nearby tranquil spot",
+    "error": null,
+    "latency_sec": 5.259
+  },
+  {
+    "qa_id": "conv-49_q3",
+    "question": "How many Prius has Evan owned?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 6.582
+  },
+  {
+    "qa_id": "conv-49_q5",
+    "question": "Which country was Evan visiting in May 2023?",
+    "reference": "Canada",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Canada",
+    "error": null,
+    "latency_sec": 3.517
+  },
+  {
+    "qa_id": "conv-49_q8",
+    "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
+    "reference": "Watercolor painting",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "painting, 2020",
+    "error": null,
+    "latency_sec": 4.684
+  },
+  {
+    "qa_id": "conv-49_q10",
+    "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+    "reference": "camping trip in the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "camping trip in the outdoors",
+    "error": null,
+    "latency_sec": 5.367
+  },
+  {
+    "qa_id": "conv-49_q12",
+    "question": "When did Sam first go to the doctor and find out he had a weight problem?",
+    "reference": "A few days before May 24, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 8th, 2023",
+    "error": null,
+    "latency_sec": 4.619
+  },
+  {
+    "qa_id": "conv-49_q20",
+    "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+    "reference": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Sam and Evan both actively manage their health through physical activity, dietary changes, mental wellness practices, and mutual support. Sam's health transformation was triggered by a doctor's wake-up call, leading him to adopt a structured diet, exercise routine, and healthier cooking. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam uses the motivational quote 'Don't fear it, just take the first step' to encourage healthier habits. Sam is committed to improving his health and diet, facing challenges and celebrating progress. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July 2023. Sam decided to adopt a more nutritious diet and get regular exercise after the health scare. Sam is on a diet and living healthier as of August 2023. Sam's health issues felt like a weight preventing full living, and he decided to make health changes after being mocked on 21 July",
+    "error": null,
+    "latency_sec": 100.413
+  },
+  {
+    "qa_id": "conv-49_q27",
+    "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+    "reference": "fitness tracker",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The answer is a fitness tracking app, recorded on May 24th, 2023.",
+    "error": null,
+    "latency_sec": 4.319
+  },
+  {
+    "qa_id": "conv-49_q38",
+    "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+    "reference": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nature and the outdoors play a significant role in Evan and Sam's mental well-being.",
+    "error": null,
+    "latency_sec": 6.355
+  },
+  {
+    "qa_id": "conv-49_q42",
+    "question": "How did Evan get into painting?",
+    "reference": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan got into painting with the help of his friend on August 19th, 2023.",
+    "error": null,
+    "latency_sec": 3.245
+  },
+  {
+    "qa_id": "conv-49_q54",
+    "question": "What personal health incidents does Evan face in 2023?",
+    "reference": "heart palpitations, twisted ankle, twisted ankle",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "health scare on November 21st, 2023",
+    "error": null,
+    "latency_sec": 3.81
+  },
+  {
+    "qa_id": "conv-49_q57",
+    "question": "Which US state was Sam travelling in during October 2023?",
+    "reference": "California",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "United States",
+    "error": null,
+    "latency_sec": 6.165
+  },
+  {
+    "qa_id": "conv-49_q65",
+    "question": "Does Evan live close to a beach or mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Yes",
+    "error": null,
+    "latency_sec": 6.756
+  },
+  {
+    "qa_id": "conv-49_q66",
+    "question": "When did Evan lose his job?",
+    "reference": "end of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 2023",
+    "error": null,
+    "latency_sec": 3.891
+  },
+  {
+    "qa_id": "conv-49_q79",
+    "question": "When will Evan and his partner have their honeymoon in Canada?",
+    "reference": "February 2024",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "February 2024",
+    "error": null,
+    "latency_sec": 3.491
+  },
+  {
+    "qa_id": "conv-49_q138",
+    "question": "What did Sam recently start enjoying to clear his head?",
+    "reference": "running in the mornings",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "running in the mornings, October 8th, 2023",
+    "error": null,
+    "latency_sec": 8.586
+  },
+  {
+    "qa_id": "conv-49_q141",
+    "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+    "reference": "Keep trying new things",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Kayaking",
+    "error": null,
+    "latency_sec": 3.208
+  },
+  {
+    "qa_id": "conv-50_q5",
+    "question": "What are Dave's dreams?",
+    "reference": "open a car maintenance shop, work on classic cars, build a custom car from scratch",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "build a custom car from scratch, May 3rd, 2023",
+    "error": null,
+    "latency_sec": 4.777
+  },
+  {
+    "qa_id": "conv-50_q7",
+    "question": "Does Dave's shop employ a lot of people?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 5.421
+  },
+  {
+    "qa_id": "conv-50_q15",
+    "question": "Why does Dave regularly visit parks?",
+    "reference": "because it relaxes and calms him",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave regularly visits parks for relaxation and therapy.",
+    "error": null,
+    "latency_sec": 4.862
+  },
+  {
+    "qa_id": "conv-50_q21",
+    "question": "Does Calvin wish to become more popular?",
+    "reference": "Yes; he want's to grow his fanbase",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 5.753
+  },
+  {
+    "qa_id": "conv-50_q23",
+    "question": "What is Dave's main passion?",
+    "reference": "auto engineering",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "restoring and modifying cars",
+    "error": null,
+    "latency_sec": 3.504
+  },
+  {
+    "qa_id": "conv-50_q31",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "reference": "San Francisco",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "car restoration project, August 14th, 2023",
+    "error": null,
+    "latency_sec": 6.561
+  },
+  {
+    "qa_id": "conv-50_q34",
+    "question": "When did Dave return from San Francisco?",
+    "reference": "September 1, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "September 1, 2023",
+    "error": null,
+    "latency_sec": 2.902
+  },
+  {
+    "qa_id": "conv-50_q37",
+    "question": "Does Calvin love music tours?",
+    "reference": "yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 5.186
+  },
+  {
+    "qa_id": "conv-50_q46",
+    "question": "What is Dave's favorite activity?",
+    "reference": "Restoring cars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, attending concerts and jam sessions with his band",
+    "error": null,
+    "latency_sec": 6.093
+  },
+  {
+    "qa_id": "conv-50_q48",
+    "question": "What was Dave doing in the first weekend of October 2023?",
+    "reference": "attending a car show",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, October 3-4, 2023",
+    "error": null,
+    "latency_sec": 5.689
+  },
+  {
+    "qa_id": "conv-50_q50",
+    "question": "When did Calvin buy his second Ferrari?",
+    "reference": "first week of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 14th, 2023",
+    "error": null,
+    "latency_sec": 3.934
+  },
+  {
+    "qa_id": "conv-50_q54",
+    "question": "What does help Calvin stay connected to the creative process?",
+    "reference": "Calvin stays connected to the creative process by always staying up-to-date on world events and watching documentaries about artists.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "October 29th, 2023, attending a networking event to meet more artists",
+    "error": null,
+    "latency_sec": 4.382
+  },
+  {
+    "qa_id": "conv-50_q56",
+    "question": "Which cities did Dave travel to in 2023?",
+    "reference": "San Francsico, Detroit",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Japan in April 2023",
+    "error": null,
+    "latency_sec": 4.42
+  },
+  {
+    "qa_id": "conv-50_q85",
+    "question": "What is Dave doing to relax on weekends?",
+    "reference": "exploring parks",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Taking walks on weekends",
+    "error": null,
+    "latency_sec": 4.92
+  },
+  {
+    "qa_id": "conv-50_q97",
+    "question": "What does Dave say is important for making his custom cars unique?",
+    "reference": "attention to small details",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave values attention to detail and patience in making his custom cars unique.",
+    "error": null,
+    "latency_sec": 4.432
+  },
+  {
+    "qa_id": "conv-50_q104",
+    "question": "Why did Calvin get his guitar customized with a shiny finish?",
+    "reference": "unique look",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Calvin got his guitar customized with a shiny purple finish on August 31st, 2023.",
+    "error": null,
+    "latency_sec": 4.675
+  },
+  {
+    "qa_id": "conv-50_q114",
+    "question": "Which song from the childhood of Calvin brings back memories of a road trip with his dad?",
+    "reference": "\"California Love\"",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "California Love",
+    "error": null,
+    "latency_sec": 4.381
+  },
+  {
+    "qa_id": "conv-50_q143",
+    "question": "What did Dave recently start a blog about?",
+    "reference": "Car mods",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "car mods",
+    "error": null,
+    "latency_sec": 2.9
+  }
+]

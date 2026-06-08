@@ -7,6 +7,8 @@ answer 方法：接收问题 → 检索 → 拼接上下文 → LLM 生成答案
 
 import sys
 import os
+import json
+import re
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "eval_kit", "eval_kit"))
 
 from llm_client import LLMClient
@@ -90,14 +92,14 @@ Before finalizing your answer, you MUST actively search for any memory that sugg
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object. Do not include any other text, markdown formatting, or tags outside the JSON.
 
-{
-  "thinking": {
+{{
+  "thinking": {{
     "supporting_clues": "List the strongest evidence that supports your final answer, with brief reasoning.",
     "opposing_clues": "List any evidence that could point to a different answer, and explain why you ultimately did not choose it. If none exists, state 'No opposing evidence found in the provided memories.'",
     "final_reasoning": "Explain how you weighed the supporting and opposing clues to reach your final conclusion. If dates are involved, explicitly state which date you used and why."
-  },
+  }},
   "answer": "A concise, complete sentence that directly answers the question AND briefly includes the core reason or context. (e.g., 'Yes, she would likely enjoy it because she enjoys classical music like Bach and Mozart.' or 'She attended the conference on 10 July 2023.')"
-}"""
+}}"""
 
 
 
@@ -166,16 +168,42 @@ class MemoryAgent:
     def answer(self, question: str) -> str:
         # 对 question 做向量化
         query_embedding = self.writer.embed_text(question)
-        # 调用 retrieval 进行双因子检索
+        # 调用 retrieval 进行三因子检索
         results = self.retriever.retrieve(question, query_embedding, top_k=self.settings.retrieval_top_k)
 
         if not results:
             return "unknown"
-        context = "\n".join(f"- {mem.text_description}" for mem, _ in results)
+
+        # ── 格式化记忆单元：打标签 + 移动日期 ──
+        formatted_memories = []
+        for rank, (mem, score) in enumerate(results, start=1):
+            # 确定标签
+            if rank <= 5:
+                tag = "[direct evidence]"
+            elif rank <= 15:
+                tag = "[related memories]"
+            else:
+                tag = "[background]"
+
+            # 提取内容和日期：格式为 "[Conversation Date: May 25th, 2023]内容"
+            text = mem.text_description
+            # 正则匹配开头的日期 "[Conversation Date: ...]"
+            date_match = re.match(r'\[Conversation Date: ([^\]]+)\]', text)
+            if date_match:
+                date_str = date_match.group(1)
+                content = text[date_match.end():].strip()
+                formatted = f"{tag} {content} [Recorded on: {date_str}]"
+            else:
+                # 没有日期的情况，直接加标签
+                formatted = f"{tag} {text}"
+
+            formatted_memories.append(formatted)
+
+        context = "\n".join(f"- {m}" for m in formatted_memories)
         prompt = ANSWER_PROMPT.format(memory_context=context, question=question, persona_context=self.persona_summaries)
+
         # 喂给 LLM 生成答案，解析 JSON 提取 answer 字段
         raw = self.llm.generate(prompt, max_tokens=4096).strip()
-        import re
         try:
             data = json.loads(raw)
             return data.get("answer", raw)
