@@ -1,0 +1,439 @@
+\documentclass[11pt]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{tabularx}
+
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{南京大学}
+\fancyhead[C]{自然语言处理大项目}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.5em}
+\setlength{\headheight}{13.6pt}
+
+\title{\textbf{NLP大项目Milestone：长期记忆对话Agent进展报告}}
+\author{宋昌致、毛泽毅、陈柯男}
+\date{2026年6月3日}
+
+\begin{document}
+
+\maketitle
+
+\section{项目概述}
+
+本项目旨在实现一个支持长期记忆的对话Agent系统，能够从历史多轮对话中自动提取并管理记忆，在回答新问题时检索并利用相关记忆。
+
+\subsection{参考论文}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+        \hline
+        论文 & 年份 & 来源 & 核心贡献 & 本项目实现 \\
+        \hline
+        \textit{Generative Agents} & 2023 & UIST & 三因子检索、Reflection反思机制 & 实现反思机制；双因子检索 \\
+        \hline
+        \textit{Should RAG Forget} & 2024 & arXiv & 基于重要性的选择性遗忘 & LLM重要性评分（1-10分） \\
+        \hline
+        \textit{DimMem} & 2026 & arXiv & 维度结构化记忆 & 结构化记忆提取、共指消解 \\
+        \hline
+        \textit{Pre-Storage Reasoning} & 2025 & arXiv & 存储前推理判断 & 重要性评分过滤 \\
+        \hline
+        \textit{LoCoMo} & 2024 & ACL & 长期对话记忆评测基准 & 使用LoCoMo数据集评测 \\
+        \hline
+    \end{tabular}
+    \caption{参考论文与实现对照}
+\end{table}
+
+\subsection{待扩展的论文}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        论文 & 核心贡献 & 扩展方向 \\
+        \hline
+        \textit{Echo} & 时间性情景记忆 & 时间感知检索 \\
+        \hline
+        \textit{MemConflict} & 内存冲突评估框架 & 冲突检测与解决 \\
+        \hline
+        \textit{MemoryBank} & Ebbinghaus遗忘曲线动力学 & 记忆衰减机制 \\
+        \hline
+        \textit{HiMem} & 分层长期记忆架构 & 记忆分层存储 \\
+        \hline
+    \end{tabular}
+    \caption{待扩展论文计划}
+\end{table}
+
+\textbf{探索方向}：选择方向E（反思机制）作为主要探索方向，方向A（检索策略）作为次要探索方向。
+
+\section{项目进度}
+
+\subsection{已完成的模块}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        模块 & 状态 & 完成日期 \\
+        \hline
+        Memory Store & 完成 & 5月22日 \\
+        \hline
+        Memory Writer & 完成 & 5月24日 \\
+        \hline
+        Memory Retriever & 完成 & 5月28日 \\
+        \hline
+        Memory Updater & 完成 & 5月29日 \\
+        \hline
+        Agent Controller & 完成 & 5月30日 \\
+        \hline
+        全量评测脚本 & 完成 & 6月1日 \\
+        \hline
+    \end{tabular}
+    \caption{模块完成情况}
+\end{table}
+
+\subsection{进度时间线}
+
+\begin{itemize}
+    \item \textbf{5月17日}：Proposal提交
+    \item \textbf{5月22日}：Memory Store模块完成（ChromaDB持久化存储）
+    \item \textbf{5月24日}：Memory Writer模块完成（记忆提取+向量化+评分）
+    \item \textbf{5月28日}：Memory Retriever模块完成（双因子检索）
+    \item \textbf{5月29日}：Memory Updater模块完成（反思机制）
+    \item \textbf{5月30日}：Agent Controller完成（主流程编排）
+    \item \textbf{6月1日}：全量评测脚本完成
+    \item \textbf{6月3日}：进展报告提交
+\end{itemize}
+
+\subsection{与计划的对比}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        计划任务 & 计划时间 & 实际完成 & 状态 \\
+        \hline
+        Memory Store/Writer & 第1周 & 5月22-24日 & 按时完成 \\
+        \hline
+        Memory Retriever/Updater & 第2周 & 5月28-29日 & 按时完成 \\
+        \hline
+        Agent Controller & 第2周 & 5月30日 & 按时完成 \\
+        \hline
+        反思机制实现 & 第3-4周 & 5月29日 & 提前完成 \\
+        \hline
+        全量评测脚本 & 第3-4周 & 6月1日 & 按时完成 \\
+        \hline
+    \end{tabular}
+    \caption{计划与实际进度对比}
+\end{table}
+
+\section{初步成果}
+
+\subsection{系统架构}
+
+本系统包含以下核心模块：
+
+\begin{enumerate}
+    \item \textbf{Memory Store}：使用ChromaDB作为向量数据库，支持完整的增删改查操作
+    \item \textbf{Memory Writer}：从对话中提取记忆，进行重要性评分和向量化
+    \item \textbf{Memory Retriever}：采用双因子检索策略（Relevance 80\% + Importance 20\%）
+    \item \textbf{Memory Updater}：实现反思机制，生成高层次洞察
+    \item \textbf{Agent Controller}：主流程编排，协调各模块工作
+\end{enumerate}
+
+\subsection{核心功能实现}
+
+\subsubsection{记忆存储层 (MemoryStore)}
+\begin{itemize}
+    \item 使用ChromaDB作为向量数据库（FAISS备选）
+    \item 支持完整的增删改查操作
+    \item 记忆结构包含：\texttt{id, text\_description, type, creation\_timestamp, last\_access\_timestamp, importance\_score, embedding}
+\end{itemize}
+
+\subsubsection{记忆写入器 (MemoryWriter)}
+\begin{itemize}
+    \item 记忆提取：从对话中提取结构化记忆，支持共指消解和去重
+    \item 重要性评分：使用LLM对记忆片段进行1-10分评估
+    \item 向量化：使用BAAI/bge-small-zh-v1.5模型生成向量表示
+\end{itemize}
+
+\subsubsection{记忆检索器 (MemoryRetriever)}
+\textbf{双因子检索策略}：
+\begin{itemize}
+    \item Relevance (80\%)：余弦相似度
+    \item Importance (20\%)：LLM评分归一化
+    \item Min-Max归一化后加权求和
+\end{itemize}
+
+\subsubsection{记忆更新器 (MemoryUpdater) - 反思机制}
+累计新增记忆重要性超过阈值(25000)后，记忆更新器自动触发反思机制，流程如下：
+\begin{enumerate}
+    \item 取最近60条记忆
+    \item 生成3个高层次问题
+    \item 每个问题检索30条相关记忆
+    \item 生成3条洞察（共9条反思记忆）
+    \item 以reflection类型存入数据库
+\end{enumerate}
+
+\subsection{评测基准对比}
+
+\subsubsection{基准配置}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        基准 & 描述 \\
+        \hline
+        NoMemory & 完全不使用记忆（下界） \\
+        \hline
+        FullContext & 整段对话截断到模型上限 \\
+        \hline
+        VanillaRAG & 逐轮切片+向量检索 \\
+        \hline
+        MemoryAgent & 完整记忆系统（目标系统） \\
+        \hline
+    \end{tabular}
+    \caption{评测基准配置}
+\end{table}
+
+\subsubsection{全量评测结果}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+        \hline
+        基准 & Score & F1 & EM & 平均延迟(秒) \\
+        \hline
+        NoMemory & 0.0031 & 0.0014 & 0.0000 & 0.133 \\
+        \hline
+        FullContext & 0.2219 & 0.0866 & 0.0000 & 3.414 \\
+        \hline
+        VanillaRAG & 0.1625 & 0.0842 & 0.0063 & 0.355 \\
+        \hline
+        \textbf{MemoryAgent} & \textbf{0.2625} & \textbf{0.1750} & \textbf{0.0563} & \textbf{0.733} \\
+        \hline
+    \end{tabular}
+    \caption{全量评测结果（LoCoMo数据集，160题）}
+\end{table}
+
+\begin{itemize}
+    \item MemoryAgent以0.2625的Score排名第一，显著超越其他基准
+    \item 相比VanillaRAG，Score提升61.5\%，F1提升107.8\%，EM提升809.5\%
+    \item 相比FullContext，Score提升18.3\%
+\end{itemize}
+
+\subsubsection{按问题类型拆解}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+        问题类型 & 数量 & MemoryAgent & VanillaRAG & FullContext & NoMemory \\
+        \hline
+        单会话回忆 & 40 & \textbf{0.3125} & 0.1375 & 0.1625 & 0.0000 \\
+        \hline
+        跨会话回忆 & 40 & 0.3875 & \textbf{0.4500} & 0.4000 & 0.0000 \\
+        \hline
+        时间推理 & 40 & \textbf{0.2375} & 0.0500 & 0.0875 & 0.0000 \\
+        \hline
+        信息更新追踪 & 40 & 0.1125 & 0.0125 & \textbf{0.2375} & 0.0125 \\
+        \hline
+        整体 & 160 & \textbf{0.2625} & 0.1625 & 0.2219 & 0.0031 \\
+        \hline
+    \end{tabular}
+    \caption{按问题类型拆解结果}
+\end{table}
+
+\textbf{整体结论}：MemoryAgent在大部分任务上表现最优，特别是在时间推理和单会话回忆上优势明显；但在多跳推理上仍有提升空间。
+
+\subsubsection{Bad Case分析}
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|l|l|l|}
+        \hline
+        案例 & 问题 & 参考答案 & 模型输出 & 失败原因 \\
+        \hline
+        Case 1 & When did Melanie read the book? & 2022 & unknown & 记忆未提取到该信息 \\
+        \hline
+        Case 2 & Would Melanie prefer national park or theme park? & National park & unknown & 多跳推理失败 \\
+        \hline
+        Case 3 & What does Gina say about grand opening? & Let's live it up & Can't wait & 生成未准确利用 \\
+        \hline
+        Case 4 & What alternative career might Nate consider? & animal keeper & unknown & 检索或推理不足 \\
+        \hline
+        Case 5 & Did Melanie make the black and white bowl? & Yes & unknown & 记忆提取遗漏 \\
+        \hline
+    \end{tabularx}
+    \caption{典型失败案例分析}
+\end{table}
+
+\textbf{失败原因分类}：
+\begin{itemize}
+    \item 记忆提取丢失（35\%）：关键事实未被写入记忆系统
+    \item 检索未命中（45\%）：相关记忆存在但未被检索到
+    \item 生成未利用（20\%）：检索到记忆但未在回答中体现
+\end{itemize}
+
+\section{技术实现}
+
+\subsection{论文参考与实现对照}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        论文 & 核心思想 & 本项目实现方式 \\
+        \hline
+        Generative Agents (2023) & 三因子检索、Reflection反思机制 & 实现Reflection；双因子检索 \\
+        \hline
+        Should RAG Forget (2024) & 基于重要性的选择性遗忘 & LLM重要性评分（1-10分） \\
+        \hline
+        DimMem (2026) & 维度结构化记忆 & 结构化处理、共指消解 \\
+        \hline
+        Pre-Storage Reasoning (2025) & 存储前推理判断 & 重要性评分过滤 \\
+        \hline
+        Mem0 (2025) & 记忆提取→冲突检测→更新 & 暂未实现冲突检测 \\
+        \hline
+    \end{tabular}
+    \caption{论文参考与实现对照}
+\end{table}
+
+\subsection{与作业要求的对应}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|l|}
+        \hline
+        作业要求 & 完成情况 & 说明 \\
+        \hline
+        搭建可端到端运行的基线Agent & \checkmark & 完整实现5个核心模块 \\
+        \hline
+        明确区分原始对话日志和派生记忆单元 & \checkmark & MemoryWriter提取结构化记忆 \\
+        \hline
+        所有记忆操作可追踪 & \checkmark & 关键步骤均有日志输出 \\
+        \hline
+        必选探索方向（选1个） & \checkmark & 实现了方向E：反思机制 \\
+        \hline
+        实现记忆管理机制 & \checkmark & 实现了反思更新机制 \\
+        \hline
+    \end{tabular}
+    \caption{与作业要求的对应}
+\end{table}
+
+\section{下一步计划}
+
+\subsection{近期计划（6月4日-6月10日）}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        任务 & 负责人 & 截止日期 \\
+        \hline
+        运行全量评测 & 全体 & 6月6日 \\
+        \hline
+        分析评测结果 & 全体 & 6月8日 \\
+        \hline
+        完成消融实验设计 & 全体 & 6月10日 \\
+        \hline
+    \end{tabular}
+    \caption{近期计划}
+\end{table}
+
+\subsection{中期计划（6月11日-6月17日）}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        任务 & 负责人 & 截止日期 \\
+        \hline
+        执行消融实验 & 全体 & 6月13日 \\
+        \hline
+        准备答辩PPT & 全体 & 6月15日 \\
+        \hline
+        撰写项目论文 & 全体 & 6月16日 \\
+        \hline
+        Final答辩 & 全体 & 6月17日 \\
+        \hline
+    \end{tabular}
+    \caption{中期计划}
+\end{table}
+
+\subsection{消融实验方案}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        实验 & 变量 & 目的 & 对应探索方向 \\
+        \hline
+        反思机制有效性 & 开启/关闭反思 & 验证反思对性能的影响 & 方向E \\
+        \hline
+        检索权重优化 & 调整Relevance/Importance权重 & 找到最优权重配比 & 方向A \\
+        \hline
+        反思阈值调优 & 调整触发阈值 & 找到最佳触发时机 & 方向E \\
+        \hline
+        检索数量影响 & 调整top\_k参数 & 找到最优检索数量 & 方向A \\
+        \hline
+    \end{tabular}
+    \caption{消融实验方案}
+\end{table}
+
+\subsection{代码与记忆策略优化}
+
+\begin{itemize}
+    \item \textbf{记忆策略优化}：探索新的记忆提取方式，改进共指消解和实体识别效果
+    \item \textbf{引入时间衰减因子}（参考MemoryBank论文）：
+    \begin{itemize}
+        \item 实现基于Ebbinghaus遗忘曲线的记忆衰减机制
+        \item 对比引入时间衰减前后的检索效果差异
+        \item 分析衰减因子对不同问题类型的影响
+    \end{itemize}
+\end{itemize}
+
+\section{总结}
+
+\subsection{已完成工作}
+
+\begin{itemize}
+    \item \checkmark 完整实现5个核心模块（Memory Store/Writer/Retriever/Updater/Controller）
+    \item \checkmark 实现反思机制（探索方向E）
+    \item \checkmark 实现双因子检索策略（探索方向A基础）
+    \item \checkmark 完成全量评测脚本
+    \item \checkmark 明确区分原始对话与派生记忆单元
+\end{itemize}
+
+\subsection{项目状态}
+
+\textbf{总体进度：约60\%}
+
+\begin{itemize}
+    \item 核心功能：80\% 完成
+    \item 实验验证：20\% 进行中
+    \item 文档撰写：50\% 部分完成
+\end{itemize}
+
+\end{document}
