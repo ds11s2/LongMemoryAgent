@@ -38,6 +38,14 @@ def _parse_date_time(date_str: str) -> float:
     return datetime.strptime(date_str, _DATE_FORMAT).timestamp()
 
 
+def _format_session_date(date_str: str) -> str:
+    """将 '1:14 pm on 25 May, 2023' 格式化为 'May 25th, 2023'"""
+    dt = datetime.strptime(date_str, _DATE_FORMAT)
+    day = dt.day
+    suffix = "th" if 10 <= day % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
+    return dt.strftime(f"%B {day}{suffix}, %Y")
+
+
 # 调用 LLM 对记忆片段进行重要性评分（1-10分）
 # 评分结果存入 MemoryUnit.importance_score 字段
 IMPORTANCE_PROMPT = """Rate the importance of the following memory for understanding a person's long-term profile and life trajectory on a scale of 1 to 10.
@@ -47,11 +55,31 @@ Scoring Guidelines:
 - 4-6: Informative facts, general preferences, or ongoing activities (e.g., hobbies, current job, weekend plans).
 - 7-8: Significant personal traits, deep emotions, strong relationships, or clear future goals (e.g., planning to adopt, deep support from friends).
 - 9-10: Pivotal life events, core identity aspects, or major achievements (e.g., transitioning gender, getting married, college acceptance).
-
+Attention:If the category is Reflection, the importance score should be higher than 7.
 Memory: {memory_text}
-
+Category: {category}
 Return ONLY an integer between 1 and 10. Do not include any other text.
 """
+
+
+# 调用llm总结人物脉络
+Summary_PROMPT = """You are an expert psychological profiler and behavioral analyst. Your task is to analyze a list of extracted memory facts and construct a highly condensed, predictive Persona Profile for each main character.
+
+Input Memory Facts:
+{all_memory_facts}
+
+CRITICAL OUTPUT CONSTRAINTS (READ CAREFULLY):
+1. SYNTHESIZE, DO NOT LIST: You MUST extract high-level insights (e.g., abstract "plays violin" into "classical arts"). DO NOT repeat chronological events or copy the input.
+2. STRICT FORMAT: You MUST use EXACTLY this format with bracketed tags: `Name: [Identity] ... [Career] ... [Hobbies] ... [Values] ... [Social] ...`
+3. NO LINE BREAKS: The entire description for a single character MUST be on ONE single continuous line. Do not use `\n` inside a character's description.
+4. STRICT LENGTH LIMIT: The description MUST be extremely concise (strictly under 150 words per character).
+5. NO EXTRA TEXT: Output ONLY the requested format. No introductions, no markdown bolding.
+
+Example Output:
+Caroline: [Identity] Transgender woman. [Career] Aspires to be a counselor for mental health. [Hobbies] Attends LGBTQ+ support groups, appreciates art. [Values] Values inclusivity, empathy, and advocacy. [Social] Single parent looking to adopt, supported by a close network of friends from her home country.
+Melanie: [Identity] Married mother of two. [Career] Working professional balancing family. [Hobbies] Outdoors, camping, painting nature, playing violin (classical arts). [Values] Strong LGBTQ+ ally, prioritizes self-care. [Social] Married for 5 years, highly supportive friend."""
+
+
 
 
 #调用llm对记忆文本进行整理
@@ -81,32 +109,38 @@ class MemoryWriter:
 
         executor_results = [None] * num_sessions
         print_lock = threading.Lock()
-        max_workers = min(num_sessions, 30)
+        max_workers = min(num_sessions, 40)
 
         
         def _process_one(idx: int):
-            prompt = (
-                "You are an expert dialogue memory extractor. Your task is to extract comprehensive, "
-            "but strictly non-redundant memory units from the following conversation.\n\n"
-            "Context:\n"
-            f"- Current Session Time: {date_str_list[idx]}\n\n"
-            "Extraction Rules:\n"
-            "1. Coreference Resolution (CRITICAL): NEVER use pronouns (I, you, he, she, it, they). "
-            "Replace all pronouns with the explicit names of the speakers or specific entities.\n"
-            "2. Atomic but Cohesive: Do NOT over-fragment. 'Melanie painted a lake sunrise last year' "
-            "is ONE fact. Do not split it into three separate statements.\n"
-            "3. Deduplication & Filtering (CRITICAL): Do NOT repeat the same fact in different ways. "
-            "Ignore greetings, pleasantries, passing agreements, and meaningless filler talk.\n"
-            "4. Comprehensiveness: Extract information across: Personal Background, Events (with absolute time), "
-            "Opinions/Sentiments, and Future Plans.\n"
-            "5. Temporal Anchoring: Translate relative times (e.g., 'yesterday', 'last year') "
-            "to absolute context based on Current Session Time.\n\n"
-            "Constraint: Aim for high-quality, dense facts. A typical session should yield 10 to 25 statements. "
-            "DO NOT exceed 30 statements unless absolutely necessary.\n\n"
-            "Output ONLY raw statements, one per line. No numbering, no bullet points, no extra text.\n\n"
-            "One statement must be no more than 20 characters long.\n\n"
-            f"Conversation:\n{lines[idx]}\n"
-            )
+            prompt = f"""You are an expert dialogue memory extractor. Your task is to extract comprehensive, atomic, and strictly non-redundant memory units from the conversation.
+
+                Context:
+                - Current Session Time: {date_str_list[idx]}
+
+                Extraction Rules:
+                1. Entity Disambiguation (CRITICAL): Pay extreme attention to WHO is doing WHAT. Never confuse the speakers' experiences, hobbies, or past events (e.g., do not assign Melanie's wedding details to Caroline).
+                2. Coreference Resolution: NEVER use pronouns (I, you, he, she, it, they). Replace all pronouns with the explicit names of the speakers or specific entities.
+                3. Absolute Temporal Anchoring: Translate relative times ('yesterday', 'last week', '3 years ago') into absolute dates or years based on the Current Session Time. Do not output relative math (e.g., write "2020", not "3 years ago from 2023").
+                4. Atomic but Cohesive: Each fact must stand alone. 'Melanie painted a lake sunrise in 2022' is ONE fact. Do not over-fragment.
+                5. Deduplication: Ignore greetings, passing agreements, and meaningless filler talk.
+                6.Preserve Specific Entities: NEVER abstract or generalize specific names of books, movies, songs, brands, or locations. If a specific title (e.g., "nothing is impossible") is mentioned, it MUST be explicitly included in the extracted fact.
+                7.Preserve Contextual Triggers: If an action is a response to a specific time-frame, event, or question (e.g., "plans for the summer", "for her birthday"), you MUST include that trigger in the extracted fact.
+                OUTPUT FORMAT:
+                You must output exactly two sections.
+                First, output an "ANALYSIS:" line where you briefly track the main events and clarify who owns which experience to avoid mix-ups.
+                Then, output a "FACTS:" line, followed by the raw extracted statements, one per line. No numbering, no bullet points.
+
+                Example Output:
+                ANALYSIS: Caroline talks about her friends' meetup last week. Melanie talks about her wedding from 5 years ago. Melanie paints, Caroline just compliments it.
+                FACTS:
+                Caroline met up with her friends in early June 2023.
+                Melanie got married in 2018.
+                Melanie played games and ate good food at her wedding in 2018.
+                Melanie paints as a hobby.
+
+                Conversation:
+                {lines[idx]}"""
             sessions_str = f"[session {idx+1}/{num_sessions}]"
 
             response = ""
@@ -131,8 +165,14 @@ class MemoryWriter:
                         print(f"  {sessions_str} 返回为空，重试 {retry+2}/{max_retries}")
                     time.sleep(2 ** retry)
 
+            # ── 解析输出，仅保留 FACTS: 之后的实际内容 ──
             memories = []
             if response:
+                # 尝试取 FACTS: 之后的部分，去掉前面的 ANALYSIS/思考部分
+                facts_marker = "FACTS:"
+                if facts_marker in response:
+                    response = response.split(facts_marker, 1)[1]
+
                 for stmt in response.split("\n"):
                     stmt = stmt.strip()
                     if not stmt:
@@ -143,8 +183,11 @@ class MemoryWriter:
                         stmt = stmt[1:].strip()
                     if len(stmt) < 5:
                         continue
+                    # 跳过 ANALYSIS 行（兜底）
+                    if stmt.lower().startswith("analysis"):
+                        continue
                     memories.append({
-                        "text": stmt,
+                        "text": f"{stmt}[Recorded on: {_format_session_date(date_str_list[idx])}] ",
                         "last_access_timestamp": date_ts_list[idx],
                         "creation_timestamp": date_ts_list[idx],
                         "type": "observation"
@@ -170,8 +213,8 @@ class MemoryWriter:
 
     # 调用 LLM 对记忆文本进行重要性评分，返回 1-10 的整数
     # 解析失败时默认返回 5 分
-    def score_importance(self, memory_text: str) -> int:
-        prompt = IMPORTANCE_PROMPT.format(memory_text=memory_text)
+    def score_importance(self, memory_text: str, category: str) -> int:
+        prompt = IMPORTANCE_PROMPT.format(memory_text=memory_text, category=category)
         raw = self.agent.invoke(prompt).strip()
         try:
             # 从原始输出中提取整数评分
@@ -182,7 +225,7 @@ class MemoryWriter:
 
     # 并发批量评分，max_workers 控制最大并发数
     # 每条记忆独立调用 LLM 打分，大幅缩短总体耗时
-    def score_importance_batch(self, texts: list[str], max_workers: int = 500) -> list[int]:
+    def score_importance_batch(self, texts: list[str], category: str, max_workers: int = 500) -> list[int]:
         num = len(texts)
         scores = [5] * num
         print_lock = threading.Lock()
@@ -191,7 +234,7 @@ class MemoryWriter:
 
         def _score_one(idx: int):
             try:
-                prompt = IMPORTANCE_PROMPT.format(memory_text=texts[idx])
+                prompt = IMPORTANCE_PROMPT.format(memory_text=texts[idx], category=category)
                 raw = self.agent.invoke(prompt).strip()
                 score = int("".join(c for c in raw if c.isdigit()))
                 scores[idx] = max(1, min(10, score))
@@ -224,4 +267,12 @@ class MemoryWriter:
     # 更新 latest_time
     def update_latest_time(self, timestamp: float):
         self.latest_time = timestamp
+
+    # 基于所有记忆事实，调用高级模型生成两个人物总结
+    # 返回格式如 "Caroline: ...\nMelanie: ..."
+    def summarize_personas(self, all_memory_facts: str) -> str:
+        prompt = Summary_PROMPT.format(all_memory_facts=all_memory_facts)
+        result = self.agent.invoke(prompt).strip()
+        print(f"  人物总结生成完成，长度: {len(result)} 字符")
+        return result
     

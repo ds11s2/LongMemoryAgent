@@ -1,0 +1,1602 @@
+[
+  {
+    "qa_id": "conv-26_q6",
+    "question": "When is Melanie planning on going camping?",
+    "reference": "June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie is planning to go camping with her family in June 2023.",
+    "error": null,
+    "latency_sec": 6.423
+  },
+  {
+    "qa_id": "conv-26_q15",
+    "question": "What activities does Melanie partake in?",
+    "reference": "pottery, camping, painting, swimming",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "She enjoys pottery and clarinet playing, as she finds peace and joy in creative activities and nature.",
+    "error": null,
+    "latency_sec": 7.677
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "She attended the conference on July 10, 2023.",
+    "error": null,
+    "latency_sec": 8.303
+  },
+  {
+    "qa_id": "conv-26_q26",
+    "question": "When did Melanie read the book \"nothing is impossible\"?",
+    "reference": 2022,
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, she would likely enjoy it because she enjoys classical music like Bach and Mozart, and this memory of her child's first steps made her appreciate her family.",
+    "error": null,
+    "latency_sec": 10.418
+  },
+  {
+    "qa_id": "conv-26_q29",
+    "question": "When did Melanie go to the pottery workshop?",
+    "reference": "The Friday before 15 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie went to the pottery workshop on July 14, 2023.",
+    "error": null,
+    "latency_sec": 8.3
+  },
+  {
+    "qa_id": "conv-26_q31",
+    "question": "When did Melanie go camping in June?",
+    "reference": "The week before 27 June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie went camping with her family in late June 2023.",
+    "error": null,
+    "latency_sec": 6.96
+  },
+  {
+    "qa_id": "conv-26_q42",
+    "question": "Would Melanie be more interested in going to a national park or a theme park?",
+    "reference": "National park; she likes the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She would likely be more interested in going to a national park or a theme park, but her family tradition of camping in natural settings suggests she prefers outdoor activities.",
+    "error": null,
+    "latency_sec": 9.096
+  },
+  {
+    "qa_id": "conv-26_q43",
+    "question": "What kind of art does Caroline make?",
+    "reference": "abstract art",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Caroline makes abstract art.",
+    "error": null,
+    "latency_sec": 7.355
+  },
+  {
+    "qa_id": "conv-26_q45",
+    "question": "When did Caroline attend a pride parade in August?",
+    "reference": "The Friday before 14 August 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "She attended the pride parade on 11 August 2023.",
+    "error": null,
+    "latency_sec": 6.685
+  },
+  {
+    "qa_id": "conv-26_q59",
+    "question": "Would Caroline be considered religious?",
+    "reference": "Somewhat, but not extremely religious",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, Caroline would not be considered religious based on the provided memories.",
+    "error": null,
+    "latency_sec": 7.988
+  },
+  {
+    "qa_id": "conv-26_q61",
+    "question": "What musical artists/bands has Melanie seen?",
+    "reference": "Summer Sounds, Matt Patterson",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "She attended the concert by the band 'Summer Sounds' on August 28th, 2023.",
+    "error": null,
+    "latency_sec": 5.366
+  },
+  {
+    "qa_id": "conv-26_q64",
+    "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+    "reference": "Yes; it's classical music",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, she would likely enjoy 'The Four Seasons' by Vivaldi because she enjoys classical music and has a strong preference for family time and personal moments.",
+    "error": null,
+    "latency_sec": 7.452
+  },
+  {
+    "qa_id": "conv-26_q69",
+    "question": "What personality traits might Melanie say Caroline has?",
+    "reference": "Thoughtful, authentic, driven",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Melanie would likely say that Caroline has a strong sense of community, enjoys creative activities like painting and playing music, and has a positive outlook on life.",
+    "error": null,
+    "latency_sec": 8.141
+  },
+  {
+    "qa_id": "conv-26_q71",
+    "question": "What book did Melanie read from Caroline's suggestion?",
+    "reference": "\"Becoming Nicole\"",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "She read a book recommended by Caroline, which likely aligned with her values of family time and nature.",
+    "error": null,
+    "latency_sec": 5.775
+  },
+  {
+    "qa_id": "conv-26_q81",
+    "question": "Would Caroline want to move back to her home country soon?",
+    "reference": "No; she's in the process of adopting children.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, she might want to move back to her home country to reconnect with her roots and find a sense of belonging, but the decision would also depend on her current circumstances and the availability of resources for adoption.",
+    "error": null,
+    "latency_sec": 10.722
+  },
+  {
+    "qa_id": "conv-26_q82",
+    "question": "What did the charity race raise awareness for?",
+    "reference": "mental health",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The charity race raised awareness for mental health.",
+    "error": null,
+    "latency_sec": 7.038
+  },
+  {
+    "qa_id": "conv-26_q85",
+    "question": "What are Caroline's plans for the summer?",
+    "reference": "researching adoption agencies",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She plans to have a special summer outing with Melanie to explore nature.",
+    "error": null,
+    "latency_sec": 4.854
+  },
+  {
+    "qa_id": "conv-26_q101",
+    "question": "Did Melanie make the black and white bowl in the photo?",
+    "reference": "Yes",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, she would likely enjoy it because she made a black and white bowl in her pottery class on July 3rd, 2023.",
+    "error": null,
+    "latency_sec": 6.301
+  },
+  {
+    "qa_id": "conv-26_q141",
+    "question": "What does Caroline's drawing symbolize for her?",
+    "reference": "Freedom and being true to herself.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Her drawing symbolizes her journey towards self-acceptance and womanhood.",
+    "error": null,
+    "latency_sec": 6.201
+  },
+  {
+    "qa_id": "conv-30_q3",
+    "question": "What do Jon and Gina both have in common?",
+    "reference": "They lost their jobs and decided to start their own businesses.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Jon and Gina both have a passion for dance and seek to turn their hobbies into successful businesses, indicating a shared entrepreneurial spirit and mutual support.",
+    "error": null,
+    "latency_sec": 7.098
+  },
+  {
+    "qa_id": "conv-30_q5",
+    "question": "What Jon thinks the ideal dance studio should look like?",
+    "reference": "By the water, with natural light and Marley flooring",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Jon envisions his ideal dance studio by the water, suggesting a serene and inspiring setting for dancers.",
+    "error": null,
+    "latency_sec": 7.116
+  },
+  {
+    "qa_id": "conv-30_q12",
+    "question": "When did Jon start to go to the gym?",
+    "reference": "March, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon started going to the gym in March 2023.",
+    "error": null,
+    "latency_sec": 4.83
+  },
+  {
+    "qa_id": "conv-30_q15",
+    "question": "When did Jon host a dance competition?",
+    "reference": "May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon hosted a dance competition in May 2023 to showcase local talent and bring attention to his dance studio.",
+    "error": null,
+    "latency_sec": 7.416
+  },
+  {
+    "qa_id": "conv-30_q19",
+    "question": "When did Gina interview for a design internship?",
+    "reference": "10 May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Gina interviewed for a design internship on May 11th, 2023.",
+    "error": null,
+    "latency_sec": 5.573
+  },
+  {
+    "qa_id": "conv-30_q22",
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "reference": "June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Gina developed a video presentation to teach how to style her fashion pieces on June 13th, 2023.",
+    "error": null,
+    "latency_sec": 6.844
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon attended networking events on June 21st, 2023, and February 1st, 2023, for his dance studio.",
+    "error": null,
+    "latency_sec": 8.753
+  },
+  {
+    "qa_id": "conv-30_q75",
+    "question": "What does Gina say to Jon about the grand opening?",
+    "reference": "Let's live it up and make some great memories",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She will attend the grand opening of Jon's dance studio on 20 June 2023.",
+    "error": null,
+    "latency_sec": 6.786
+  },
+  {
+    "qa_id": "conv-41_q7",
+    "question": "What items des John mention having as a child?",
+    "reference": "A doll, a film camera",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, John mentions having a childhood doll that he used to look out for others who were feeling down.",
+    "error": null,
+    "latency_sec": 5.455
+  },
+  {
+    "qa_id": "conv-41_q14",
+    "question": "Would John be considered a patriotic person?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, John would likely be considered a patriotic person due to his dedication to improving his community and his personal journey of overcoming obstacles.",
+    "error": null,
+    "latency_sec": 7.742
+  },
+  {
+    "qa_id": "conv-41_q17",
+    "question": "What might John's degree be in?",
+    "reference": "Political science, Public administration, Public affairs",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "John's degree is likely in mechanical engineering, as he worked in mechanical engineering and is now moving into local politics and infrastructure reform.",
+    "error": null,
+    "latency_sec": 6.808
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, John attended the convention with colleagues on March 2023, as directly stated in the [direct evidence] memory.",
+    "error": null,
+    "latency_sec": 5.261
+  },
+  {
+    "qa_id": "conv-41_q26",
+    "question": "What has Maria done to feel closer to her faith?",
+    "reference": "Join a local church, buy a cross necklace",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria bought a cross necklace to feel closer to her faith in 2023.",
+    "error": null,
+    "latency_sec": 6.2
+  },
+  {
+    "qa_id": "conv-41_q29",
+    "question": "What events is Maria planning for the homeless shelter funraiser?",
+    "reference": "Chili cook-off, ring-toss tournament",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria is planning a ring-toss tournament for the homeless shelter fundraiser in late May 2023.",
+    "error": null,
+    "latency_sec": 6.149
+  },
+  {
+    "qa_id": "conv-41_q41",
+    "question": "Does John live close to a beach or the mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, John likely lives close to a beach due to his fondness for beach settings and his family's frequent visits there.",
+    "error": null,
+    "latency_sec": 7.661
+  },
+  {
+    "qa_id": "conv-41_q48",
+    "question": "When did John have his first firefighter call-out?",
+    "reference": "The sunday before 3` July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John's fire-fighting brigade had their first call-out on 30 July 2023.",
+    "error": null,
+    "latency_sec": 6.591
+  },
+  {
+    "qa_id": "conv-41_q52",
+    "question": "Who have written notes of gratitude to Maria?",
+    "reference": "Cindy, Laura",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she would likely enjoy it because she attended the conference on 10 July 2023.",
+    "error": null,
+    "latency_sec": 9.465
+  },
+  {
+    "qa_id": "conv-41_q53",
+    "question": "When did John help renovate his hometown community center?",
+    "reference": "2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John helped renovate his hometown community center on August 5th, 2022.",
+    "error": null,
+    "latency_sec": 8.512
+  },
+  {
+    "qa_id": "conv-41_q57",
+    "question": "What causes has John done events for?",
+    "reference": "Toy drive, Community food drive, veterans, domestic violence",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has done events for personal growth, community engagement, advocacy, and family involvement based on his memories.",
+    "error": null,
+    "latency_sec": 8.486
+  },
+  {
+    "qa_id": "conv-41_q62",
+    "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria has adopted one dog from the shelter she volunteers at.",
+    "error": null,
+    "latency_sec": 4.55
+  },
+  {
+    "qa_id": "conv-41_q64",
+    "question": "What job might Maria pursue in the future?",
+    "reference": "Shelter coordinator, Counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She might pursue a career as a social worker or community organizer, leveraging her experience and passion for helping others and her love for creative arts and fitness.",
+    "error": null,
+    "latency_sec": 8.283
+  },
+  {
+    "qa_id": "conv-41_q65",
+    "question": "What is John's main focus in local politics?",
+    "reference": "Improving education and infrastructure",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's main focus in local politics is improving education and infrastructure in his community.",
+    "error": null,
+    "latency_sec": 6.987
+  },
+  {
+    "qa_id": "conv-41_q108",
+    "question": "What did Maria say it was like being at the waterfall in Oregon?",
+    "reference": "Like being in a fairy tale",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, she would likely enjoy it because she felt like she was in a fairy tale at the waterfall and bridge location on June 12th, 2023.",
+    "error": null,
+    "latency_sec": 7.4
+  },
+  {
+    "qa_id": "conv-41_q113",
+    "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+    "reference": "self-doubt",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "One of the biggest challenges John faced in his journey to becoming assistant manager was likely overcoming personal and professional obstacles that led to his promotion on June 16th, 2023.",
+    "error": null,
+    "latency_sec": 7.537
+  },
+  {
+    "qa_id": "conv-41_q117",
+    "question": "What event did John participate in to show support for veterans' rights?",
+    "reference": "marching event",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John participated in a marching event for veterans’ rights on 3 July 2023.",
+    "error": null,
+    "latency_sec": 7.48
+  },
+  {
+    "qa_id": "conv-41_q134",
+    "question": "How did John describe his kids' reaction at the military memorial?",
+    "reference": "awestruck and humbled",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, his children were awestruck and humbled by the military memorial visit on August 3rd, 2023, because they were deeply moved by the experience.",
+    "error": null,
+    "latency_sec": 7.169
+  },
+  {
+    "qa_id": "conv-42_q0",
+    "question": "Is it likely that Nate has friends besides Joanna?",
+    "reference": "Yesteammates on hisvideo game team.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, he would likely have friends besides Joanna because she has supportive friends who understand and appreciate her work.",
+    "error": null,
+    "latency_sec": 5.928
+  },
+  {
+    "qa_id": "conv-42_q14",
+    "question": "What nickname does Nate use for Joanna?",
+    "reference": "Jo",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, he might use the nickname 'Hiker' for Joanna because Joanna compensates for her allergies to fur and reptiles by engaging in creative activities like hiking and baking, which aligns with Nate's interest in strategic, fantasy, and sci-fi video games.",
+    "error": null,
+    "latency_sec": 11.111
+  },
+  {
+    "qa_id": "conv-42_q19",
+    "question": "How many times has Joanna found new hiking trails?",
+    "reference": "twice",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she found new hiking trails in her town on May 12th, 2022.",
+    "error": null,
+    "latency_sec": 8.092
+  },
+  {
+    "qa_id": "conv-42_q20",
+    "question": "When did Nate adopt Max?",
+    "reference": "May 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate adopted Max on May 20th, 2022.",
+    "error": null,
+    "latency_sec": 5.583
+  },
+  {
+    "qa_id": "conv-42_q30",
+    "question": "What kind of writings does Joanna do?",
+    "reference": "Screenplays,books, online blog posts, journal",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Joanna writes screenplays and scripts, which are a form of writing, as she uses writing as an outlet for emotional expression and healing.",
+    "error": null,
+    "latency_sec": 9.247
+  },
+  {
+    "qa_id": "conv-42_q32",
+    "question": "Where did Joanna travel to in July 2022?",
+    "reference": "Woodhaven",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Joanna traveled to her hometown for research for her next movie on July 10th, 2022.",
+    "error": null,
+    "latency_sec": 5.69
+  },
+  {
+    "qa_id": "conv-42_q33",
+    "question": "When did someone write Joanna a touching letter?",
+    "reference": "The week before 14August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, she would likely write cute notes to Joanna when they were children, as this is directly supported by the memory.",
+    "error": null,
+    "latency_sec": 5.938
+  },
+  {
+    "qa_id": "conv-42_q35",
+    "question": "When did Nate take time off to chill with his pets?",
+    "reference": "The weekend of 22August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate took time off to chill with his pets on the weekend of 27-28 August 2022.",
+    "error": null,
+    "latency_sec": 7.511
+  },
+  {
+    "qa_id": "conv-42_q37",
+    "question": "When did Nate win an international tournament?",
+    "reference": "21 August, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate won an international gaming tournament on 21 August 2022.",
+    "error": null,
+    "latency_sec": 6.971
+  },
+  {
+    "qa_id": "conv-42_q43",
+    "question": "How long did it take for Joanna to finish writing her book?",
+    "reference": "four months",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Joanna finished writing her book in late September 2022.",
+    "error": null,
+    "latency_sec": 4.924
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate won a big Valorant tourney on September 2022.",
+    "error": null,
+    "latency_sec": 7.012
+  },
+  {
+    "qa_id": "conv-42_q66",
+    "question": "What alternative career might Nate consider after gaming?",
+    "reference": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nate is likely to continue in the gaming industry, possibly exploring new gaming projects or roles within the gaming community.",
+    "error": null,
+    "latency_sec": 7.274
+  },
+  {
+    "qa_id": "conv-42_q81",
+    "question": "What recipes has Joanna made?",
+    "reference": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "She has made a recipe for a dessert with blueberries, coconut milk, and a gluten-free crust.",
+    "error": null,
+    "latency_sec": 7.871
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, the first half of July 2022 was a good month for Nate and Joanna, as Joanna took a road trip for her next movie while Nate was winning his tournament.",
+    "error": null,
+    "latency_sec": 9.407
+  },
+  {
+    "qa_id": "conv-42_q87",
+    "question": "What state did Nate visit?",
+    "reference": "Florida",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Nate visited the state where he won the Valorant tournament on November 5th, 2022.",
+    "error": null,
+    "latency_sec": 5.984
+  },
+  {
+    "qa_id": "conv-42_q91",
+    "question": "What is Nate's favorite book series about?",
+    "reference": "dragons",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, Nate's favorite book series is the one with awesome battles and interesting characters, as he recommended it to Joanna on August 22nd, 2022.",
+    "error": null,
+    "latency_sec": 6.959
+  },
+  {
+    "qa_id": "conv-42_q133",
+    "question": "How many people attended the gaming party hosted by Nate in June 2022?",
+    "reference": "7",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The gaming party hosted by Nate on June 24th, 2022, had 7 attendees as recorded in related memories.",
+    "error": null,
+    "latency_sec": 7.902
+  },
+  {
+    "qa_id": "conv-42_q157",
+    "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+    "reference": "chocolate raspberry tart",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, she would likely enjoy it because she shared a photo of a chocolate raspberry tart with almond flour crust, chocolate ganache, and fresh raspberries.",
+    "error": null,
+    "latency_sec": 6.301
+  },
+  {
+    "qa_id": "conv-42_q161",
+    "question": "What did Joanna make for one of the ladies at her writing club?",
+    "reference": "a bookmark",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She made a bookmark for a lady in her writing club on October 6th, 2022.",
+    "error": null,
+    "latency_sec": 8.042
+  },
+  {
+    "qa_id": "conv-42_q188",
+    "question": "What is Nate creating for YouTube on 9 November, 2022?",
+    "reference": "gaming content",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Nate is creating gaming content for YouTube on 9 November, 2022.",
+    "error": null,
+    "latency_sec": 5.568
+  },
+  {
+    "qa_id": "conv-42_q193",
+    "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+    "reference": "The incredible sunset and surrounding beauty",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, she would likely enjoy it because she enjoys hiking and appreciates natural beauty, as evidenced by her memories of hiking and appreciating the sunset in nature.",
+    "error": null,
+    "latency_sec": 6.996
+  },
+  {
+    "qa_id": "conv-43_q1",
+    "question": "What are John's goals for his career that are not related to his basketball skills?",
+    "reference": "get endorsements, build his brand, do charity work",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John's goals for his career that are not related to his basketball skills likely involve making a positive impact on his community and mentoring younger players.",
+    "error": null,
+    "latency_sec": 11.458
+  },
+  {
+    "qa_id": "conv-43_q8",
+    "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+    "reference": "Under Armour",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The outdoor gear company that likely signed John for an endorsement deal is likely an outdoor company, not a beverage company.",
+    "error": null,
+    "latency_sec": 7.782
+  },
+  {
+    "qa_id": "conv-43_q11",
+    "question": "What sports does John like besides basketball?",
+    "reference": "surfing",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John likely enjoys playing violin, as it aligns with his values of imagination and perseverance, and his deep connection to sports.",
+    "error": null,
+    "latency_sec": 7.09
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Anthony is likely a friend or family member of John, as he participated in a Harry Potter trivia contest with John at a charity event.",
+    "error": null,
+    "latency_sec": 5.225
+  },
+  {
+    "qa_id": "conv-43_q22",
+    "question": "When did John meet with his teammates after returning from Chicago?",
+    "reference": "August 15, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John met with his teammates after returning from Chicago at a restaurant meetup.",
+    "error": null,
+    "latency_sec": 6.101
+  },
+  {
+    "qa_id": "conv-43_q27",
+    "question": "Which popular time management technique does Tim use to prepare for exams?",
+    "reference": "Pomodoro technique",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Tim uses a popular time management technique of 25 minutes studying followed by 5 minutes break to prepare for exams.",
+    "error": null,
+    "latency_sec": 7.157
+  },
+  {
+    "qa_id": "conv-43_q30",
+    "question": "Which cities has John been to?",
+    "reference": "Seattle, Chicago, New York, and Paris.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has visited Edinburgh, Scotland, based on his bucket list of visiting castles.",
+    "error": null,
+    "latency_sec": 7.907
+  },
+  {
+    "qa_id": "conv-43_q34",
+    "question": "What could John do after his basketball career?",
+    "reference": "become a basketball coach since he likes giving back and leadership",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "John might enjoy reading fantasy literature and learning languages, as these activities allow him to engage with his personal history and continue his passion for storytelling.",
+    "error": null,
+    "latency_sec": 9.825
+  },
+  {
+    "qa_id": "conv-43_q36",
+    "question": "Who is Tim and John's favorite basketball player?",
+    "reference": "LeBron James",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim and John's favorite basketball player is LeBron James.",
+    "error": null,
+    "latency_sec": 6.088
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, Tim visited the UK for the Harry Potter Conference on June 15th, 2023.",
+    "error": null,
+    "latency_sec": 7.199
+  },
+  {
+    "qa_id": "conv-43_q40",
+    "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+    "reference": "Yes",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "No, Tim has not been to North Carolina and Tennessee states in the US, as his fandom is primarily centered in the UK and Europe, and there is no indication of a preference for the US.",
+    "error": null,
+    "latency_sec": 10.704
+  },
+  {
+    "qa_id": "conv-43_q49",
+    "question": "How many times has John injured his ankle?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has likely injured his ankle once based on the context provided in the memories.",
+    "error": null,
+    "latency_sec": 7.398
+  },
+  {
+    "qa_id": "conv-43_q50",
+    "question": "Which book was John reading during his recovery from an ankle injury?",
+    "reference": "The Alchemist",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John was reading an inspiring book that reminded him to keep dreaming during his recovery from the ankle injury.",
+    "error": null,
+    "latency_sec": 7.823
+  },
+  {
+    "qa_id": "conv-43_q57",
+    "question": "What instruments does Tim play?",
+    "reference": "piano, violin",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim plays the violin and is interested in classical, jazz, and film score music.",
+    "error": null,
+    "latency_sec": 5.564
+  },
+  {
+    "qa_id": "conv-43_q66",
+    "question": "What is a Star Wars book that Tim might enjoy?",
+    "reference": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Tim might enjoy a Star Wars novel because he is a passionate fantasy fan who enjoys Star Wars content.",
+    "error": null,
+    "latency_sec": 7.973
+  },
+  {
+    "qa_id": "conv-43_q67",
+    "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+    "reference": "Writing a travel blog.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A good hobby related to his travel dreams for Tim could be reading travel stories from travelers around the world.",
+    "error": null,
+    "latency_sec": 5.921
+  },
+  {
+    "qa_id": "conv-43_q70",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "reference": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Tim would likely enjoy visiting the Star Wars Experience in Bray, Ireland, because he enjoys fantasy movies like Star Wars.",
+    "error": null,
+    "latency_sec": 6.985
+  },
+  {
+    "qa_id": "conv-43_q74",
+    "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+    "reference": "characters, spells, magical creatures",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's fan project collaborations will likely focus on creative writing and the imaginative elements of the Harry Potter universe, as both John and Tim have a strong passion for the genre.",
+    "error": null,
+    "latency_sec": 13.595
+  },
+  {
+    "qa_id": "conv-43_q91",
+    "question": "When did John meet back up with his teammates after his trip in August 2023?",
+    "reference": "Aug 15th",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John met back up with his teammates on August 15, 2023.",
+    "error": null,
+    "latency_sec": 6.904
+  },
+  {
+    "qa_id": "conv-43_q108",
+    "question": "What does John want to do after his basketball career?",
+    "reference": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John might want to transition into a coaching role or continue his involvement with the sport in a different capacity, given his reflection on life after basketball and his desire to be known as a consistent performer.",
+    "error": null,
+    "latency_sec": 11.41
+  },
+  {
+    "qa_id": "conv-43_q131",
+    "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+    "reference": "a basketball signed by his favorite player",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, Tim's prized possession is his collection of J.K. Rowling's books, which he has been reading for a long time and considers a significant part of his hobby.",
+    "error": null,
+    "latency_sec": 8.162
+  },
+  {
+    "qa_id": "conv-43_q142",
+    "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+    "reference": "made him think again about following dreams and searching for personal legends",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, John found 'The Alchemist' inspiring and motivated to follow his dreams and trust the process, which impacted his perspective on following dreams.",
+    "error": null,
+    "latency_sec": 5.408
+  },
+  {
+    "qa_id": "conv-44_q19",
+    "question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+    "reference": "cook dog treats",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Andrew would likely enjoy indoor dog training or agility exercises, which would make his dog happy.",
+    "error": null,
+    "latency_sec": 4.823
+  },
+  {
+    "qa_id": "conv-44_q20",
+    "question": "Which meat does Audrey prefer eating more than others?",
+    "reference": "chicken",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She likely prefers chicken over other meats due to her fondness for Roasted Chicken, which she shares with Andrew and is inspired by Mediterranean flavors.",
+    "error": null,
+    "latency_sec": 7.062
+  },
+  {
+    "qa_id": "conv-44_q33",
+    "question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+    "reference": "Change to a hybrid or remote job so he can move away from the city to the suburbs to have a larger living space and be closer to nature.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Andrew is determined to adopt a dog and find pet-friendly housing but faces ongoing challenges (1, 2, 4, 9, 15, 48). He previously hiked with his dog at an unspecified date (October 28th, 2023). He wants to build a strong bond with his dog Toby. He previously shared a photo of Toby at his favorite spot (August 16th, 2023). Audrey advised Andrew to praise his dog's successes (September 24th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously hiked with his dog at an unspecified date (October 28th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August 16th, 2023). He previously decided to try figuring out dog care on his own first (August 24th, 2023). He previously shared a photo of Toby at his favorite spot (August",
+    "error": null,
+    "latency_sec": 128.231
+  },
+  {
+    "qa_id": "conv-44_q38",
+    "question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+    "reference": "the weekend before October 24, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Andrew and his girlfriend went on a wine tasting trip on October 21-22, 2023.",
+    "error": null,
+    "latency_sec": 7.889
+  },
+  {
+    "qa_id": "conv-44_q39",
+    "question": "What did Audrey get wtih having so many dogs?",
+    "reference": "Companionship",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "She enjoys having so many dogs because they provide her with companionship and joy.",
+    "error": null,
+    "latency_sec": 5.732
+  },
+  {
+    "qa_id": "conv-44_q46",
+    "question": "How many pets did Andrew have, as of September 2023?",
+    "reference": "one",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Andrew had one pet as of September 2023, which was his dog named Toby.",
+    "error": null,
+    "latency_sec": 5.283
+  },
+  {
+    "qa_id": "conv-44_q49",
+    "question": "What does Audrey view her pets as?",
+    "reference": "Family",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Audrey views her pets as cherished companions and sources of joy.",
+    "error": null,
+    "latency_sec": 7.23
+  },
+  {
+    "qa_id": "conv-44_q55",
+    "question": "When did Andrew make his dogs a fun indoor area?",
+    "reference": "few days before November 22, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Yes, he likely made his dogs a fun indoor area on October 28th, 2023, when he hiked with his dog Toby.",
+    "error": null,
+    "latency_sec": 9.29
+  },
+  {
+    "qa_id": "conv-44_q88",
+    "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+    "reference": "Grooming slowly and gently, paying attention to sensitive areas like ears and paws. And remember to stay patient and positive throughout the grooming process.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Audrey advised Andrew to groom Toby slowly and gently, paying attention to sensitive areas and staying patient.",
+    "error": null,
+    "latency_sec": 5.492
+  },
+  {
+    "qa_id": "conv-44_q107",
+    "question": "How do Audrey's dogs react to snow?",
+    "reference": "Confused",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Audrey's dogs do not react well to snow, as they were confused and confused when taken to a snowy park in winter 2023.",
+    "error": null,
+    "latency_sec": 5.921
+  },
+  {
+    "qa_id": "conv-47_q11",
+    "question": "How was John feeling on April 10, 2022?",
+    "reference": "seeking solitude",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John was likely feeling positive and engaged on April 10, 2022, as he was social and engaged in hobbies.",
+    "error": null,
+    "latency_sec": 7.456
+  },
+  {
+    "qa_id": "conv-47_q17",
+    "question": "What is the board game where you have to find the imposter that John mentions to James?",
+    "reference": "Mafia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, the board game where players figure out who the impostors are is the game John mentioned to James.",
+    "error": null,
+    "latency_sec": 9.073
+  },
+  {
+    "qa_id": "conv-47_q19",
+    "question": "Was James feeling lonely before meeting Samantha?",
+    "reference": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, he might have felt lonely at home before meeting Samantha, given his history of travel and his desire for new experiences and companionship.",
+    "error": null,
+    "latency_sec": 6.433
+  },
+  {
+    "qa_id": "conv-47_q36",
+    "question": "Who is Jill?",
+    "reference": "Most likely John's partner.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jill is John's partner.",
+    "error": null,
+    "latency_sec": 3.835
+  },
+  {
+    "qa_id": "conv-47_q39",
+    "question": "When did John start his job in IT?",
+    "reference": "2019",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John likely started his IT job around September 4th, 2022, given his father's involvement in IT and his own passion for technology.",
+    "error": null,
+    "latency_sec": 9.645
+  },
+  {
+    "qa_id": "conv-47_q40",
+    "question": "What kind of tricks do James's pets know?",
+    "reference": "swimming, catching frisbees, balancing on a skateboard, sit, stay, paw, and rollover",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, they likely know basic tricks because James's pets bring him joy and are often part of his creative process.",
+    "error": null,
+    "latency_sec": 6.139
+  },
+  {
+    "qa_id": "conv-47_q87",
+    "question": "What type of pizza is John's favorite?",
+    "reference": "Hawaiian",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's favorite pizza type is unknown.",
+    "error": null,
+    "latency_sec": 6.717
+  },
+  {
+    "qa_id": "conv-47_q99",
+    "question": "What is the main focus of the organization that James volunteered with?",
+    "reference": "providing necessary items to those who are less fortunate",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, the organization that James volunteered with is an organization providing necessary items to the less fortunate, as directly stated in the memory logs.",
+    "error": null,
+    "latency_sec": 6.271
+  },
+  {
+    "qa_id": "conv-47_q106",
+    "question": "What online game did John start playing recently for improving strategy?",
+    "reference": "Chess",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John started playing a strategy game recently for improving strategy.",
+    "error": null,
+    "latency_sec": 5.235
+  },
+  {
+    "qa_id": "conv-47_q130",
+    "question": "What instrument did James used to play when he was younger?",
+    "reference": "guitar",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "James used to play guitar when he was younger, as evidenced by the memory recorded on September 18th, 2022.",
+    "error": null,
+    "latency_sec": 6.164
+  },
+  {
+    "qa_id": "conv-47_q139",
+    "question": "What sparked James' passion for gaming when he was a kid?",
+    "reference": "Super Mario and The Legend of Zelda games",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "James' passion for gaming was sparked when he played Super Mario and The Legend of Zelda on his first gaming system, which were well-known games that often spark a passion for gaming in children.",
+    "error": null,
+    "latency_sec": 8.568
+  },
+  {
+    "qa_id": "conv-48_q0",
+    "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+    "reference": "electricity engineering project",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jolene was working on an electrical engineering project in the week before January 23rd, 2023.",
+    "error": null,
+    "latency_sec": 6.324
+  },
+  {
+    "qa_id": "conv-48_q3",
+    "question": "When did Jolene`s mother pass away?",
+    "reference": "in 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jolene's mother passed away on August 26th, 2023.",
+    "error": null,
+    "latency_sec": 5.676
+  },
+  {
+    "qa_id": "conv-48_q13",
+    "question": "What places give Deborah peace?",
+    "reference": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "The hidden coffee shop near Deborah is a place that gives Deborah peace.",
+    "error": null,
+    "latency_sec": 4.857
+  },
+  {
+    "qa_id": "conv-48_q18",
+    "question": "In what country did Jolene buy snake Seraphim?",
+    "reference": "In France",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene bought Seraphim in Paris in 2022.",
+    "error": null,
+    "latency_sec": 5.985
+  },
+  {
+    "qa_id": "conv-48_q19",
+    "question": "How many times has Jolene been to France?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she would likely have visited France because her pendant was given to her by her mother in Paris in 2010.",
+    "error": null,
+    "latency_sec": 8.868
+  },
+  {
+    "qa_id": "conv-48_q28",
+    "question": "In what country was Jolene during summer 2022?",
+    "reference": "Colombia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene took a vacation to Bogota, Colombia in summer 2022.",
+    "error": null,
+    "latency_sec": 5.349
+  },
+  {
+    "qa_id": "conv-48_q31",
+    "question": "When was the last photo of Deborah and Karlie taken?",
+    "reference": "in summer 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "The last photo of Deborah and Karlie was taken in summer 2022.",
+    "error": null,
+    "latency_sec": 7.135
+  },
+  {
+    "qa_id": "conv-48_q43",
+    "question": "When did Deborah go for a bicycle ride with Anna?",
+    "reference": "first week of April, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "She went for a bicycle ride with her neighbor in early April 2023.",
+    "error": null,
+    "latency_sec": 4.928
+  },
+  {
+    "qa_id": "conv-48_q48",
+    "question": "Which US state did Jolene visit during her internship?",
+    "reference": "Alaska",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She likely visited California during her internship, as it is a major tech hub with many beaches and national parks.",
+    "error": null,
+    "latency_sec": 13.166
+  },
+  {
+    "qa_id": "conv-48_q73",
+    "question": "Did Jolene teach herself how to play the console?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she would likely enjoy learning how to play the console because she taught herself to play video games on her own.",
+    "error": null,
+    "latency_sec": 9.077
+  },
+  {
+    "qa_id": "conv-48_q79",
+    "question": "Has Deborah tried surfing?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "No, there is no direct evidence of Deborah trying surfing, but she has been drawn to her mother's memory and may be interested in activities that honor her.",
+    "error": null,
+    "latency_sec": 7.082
+  },
+  {
+    "qa_id": "conv-48_q80",
+    "question": "Has Jolene tried surfing?",
+    "reference": "no",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she has tried surfing as she gathered information and materials to learn it on March 22nd, 2023.",
+    "error": null,
+    "latency_sec": 5.046
+  },
+  {
+    "qa_id": "conv-48_q123",
+    "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+    "reference": "They realized they inspire each other",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Jolene and Anna discussed their love for nature and the beauty of the sunset while watching the sea on March 22nd, 2023.",
+    "error": null,
+    "latency_sec": 4.073
+  },
+  {
+    "qa_id": "conv-48_q133",
+    "question": "What is Jolene currently doing in June 2023?",
+    "reference": "interning at a well-known engineering firm",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Jolene is currently busy with her internship at a well-known engineering firm, focusing on gaining more experience and studying, with occasional time for personal care and hobbies like snake care and meditation.",
+    "error": null,
+    "latency_sec": 8.734
+  },
+  {
+    "qa_id": "conv-48_q150",
+    "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+    "reference": "Zelda BOTW",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Jolene's favorite game to play with her partner is 'It Takes Two', and she finds it awesome to see the robot come together. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 suggests she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit' on a console before 27 January 2023 and planning to play 'Walking Dead' on 28 January 2023 also indicates she enjoys open-world games. The memory of playing 'Detroit",
+    "error": null,
+    "latency_sec": 108.416
+  },
+  {
+    "qa_id": "conv-48_q164",
+    "question": "How old is Max?",
+    "reference": "8 years old",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Max is 8 years old.",
+    "error": null,
+    "latency_sec": 4.758
+  },
+  {
+    "qa_id": "conv-48_q166",
+    "question": "What type of place does Jolene visit to meditate?",
+    "reference": "A tranquil spot by a pond",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She likely visits a park in Paris to meditate, as it is a place connected to her mother's memory.",
+    "error": null,
+    "latency_sec": 7.487
+  },
+  {
+    "qa_id": "conv-49_q3",
+    "question": "How many Prius has Evan owned?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, Evan has at least one Prius.",
+    "error": null,
+    "latency_sec": 6.685
+  },
+  {
+    "qa_id": "conv-49_q5",
+    "question": "Which country was Evan visiting in May 2023?",
+    "reference": "Canada",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Evan was visiting Canada in May 2023 during his road trip to Jasper.",
+    "error": null,
+    "latency_sec": 5.99
+  },
+  {
+    "qa_id": "conv-49_q8",
+    "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
+    "reference": "Watercolor painting",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan started practicing watercolor painting a few years ago, which he enjoys.",
+    "error": null,
+    "latency_sec": 5.788
+  },
+  {
+    "qa_id": "conv-49_q10",
+    "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+    "reference": "camping trip in the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Evan would prefer a camping trip in the outdoors over a walking tour in a metropolitan city, as his memories of outdoor adventures and camping trips strongly indicate a preference for nature and outdoor activities.",
+    "error": null,
+    "latency_sec": 7.675
+  },
+  {
+    "qa_id": "conv-49_q12",
+    "question": "When did Sam first go to the doctor and find out he had a weight problem?",
+    "reference": "A few days before May 24, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Sam first went to the doctor on October 8th, 2023, and found out he had a weight problem.",
+    "error": null,
+    "latency_sec": 6.041
+  },
+  {
+    "qa_id": "conv-49_q20",
+    "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+    "reference": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A yoga mat and a sketchbook. This gift aligns with their values of health consciousness and openness to new experiences, and it supports their mutual support for each other's health goals.",
+    "error": null,
+    "latency_sec": 10.411
+  },
+  {
+    "qa_id": "conv-49_q27",
+    "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+    "reference": "fitness tracker",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Evan might gift Sam a fitness tracker or app to help him keep up with his fitness goals.",
+    "error": null,
+    "latency_sec": 7.052
+  },
+  {
+    "qa_id": "conv-49_q38",
+    "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+    "reference": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nature and the outdoors play a significant role in Evan and Sam's mental well-being and support each other's activities.",
+    "error": null,
+    "latency_sec": 7.193
+  },
+  {
+    "qa_id": "conv-49_q42",
+    "question": "How did Evan get into painting?",
+    "reference": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan got into painting after receiving a painting from a friend as a gift on August 19th, 2023.",
+    "error": null,
+    "latency_sec": 6.335
+  },
+  {
+    "qa_id": "conv-49_q54",
+    "question": "What personal health incidents does Evan face in 2023?",
+    "reference": "heart palpitations, twisted ankle, twisted ankle",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, Evan faces a health scare in November 2023, which is a personal health incident he faces in 2023.",
+    "error": null,
+    "latency_sec": 6.549
+  },
+  {
+    "qa_id": "conv-49_q57",
+    "question": "Which US state was Sam travelling in during October 2023?",
+    "reference": "California",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Sam was likely traveling in the countryside during October 2023.",
+    "error": null,
+    "latency_sec": 6.905
+  },
+  {
+    "qa_id": "conv-49_q65",
+    "question": "Does Evan live close to a beach or mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Evan lives close to a beach because his favorite spot is a peaceful place close to his home by the beach where he goes to relax.",
+    "error": null,
+    "latency_sec": 6.224
+  },
+  {
+    "qa_id": "conv-49_q66",
+    "question": "When did Evan lose his job?",
+    "reference": "end of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Evan lost his job in October 2023 due to company downsizing.",
+    "error": null,
+    "latency_sec": 3.713
+  },
+  {
+    "qa_id": "conv-49_q79",
+    "question": "When will Evan and his partner have their honeymoon in Canada?",
+    "reference": "February 2024",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Evan and his partner will have their honeymoon in Canada in February 2024.",
+    "error": null,
+    "latency_sec": 9.367
+  },
+  {
+    "qa_id": "conv-49_q138",
+    "question": "What did Sam recently start enjoying to clear his head?",
+    "reference": "running in the mornings",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Sam recently started enjoying hiking to clear his head.",
+    "error": null,
+    "latency_sec": 7.309
+  },
+  {
+    "qa_id": "conv-49_q141",
+    "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+    "reference": "Keep trying new things",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Evan suggested Sam find an enjoyable exercise and a workout buddy for accountability to help Sam find his own version of love and health.",
+    "error": null,
+    "latency_sec": 5.16
+  },
+  {
+    "qa_id": "conv-50_q5",
+    "question": "What are Dave's dreams?",
+    "reference": "open a car maintenance shop, work on classic cars, build a custom car from scratch",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's dream is to build a custom car from scratch someday.",
+    "error": null,
+    "latency_sec": 5.509
+  },
+  {
+    "qa_id": "conv-50_q7",
+    "question": "Does Dave's shop employ a lot of people?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, there is no direct evidence of the number of employees, but based on the context, Dave's shop likely employs a small number of people.",
+    "error": null,
+    "latency_sec": 8.744
+  },
+  {
+    "qa_id": "conv-50_q15",
+    "question": "Why does Dave regularly visit parks?",
+    "reference": "because it relaxes and calms him",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave regularly visits parks because he enjoys exploring and sharing his interests with others, which aligns with his values of self-expression and learning from different perspectives.",
+    "error": null,
+    "latency_sec": 5.694
+  },
+  {
+    "qa_id": "conv-50_q21",
+    "question": "Does Calvin wish to become more popular?",
+    "reference": "Yes; he want's to grow his fanbase",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Calvin wishes to become more popular as he actively works on his album and collaborates with major artists like Frank Ocean.",
+    "error": null,
+    "latency_sec": 6.602
+  },
+  {
+    "qa_id": "conv-50_q23",
+    "question": "What is Dave's main passion?",
+    "reference": "auto engineering",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's main passion is restoring and modifying cars.",
+    "error": null,
+    "latency_sec": 9.582
+  },
+  {
+    "qa_id": "conv-50_q31",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "reference": "San Francisco",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave was involved in restoring an old car in the last two weeks of August 2023.",
+    "error": null,
+    "latency_sec": 9.386
+  },
+  {
+    "qa_id": "conv-50_q34",
+    "question": "When did Dave return from San Francisco?",
+    "reference": "September 1, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave returned from San Francisco on September 1st, 2023.",
+    "error": null,
+    "latency_sec": 4.362
+  },
+  {
+    "qa_id": "conv-50_q37",
+    "question": "Does Calvin love music tours?",
+    "reference": "yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, he would likely enjoy music tours because he has performed at music festivals and toured with Frank Ocean.",
+    "error": null,
+    "latency_sec": 5.713
+  },
+  {
+    "qa_id": "conv-50_q46",
+    "question": "What is Dave's favorite activity?",
+    "reference": "Restoring cars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's favorite activity is attending live music performances, such as Aerosmith concerts.",
+    "error": null,
+    "latency_sec": 6.792
+  },
+  {
+    "qa_id": "conv-50_q48",
+    "question": "What was Dave doing in the first weekend of October 2023?",
+    "reference": "attending a car show",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave likely attended a concert in the first weekend of October 2023, as he enjoys music and has a history of attending concerts.",
+    "error": null,
+    "latency_sec": 7.105
+  },
+  {
+    "qa_id": "conv-50_q50",
+    "question": "When did Calvin buy his second Ferrari?",
+    "reference": "first week of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Calvin bought his second Ferrari on 15 October 2023.",
+    "error": null,
+    "latency_sec": 6.163
+  },
+  {
+    "qa_id": "conv-50_q54",
+    "question": "What does help Calvin stay connected to the creative process?",
+    "reference": "Calvin stays connected to the creative process by always staying up-to-date on world events and watching documentaries about artists.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Calvin stays connected to the creative process by attending networking events and staying informed about the music industry and global trends.",
+    "error": null,
+    "latency_sec": 6.729
+  },
+  {
+    "qa_id": "conv-50_q56",
+    "question": "Which cities did Dave travel to in 2023?",
+    "reference": "San Francsico, Detroit",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave traveled to Boston in 2023.",
+    "error": null,
+    "latency_sec": 5.703
+  },
+  {
+    "qa_id": "conv-50_q85",
+    "question": "What is Dave doing to relax on weekends?",
+    "reference": "exploring parks",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave is likely taking walks on weekends to relax, as he enjoys taking walks on weekends and has been exploring parks on weekends as of June 2023.",
+    "error": null,
+    "latency_sec": 6.598
+  },
+  {
+    "qa_id": "conv-50_q97",
+    "question": "What does Dave say is important for making his custom cars unique?",
+    "reference": "attention to small details",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Dave has a passion for auto engineering and building custom cars. He finds therapeutic fulfillment in fixing and restoring cars. He is giving a classic muscle car a modern twist with a silver finish. Dave's dream is to build a custom car from scratch someday. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a silver finish. Dave is giving a classic muscle car a modern twist with a",
+    "error": null,
+    "latency_sec": 82.101
+  },
+  {
+    "qa_id": "conv-50_q104",
+    "question": "Why did Calvin get his guitar customized with a shiny finish?",
+    "reference": "unique look",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, Calvin likely appreciates classical music like Bach and Mozart, as indicated by his experimentation with different genres, and the shiny purple finish of his guitar could be a nod to a classical instrument like a violin or a classical guitar.",
+    "error": null,
+    "latency_sec": 6.659
+  },
+  {
+    "qa_id": "conv-50_q114",
+    "question": "Which song from the childhood of Calvin brings back memories of a road trip with his dad?",
+    "reference": "\"California Love\"",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes, the song from Calvin's childhood that brings back memories of a road trip with his dad is 'California Love' by Tupac and Dr. Dre.",
+    "error": null,
+    "latency_sec": 5.883
+  },
+  {
+    "qa_id": "conv-50_q143",
+    "question": "What did Dave recently start a blog about?",
+    "reference": "Car mods",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave recently started a blog about DIY projects.",
+    "error": null,
+    "latency_sec": 3.498
+  }
+]

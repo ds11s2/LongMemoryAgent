@@ -2,4 +2,13 @@
 chroma_db/
 __pycache__/
 *.pyc
+.idea/
+.vscode/
 .venv
+memory_agent/test/saved_chroma_db/
+memory_agent/test/ingest.log
+memory_agent/test/judge_results.json
+memory_agent/test/persona_summaries.json
+memory_agent/test/predictions.json
+memory_agent/test/results.md
+

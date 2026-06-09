@@ -1,0 +1,1602 @@
+[
+  {
+    "qa_id": "conv-26_q6",
+    "question": "When is Melanie planning on going camping?",
+    "reference": "June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 2023",
+    "error": null,
+    "latency_sec": 8.616
+  },
+  {
+    "qa_id": "conv-26_q15",
+    "question": "What activities does Melanie partake in?",
+    "reference": "pottery, camping, painting, swimming",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "painting, clarinet playing, pottery, running",
+    "error": null,
+    "latency_sec": 8.595
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 10, 2023",
+    "error": null,
+    "latency_sec": 8.616
+  },
+  {
+    "qa_id": "conv-26_q26",
+    "question": "When did Melanie read the book \"nothing is impossible\"?",
+    "reference": 2022,
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 15.385
+  },
+  {
+    "qa_id": "conv-26_q29",
+    "question": "When did Melanie go to the pottery workshop?",
+    "reference": "The Friday before 15 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 14, 2023",
+    "error": null,
+    "latency_sec": 12.686
+  },
+  {
+    "qa_id": "conv-26_q31",
+    "question": "When did Melanie go camping in June?",
+    "reference": "The week before 27 June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 27, 2023",
+    "error": null,
+    "latency_sec": 11.58
+  },
+  {
+    "qa_id": "conv-26_q42",
+    "question": "Would Melanie be more interested in going to a national park or a theme park?",
+    "reference": "National park; she likes the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "national park",
+    "error": null,
+    "latency_sec": 11.344
+  },
+  {
+    "qa_id": "conv-26_q43",
+    "question": "What kind of art does Caroline make?",
+    "reference": "abstract art",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Caroline makes abstract art to explore her transition and changing body.",
+    "error": null,
+    "latency_sec": 9.333
+  },
+  {
+    "qa_id": "conv-26_q45",
+    "question": "When did Caroline attend a pride parade in August?",
+    "reference": "The Friday before 14 August 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 11, 2023",
+    "error": null,
+    "latency_sec": 8.081
+  },
+  {
+    "qa_id": "conv-26_q59",
+    "question": "Would Caroline be considered religious?",
+    "reference": "Somewhat, but not extremely religious",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 9.466
+  },
+  {
+    "qa_id": "conv-26_q61",
+    "question": "What musical artists/bands has Melanie seen?",
+    "reference": "Summer Sounds, Matt Patterson",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Summer Sounds (concert)",
+    "error": null,
+    "latency_sec": 6.233
+  },
+  {
+    "qa_id": "conv-26_q64",
+    "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+    "reference": "Yes; it's classical music",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 14.237
+  },
+  {
+    "qa_id": "conv-26_q69",
+    "question": "What personality traits might Melanie say Caroline has?",
+    "reference": "Thoughtful, authentic, driven",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Melanie recorded that Caroline is an active LGBTQ+ advocate through community events and art, using her personal story to foster understanding and belonging (Recorded on: June 27th, 2023). Caroline is a single person planning to adopt as a single parent (Recorded on: May 25th, 2023). Caroline is a transgender woman and joined the transgender community (Recorded on: August 25th, 2023). Caroline is exploring a career in counseling and mental health to help trans people (Recorded on: June 27th, 2023). Caroline mentors a transgender teen (Recorded on: July 17th, 2023). Caroline is a painter exploring identity (Recorded on: October 13th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and potter (Recorded on: July 15th, 2023). Caroline is a painter of landscapes and",
+    "error": null,
+    "latency_sec": 201.355
+  },
+  {
+    "qa_id": "conv-26_q71",
+    "question": "What book did Melanie read from Caroline's suggestion?",
+    "reference": "\"Becoming Nicole\"",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "The book recommended by Caroline on October 13th, 2023",
+    "error": null,
+    "latency_sec": 6.647
+  },
+  {
+    "qa_id": "conv-26_q81",
+    "question": "Would Caroline want to move back to her home country soon?",
+    "reference": "No; she's in the process of adopting children.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 7.576
+  },
+  {
+    "qa_id": "conv-26_q82",
+    "question": "What did the charity race raise awareness for?",
+    "reference": "mental health",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "mental health",
+    "error": null,
+    "latency_sec": 4.536
+  },
+  {
+    "qa_id": "conv-26_q85",
+    "question": "What are Caroline's plans for the summer?",
+    "reference": "researching adoption agencies",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Summer outing with Melanie in 2023",
+    "error": null,
+    "latency_sec": 6.799
+  },
+  {
+    "qa_id": "conv-26_q101",
+    "question": "Did Melanie make the black and white bowl in the photo?",
+    "reference": "Yes",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 7.347
+  },
+  {
+    "qa_id": "conv-26_q141",
+    "question": "What does Caroline's drawing symbolize for her?",
+    "reference": "Freedom and being true to herself.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Freedom and embracing her womanhood. October 13th, 2023",
+    "error": null,
+    "latency_sec": 8.721
+  },
+  {
+    "qa_id": "conv-30_q3",
+    "question": "What do Jon and Gina both have in common?",
+    "reference": "They lost their jobs and decided to start their own businesses.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "passion for dance",
+    "error": null,
+    "latency_sec": 11.337
+  },
+  {
+    "qa_id": "conv-30_q5",
+    "question": "What Jon thinks the ideal dance studio should look like?",
+    "reference": "By the water, with natural light and Marley flooring",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "by the water, January 20th, 2023",
+    "error": null,
+    "latency_sec": 6.887
+  },
+  {
+    "qa_id": "conv-30_q12",
+    "question": "When did Jon start to go to the gym?",
+    "reference": "March, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "March 2023",
+    "error": null,
+    "latency_sec": 6.721
+  },
+  {
+    "qa_id": "conv-30_q15",
+    "question": "When did Jon host a dance competition?",
+    "reference": "May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 2023",
+    "error": null,
+    "latency_sec": 7.239
+  },
+  {
+    "qa_id": "conv-30_q19",
+    "question": "When did Gina interview for a design internship?",
+    "reference": "10 May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 10, 2023",
+    "error": null,
+    "latency_sec": 7.58
+  },
+  {
+    "qa_id": "conv-30_q22",
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "reference": "June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "June 13th, 2023",
+    "error": null,
+    "latency_sec": 7.823
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "20 June 2023",
+    "error": null,
+    "latency_sec": 7.764
+  },
+  {
+    "qa_id": "conv-30_q75",
+    "question": "What does Gina say to Jon about the grand opening?",
+    "reference": "Let's live it up and make some great memories",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Will attend on 20 June 2023",
+    "error": null,
+    "latency_sec": 7.466
+  },
+  {
+    "qa_id": "conv-41_q7",
+    "question": "What items des John mention having as a child?",
+    "reference": "A doll, a film camera",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "doll, January 28th, 2023",
+    "error": null,
+    "latency_sec": 7.792
+  },
+  {
+    "qa_id": "conv-41_q14",
+    "question": "Would John be considered a patriotic person?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 9.346
+  },
+  {
+    "qa_id": "conv-41_q17",
+    "question": "What might John's degree be in?",
+    "reference": "Political science, Public administration, Public affairs",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "engineering",
+    "error": null,
+    "latency_sec": 13.006
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "March 2023",
+    "error": null,
+    "latency_sec": 7.249
+  },
+  {
+    "qa_id": "conv-41_q26",
+    "question": "What has Maria done to feel closer to her faith?",
+    "reference": "Join a local church, buy a cross necklace",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria bought a cross necklace on April 10th, 2023",
+    "error": null,
+    "latency_sec": 7.297
+  },
+  {
+    "qa_id": "conv-41_q29",
+    "question": "What events is Maria planning for the homeless shelter funraiser?",
+    "reference": "Chili cook-off, ring-toss tournament",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "ring-toss tournament, late May 2023",
+    "error": null,
+    "latency_sec": 6.804
+  },
+  {
+    "qa_id": "conv-41_q41",
+    "question": "Does John live close to a beach or the mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 12.396
+  },
+  {
+    "qa_id": "conv-41_q48",
+    "question": "When did John have his first firefighter call-out?",
+    "reference": "The sunday before 3` July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "30 July 2023",
+    "error": null,
+    "latency_sec": 8.679
+  },
+  {
+    "qa_id": "conv-41_q52",
+    "question": "Who have written notes of gratitude to Maria?",
+    "reference": "Cindy, Laura",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Cindy, August 3rd, 2023",
+    "error": null,
+    "latency_sec": 5.764
+  },
+  {
+    "qa_id": "conv-41_q53",
+    "question": "When did John help renovate his hometown community center?",
+    "reference": "2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "2022-08-05",
+    "error": null,
+    "latency_sec": 7.457
+  },
+  {
+    "qa_id": "conv-41_q57",
+    "question": "What causes has John done events for?",
+    "reference": "Toy drive, Community food drive, veterans, domestic violence",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "A toy drive for kids in need (January 1st, 2023), a community fundraising event for the local fire station (August 16th, 2023), a new job with an encouraging and inspiring team (July 22nd, 2023)",
+    "error": null,
+    "latency_sec": 14.68
+  },
+  {
+    "qa_id": "conv-41_q62",
+    "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 7.431
+  },
+  {
+    "qa_id": "conv-41_q64",
+    "question": "What job might Maria pursue in the future?",
+    "reference": "Shelter coordinator, Counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Charity worker",
+    "error": null,
+    "latency_sec": 7.439
+  },
+  {
+    "qa_id": "conv-41_q65",
+    "question": "What is John's main focus in local politics?",
+    "reference": "Improving education and infrastructure",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "education and infrastructure",
+    "error": null,
+    "latency_sec": 11.601
+  },
+  {
+    "qa_id": "conv-41_q108",
+    "question": "What did Maria say it was like being at the waterfall in Oregon?",
+    "reference": "Like being in a fairy tale",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Was in a fairy tale on June 12th, 2023",
+    "error": null,
+    "latency_sec": 6.437
+  },
+  {
+    "qa_id": "conv-41_q113",
+    "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+    "reference": "self-doubt",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "assistant manager on June 16th, 2023",
+    "error": null,
+    "latency_sec": 8.571
+  },
+  {
+    "qa_id": "conv-41_q117",
+    "question": "What event did John participate in to show support for veterans' rights?",
+    "reference": "marching event",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Marching event for veterans’ rights on 3 July 2023",
+    "error": null,
+    "latency_sec": 11.391
+  },
+  {
+    "qa_id": "conv-41_q134",
+    "question": "How did John describe his kids' reaction at the military memorial?",
+    "reference": "awestruck and humbled",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "awestruck and humbled, August 3rd, 2023",
+    "error": null,
+    "latency_sec": 7.132
+  },
+  {
+    "qa_id": "conv-42_q0",
+    "question": "Is it likely that Nate has friends besides Joanna?",
+    "reference": "Yesteammates on hisvideo game team.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 7.104
+  },
+  {
+    "qa_id": "conv-42_q14",
+    "question": "What nickname does Nate use for Joanna?",
+    "reference": "Jo",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "FindingHomeWriter",
+    "error": null,
+    "latency_sec": 15.405
+  },
+  {
+    "qa_id": "conv-42_q19",
+    "question": "How many times has Joanna found new hiking trails?",
+    "reference": "twice",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 7.337
+  },
+  {
+    "qa_id": "conv-42_q20",
+    "question": "When did Nate adopt Max?",
+    "reference": "May 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 20th, 2022",
+    "error": null,
+    "latency_sec": 7.373
+  },
+  {
+    "qa_id": "conv-42_q30",
+    "question": "What kind of writings does Joanna do?",
+    "reference": "Screenplays,books, online blog posts, journal",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Joanna is a dedicated screenwriter who uses personal experiences to create emotionally-driven scripts and actively pursues film festival submissions and production opportunities (direct evidence). Joanna uses writing and baking as outlets for emotional expression, healing, and personal growth (related memories). Joanna has a go-to place with many books that she uses for writing inspiration (background). Joanna writes best when being true to herself (background). Joanna is working on a script titled 'Finding Home' with her writers group (background). Joanna is a writer who uses writing and baking as outlets for emotional expression and healing (related memories). Joanna has a book series on her reading list that Nate described (background). Joanna is a writer who draws from personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background). Joanna is a writer who uses personal experiences to create emotionally-driven scripts and actively pursues recognition through festivals and networking (background",
+    "error": null,
+    "latency_sec": 186.601
+  },
+  {
+    "qa_id": "conv-42_q32",
+    "question": "Where did Joanna travel to in July 2022?",
+    "reference": "Woodhaven",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 10th, 2022",
+    "error": null,
+    "latency_sec": 6.982
+  },
+  {
+    "qa_id": "conv-42_q33",
+    "question": "When did someone write Joanna a touching letter?",
+    "reference": "The week before 14August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "November 7th, 2022",
+    "error": null,
+    "latency_sec": 6.424
+  },
+  {
+    "qa_id": "conv-42_q35",
+    "question": "When did Nate take time off to chill with his pets?",
+    "reference": "The weekend of 22August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 27-28, 2022",
+    "error": null,
+    "latency_sec": 9.392
+  },
+  {
+    "qa_id": "conv-42_q37",
+    "question": "When did Nate win an international tournament?",
+    "reference": "21 August, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "21 August 2022",
+    "error": null,
+    "latency_sec": 5.84
+  },
+  {
+    "qa_id": "conv-42_q43",
+    "question": "How long did it take for Joanna to finish writing her book?",
+    "reference": "four months",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "late September 2022",
+    "error": null,
+    "latency_sec": 6.521
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "5 November 2022",
+    "error": null,
+    "latency_sec": 8.007
+  },
+  {
+    "qa_id": "conv-42_q66",
+    "question": "What alternative career might Nate consider after gaming?",
+    "reference": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "YouTube content creator",
+    "error": null,
+    "latency_sec": 7.584
+  },
+  {
+    "qa_id": "conv-42_q81",
+    "question": "What recipes has Joanna made?",
+    "reference": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "new recipe for a dessert with blueberries, coconut milk, and a gluten-free crust, recorded on August 14th, 2022",
+    "error": null,
+    "latency_sec": 8.485
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 10.911
+  },
+  {
+    "qa_id": "conv-42_q87",
+    "question": "What state did Nate visit?",
+    "reference": "Florida",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "park",
+    "error": null,
+    "latency_sec": 6.551
+  },
+  {
+    "qa_id": "conv-42_q91",
+    "question": "What is Nate's favorite book series about?",
+    "reference": "dragons",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The book series recommended by Nate to Joanna is his favorite.",
+    "error": null,
+    "latency_sec": 7.497
+  },
+  {
+    "qa_id": "conv-42_q133",
+    "question": "How many people attended the gaming party hosted by Nate in June 2022?",
+    "reference": "7",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "7",
+    "error": null,
+    "latency_sec": 7.034
+  },
+  {
+    "qa_id": "conv-42_q157",
+    "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+    "reference": "chocolate raspberry tart",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "chocolate raspberry tart on September 14th, 2022",
+    "error": null,
+    "latency_sec": 7.574
+  },
+  {
+    "qa_id": "conv-42_q161",
+    "question": "What did Joanna make for one of the ladies at her writing club?",
+    "reference": "a bookmark",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "A bookmark, October 6, 2022",
+    "error": null,
+    "latency_sec": 8.847
+  },
+  {
+    "qa_id": "conv-42_q188",
+    "question": "What is Nate creating for YouTube on 9 November, 2022?",
+    "reference": "gaming content",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Nate",
+    "error": null,
+    "latency_sec": 5.487
+  },
+  {
+    "qa_id": "conv-42_q193",
+    "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+    "reference": "The incredible sunset and surrounding beauty",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "summer 2022",
+    "error": null,
+    "latency_sec": 7.956
+  },
+  {
+    "qa_id": "conv-43_q1",
+    "question": "What are John's goals for his career that are not related to his basketball skills?",
+    "reference": "get endorsements, build his brand, do charity work",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John's goal to improve his shooting percentage and his commitment to mentoring younger players and supporting youth sports.",
+    "error": null,
+    "latency_sec": 10.107
+  },
+  {
+    "qa_id": "conv-43_q8",
+    "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+    "reference": "Under Armour",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The renowned outdoor gear company",
+    "error": null,
+    "latency_sec": 6.5
+  },
+  {
+    "qa_id": "conv-43_q11",
+    "question": "What sports does John like besides basketball?",
+    "reference": "surfing",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 10.261
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Anthony: August 2nd, 2023",
+    "error": null,
+    "latency_sec": 6.003
+  },
+  {
+    "qa_id": "conv-43_q22",
+    "question": "When did John meet with his teammates after returning from Chicago?",
+    "reference": "August 15, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 15, 2023",
+    "error": null,
+    "latency_sec": 7.419
+  },
+  {
+    "qa_id": "conv-43_q27",
+    "question": "Which popular time management technique does Tim use to prepare for exams?",
+    "reference": "Pomodoro technique",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "25-minute study followed by 5-minute break, recorded on November 16th, 2023",
+    "error": null,
+    "latency_sec": 7.874
+  },
+  {
+    "qa_id": "conv-43_q30",
+    "question": "Which cities has John been to?",
+    "reference": "Seattle, Chicago, New York, and Paris.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Seattle in August 2023",
+    "error": null,
+    "latency_sec": 7.548
+  },
+  {
+    "qa_id": "conv-43_q34",
+    "question": "What could John do after his basketball career?",
+    "reference": "become a basketball coach since he likes giving back and leadership",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "mentor young athletes, start a foundation, do charity work",
+    "error": null,
+    "latency_sec": 16.268
+  },
+  {
+    "qa_id": "conv-43_q36",
+    "question": "Who is Tim and John's favorite basketball player?",
+    "reference": "LeBron James",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John: LeBron James",
+    "error": null,
+    "latency_sec": 8.989
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 2023",
+    "error": null,
+    "latency_sec": 5.628
+  },
+  {
+    "qa_id": "conv-43_q40",
+    "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+    "reference": "Yes",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 7.485
+  },
+  {
+    "qa_id": "conv-43_q49",
+    "question": "How many times has John injured his ankle?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"The memory on December 16th, 2023, states that John has not read any of George R. R. Martin's books. This implies that John has not injured his ankle while reading these books, as there is no mention of any ankle injuries related to reading. Additionally, the memory on November 21st, 2023, states that John has met LeBron James a few times, which does not mention any ankle injuries. The memory on December 16th, 2023, also states that John has not visited Edinburgh, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not read any of George R. R. Martin's books, which does not imply any ankle injuries. The memory on November 21st, 2023, states that John has not visited any real Harry Potter places but wants to, which does not imply any ankle injuries. The memory on November 21st, 2023, states that",
+    "error": null,
+    "latency_sec": 182.416
+  },
+  {
+    "qa_id": "conv-43_q50",
+    "question": "Which book was John reading during his recovery from an ankle injury?",
+    "reference": "The Alchemist",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "The Name of the Wind by Patrick Rothfuss",
+    "error": null,
+    "latency_sec": 7.421
+  },
+  {
+    "qa_id": "conv-43_q57",
+    "question": "What instruments does Tim play?",
+    "reference": "piano, violin",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "piano",
+    "error": null,
+    "latency_sec": 7.443
+  },
+  {
+    "qa_id": "conv-43_q66",
+    "question": "What is a Star Wars book that Tim might enjoy?",
+    "reference": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, The Force Awakens",
+    "error": null,
+    "latency_sec": 6.39
+  },
+  {
+    "qa_id": "conv-43_q67",
+    "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+    "reference": "Writing a travel blog.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "traveling to new places to experience different cultures",
+    "error": null,
+    "latency_sec": 9.087
+  },
+  {
+    "qa_id": "conv-43_q70",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "reference": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Star Wars: Galaxy's Edge theme park",
+    "error": null,
+    "latency_sec": 8.658
+  },
+  {
+    "qa_id": "conv-43_q74",
+    "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+    "reference": "characters, spells, magical creatures",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Harry Potter universe",
+    "error": null,
+    "latency_sec": 8.052
+  },
+  {
+    "qa_id": "conv-43_q91",
+    "question": "When did John meet back up with his teammates after his trip in August 2023?",
+    "reference": "Aug 15th",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "August 15, 2023",
+    "error": null,
+    "latency_sec": 6.64
+  },
+  {
+    "qa_id": "conv-43_q108",
+    "question": "What does John want to do after his basketball career?",
+    "reference": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John wants to use his platform for charity and community impact after his basketball career.",
+    "error": null,
+    "latency_sec": 9.111
+  },
+  {
+    "qa_id": "conv-43_q131",
+    "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+    "reference": "a basketball signed by his favorite player",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Harry Potter fan project, May 21st, 2023",
+    "error": null,
+    "latency_sec": 6.217
+  },
+  {
+    "qa_id": "conv-43_q142",
+    "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+    "reference": "made him think again about following dreams and searching for personal legends",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The Alchemist motivated John to trust the process and follow his dreams.",
+    "error": null,
+    "latency_sec": 7.322
+  },
+  {
+    "qa_id": "conv-44_q19",
+    "question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+    "reference": "cook dog treats",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, hiking",
+    "error": null,
+    "latency_sec": 9.245
+  },
+  {
+    "qa_id": "conv-44_q20",
+    "question": "Which meat does Audrey prefer eating more than others?",
+    "reference": "chicken",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "chicken",
+    "error": null,
+    "latency_sec": 5.371
+  },
+  {
+    "qa_id": "conv-44_q33",
+    "question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+    "reference": "Change to a hybrid or remote job so he can move away from the city to the suburbs to have a larger living space and be closer to nature.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"Andrew adopted a dog named Buddy from a shelter shortly before 19 October 2023 (direct evidence). He is looking for a pet-friendly apartment near a park or woods (background). He has two dogs named Toby and Buddy (background). He enjoys hiking with dogs (background). He is determined to adopt a dog and find a pet-friendly apartment (background). He has a dog named Toby who is still young (background). He wants to go on a road trip with a dog in the future (background). He has a dog named Toby who is still young (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog named Toby (background). He has a dog",
+    "error": null,
+    "latency_sec": 187.696
+  },
+  {
+    "qa_id": "conv-44_q38",
+    "question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+    "reference": "the weekend before October 24, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 21-22, 2023",
+    "error": null,
+    "latency_sec": 6.873
+  },
+  {
+    "qa_id": "conv-44_q39",
+    "question": "What did Audrey get wtih having so many dogs?",
+    "reference": "Companionship",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Audrey got four dogs: two Jack Russell mixes and two Chihuahua mixes, prioritizing their safety and well-being, and finding joy in their presence and companionship.",
+    "error": null,
+    "latency_sec": 8.007
+  },
+  {
+    "qa_id": "conv-44_q46",
+    "question": "How many pets did Andrew have, as of September 2023?",
+    "reference": "one",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 5.925
+  },
+  {
+    "qa_id": "conv-44_q49",
+    "question": "What does Audrey view her pets as?",
+    "reference": "Family",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "companions who bring joy and unconditional love",
+    "error": null,
+    "latency_sec": 5.819
+  },
+  {
+    "qa_id": "conv-44_q55",
+    "question": "When did Andrew make his dogs a fun indoor area?",
+    "reference": "few days before November 22, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 19th, 2023",
+    "error": null,
+    "latency_sec": 5.841
+  },
+  {
+    "qa_id": "conv-44_q88",
+    "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+    "reference": "Grooming slowly and gently, paying attention to sensitive areas like ears and paws. And remember to stay patient and positive throughout the grooming process.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "To groom slowly and gently, paying attention to sensitive areas, and staying patient.",
+    "error": null,
+    "latency_sec": 6.089
+  },
+  {
+    "qa_id": "conv-44_q107",
+    "question": "How do Audrey's dogs react to snow?",
+    "reference": "Confused",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "hate",
+    "error": null,
+    "latency_sec": 4.102
+  },
+  {
+    "qa_id": "conv-47_q11",
+    "question": "How was John feeling on April 10, 2022?",
+    "reference": "seeking solitude",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "playing chess",
+    "error": null,
+    "latency_sec": 6.128
+  },
+  {
+    "qa_id": "conv-47_q17",
+    "question": "What is the board game where you have to find the imposter that John mentions to James?",
+    "reference": "Mafia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The board game where you have to find the imposter is the board game John mentioned to James on April 29th, 2022.",
+    "error": null,
+    "latency_sec": 7.941
+  },
+  {
+    "qa_id": "conv-47_q19",
+    "question": "Was James feeling lonely before meeting Samantha?",
+    "reference": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 7.144
+  },
+  {
+    "qa_id": "conv-47_q36",
+    "question": "Who is Jill?",
+    "reference": "Most likely John's partner.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jill",
+    "error": null,
+    "latency_sec": 3.728
+  },
+  {
+    "qa_id": "conv-47_q39",
+    "question": "When did John start his job in IT?",
+    "reference": "2019",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "August 6th, 2022",
+    "error": null,
+    "latency_sec": 6.277
+  },
+  {
+    "qa_id": "conv-47_q40",
+    "question": "What kind of tricks do James's pets know?",
+    "reference": "swimming, catching frisbees, balancing on a skateboard, sit, stay, paw, and rollover",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "James's pets can perform tricks: sit, stay, paw, and rollover.",
+    "error": null,
+    "latency_sec": 5.98
+  },
+  {
+    "qa_id": "conv-47_q87",
+    "question": "What type of pizza is John's favorite?",
+    "reference": "Hawaiian",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Hawaiian",
+    "error": null,
+    "latency_sec": 4.469
+  },
+  {
+    "qa_id": "conv-47_q99",
+    "question": "What is the main focus of the organization that James volunteered with?",
+    "reference": "providing necessary items to those who are less fortunate",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The organization that James volunteered with is the organization that provides necessary items to the less fortunate.",
+    "error": null,
+    "latency_sec": 6.377
+  },
+  {
+    "qa_id": "conv-47_q106",
+    "question": "What online game did John start playing recently for improving strategy?",
+    "reference": "Chess",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "{\n  \"thinking\": {\n    \"supporting_clues\": \"John kept his mobile game development a secret because he would have been upset if he had told James in advance and the game hadn't worked out. [Recorded on: September 20th, 2022]. John also played a game with friends where players figure out who the impostors are. [Recorded on: April 29th, 2022]. John is committed to improving his gaming skills and setting new goals. [Recorded on: March 27th, 2022]. John is a driven technologist and community organizer. [Identity]. John is a driven technologist and community organizer. [Career]. John is a driven technologist and community organizer. [Values]. John is a driven technologist and community organizer. [Social]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and community organizer. [Background]. John is a driven technologist and",
+    "error": null,
+    "latency_sec": 161.312
+  },
+  {
+    "qa_id": "conv-47_q130",
+    "question": "What instrument did James used to play when he was younger?",
+    "reference": "guitar",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 5.818
+  },
+  {
+    "qa_id": "conv-47_q139",
+    "question": "What sparked James' passion for gaming when he was a kid?",
+    "reference": "Super Mario and The Legend of Zelda games",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Super Mario and The Legend of Zelda on a Nintendo when he was a child",
+    "error": null,
+    "latency_sec": 6.475
+  },
+  {
+    "qa_id": "conv-48_q0",
+    "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+    "reference": "electricity engineering project",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "an electrical engineering project, January 2023",
+    "error": null,
+    "latency_sec": 6.413
+  },
+  {
+    "qa_id": "conv-48_q3",
+    "question": "When did Jolene`s mother pass away?",
+    "reference": "in 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "2022",
+    "error": null,
+    "latency_sec": 5.579
+  },
+  {
+    "qa_id": "conv-48_q13",
+    "question": "What places give Deborah peace?",
+    "reference": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "mother's house, beach",
+    "error": null,
+    "latency_sec": 10.355
+  },
+  {
+    "qa_id": "conv-48_q18",
+    "question": "In what country did Jolene buy snake Seraphim?",
+    "reference": "In France",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Paris in 2022",
+    "error": null,
+    "latency_sec": 4.319
+  },
+  {
+    "qa_id": "conv-48_q19",
+    "question": "How many times has Jolene been to France?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 5.671
+  },
+  {
+    "qa_id": "conv-48_q28",
+    "question": "In what country was Jolene during summer 2022?",
+    "reference": "Colombia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Bogota",
+    "error": null,
+    "latency_sec": 5.574
+  },
+  {
+    "qa_id": "conv-48_q31",
+    "question": "When was the last photo of Deborah and Karlie taken?",
+    "reference": "in summer 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "summer 2022",
+    "error": null,
+    "latency_sec": 5.568
+  },
+  {
+    "qa_id": "conv-48_q43",
+    "question": "When did Deborah go for a bicycle ride with Anna?",
+    "reference": "first week of April, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "July 9th, 2023",
+    "error": null,
+    "latency_sec": 7.926
+  },
+  {
+    "qa_id": "conv-48_q48",
+    "question": "Which US state did Jolene visit during her internship?",
+    "reference": "Alaska",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 4.923
+  },
+  {
+    "qa_id": "conv-48_q73",
+    "question": "Did Jolene teach herself how to play the console?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, 2023",
+    "error": null,
+    "latency_sec": 5.031
+  },
+  {
+    "qa_id": "conv-48_q79",
+    "question": "Has Deborah tried surfing?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 6.817
+  },
+  {
+    "qa_id": "conv-48_q80",
+    "question": "Has Jolene tried surfing?",
+    "reference": "no",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 6.088
+  },
+  {
+    "qa_id": "conv-48_q123",
+    "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+    "reference": "They realized they inspire each other",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Jolene and Anna",
+    "error": null,
+    "latency_sec": 6.959
+  },
+  {
+    "qa_id": "conv-48_q133",
+    "question": "What is Jolene currently doing in June 2023?",
+    "reference": "interning at a well-known engineering firm",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "interning at a well-known engineering firm, June 2023",
+    "error": null,
+    "latency_sec": 7.813
+  },
+  {
+    "qa_id": "conv-48_q150",
+    "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+    "reference": "Zelda BOTW",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Zelda: Breath of the Wild",
+    "error": null,
+    "latency_sec": 6.925
+  },
+  {
+    "qa_id": "conv-48_q164",
+    "question": "How old is Max?",
+    "reference": "8 years old",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "August 26th, 2023",
+    "error": null,
+    "latency_sec": 13.53
+  },
+  {
+    "qa_id": "conv-48_q166",
+    "question": "What type of place does Jolene visit to meditate?",
+    "reference": "A tranquil spot by a pond",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "nearby tranquil spot",
+    "error": null,
+    "latency_sec": 5.784
+  },
+  {
+    "qa_id": "conv-49_q3",
+    "question": "How many Prius has Evan owned?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "1",
+    "error": null,
+    "latency_sec": 6.014
+  },
+  {
+    "qa_id": "conv-49_q5",
+    "question": "Which country was Evan visiting in May 2023?",
+    "reference": "Canada",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Rocky Mountains",
+    "error": null,
+    "latency_sec": 7.187
+  },
+  {
+    "qa_id": "conv-49_q8",
+    "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
+    "reference": "Watercolor painting",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "painting, early 2020s",
+    "error": null,
+    "latency_sec": 6.92
+  },
+  {
+    "qa_id": "conv-49_q10",
+    "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+    "reference": "camping trip in the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "camping trip in the outdoors",
+    "error": null,
+    "latency_sec": 8.057
+  },
+  {
+    "qa_id": "conv-49_q12",
+    "question": "When did Sam first go to the doctor and find out he had a weight problem?",
+    "reference": "A few days before May 24, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "May 21, 2023",
+    "error": null,
+    "latency_sec": 8.488
+  },
+  {
+    "qa_id": "conv-49_q20",
+    "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+    "reference": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A personalized health tracking app",
+    "error": null,
+    "latency_sec": 7.208
+  },
+  {
+    "qa_id": "conv-49_q27",
+    "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+    "reference": "fitness tracker",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "fitness tracker, October 25th, 2023",
+    "error": null,
+    "latency_sec": 7.919
+  },
+  {
+    "qa_id": "conv-49_q38",
+    "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+    "reference": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "nature and outdoor adventures",
+    "error": null,
+    "latency_sec": 8.576
+  },
+  {
+    "qa_id": "conv-49_q42",
+    "question": "How did Evan get into painting?",
+    "reference": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan got into painting through the help of his friend.",
+    "error": null,
+    "latency_sec": 7.083
+  },
+  {
+    "qa_id": "conv-49_q54",
+    "question": "What personal health incidents does Evan face in 2023?",
+    "reference": "heart palpitations, twisted ankle, twisted ankle",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "health scare on November 21st, 2023; health issues since August 2021",
+    "error": null,
+    "latency_sec": 10.437
+  },
+  {
+    "qa_id": "conv-49_q57",
+    "question": "Which US state was Sam travelling in during October 2023?",
+    "reference": "California",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Alberta",
+    "error": null,
+    "latency_sec": 11.095
+  },
+  {
+    "qa_id": "conv-49_q65",
+    "question": "Does Evan live close to a beach or mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 5.004
+  },
+  {
+    "qa_id": "conv-49_q66",
+    "question": "When did Evan lose his job?",
+    "reference": "end of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "October 2023",
+    "error": null,
+    "latency_sec": 6.351
+  },
+  {
+    "qa_id": "conv-49_q79",
+    "question": "When will Evan and his partner have their honeymoon in Canada?",
+    "reference": "February 2024",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "February 2024",
+    "error": null,
+    "latency_sec": 6.728
+  },
+  {
+    "qa_id": "conv-49_q138",
+    "question": "What did Sam recently start enjoying to clear his head?",
+    "reference": "running in the mornings",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "painting",
+    "error": null,
+    "latency_sec": 12.249
+  },
+  {
+    "qa_id": "conv-49_q141",
+    "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+    "reference": "Keep trying new things",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "put a GPS sensor on his keys on December 26th, 2023",
+    "error": null,
+    "latency_sec": 6.955
+  },
+  {
+    "qa_id": "conv-50_q5",
+    "question": "What are Dave's dreams?",
+    "reference": "open a car maintenance shop, work on classic cars, build a custom car from scratch",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, work on cars for a living",
+    "error": null,
+    "latency_sec": 7.107
+  },
+  {
+    "qa_id": "conv-50_q7",
+    "question": "Does Dave's shop employ a lot of people?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No",
+    "error": null,
+    "latency_sec": 8.847
+  },
+  {
+    "qa_id": "conv-50_q15",
+    "question": "Why does Dave regularly visit parks?",
+    "reference": "because it relaxes and calms him",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave visits parks for therapeutic reasons.",
+    "error": null,
+    "latency_sec": 7.263
+  },
+  {
+    "qa_id": "conv-50_q21",
+    "question": "Does Calvin wish to become more popular?",
+    "reference": "Yes; he want's to grow his fanbase",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 9.583
+  },
+  {
+    "qa_id": "conv-50_q23",
+    "question": "What is Dave's main passion?",
+    "reference": "auto engineering",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "restoring and modifying cars",
+    "error": null,
+    "latency_sec": 6.243
+  },
+  {
+    "qa_id": "conv-50_q31",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "reference": "San Francisco",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Boston: not mentioned",
+    "error": null,
+    "latency_sec": 10.395
+  },
+  {
+    "qa_id": "conv-50_q34",
+    "question": "When did Dave return from San Francisco?",
+    "reference": "September 1, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "1 September 2023",
+    "error": null,
+    "latency_sec": 7.467
+  },
+  {
+    "qa_id": "conv-50_q37",
+    "question": "Does Calvin love music tours?",
+    "reference": "yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes",
+    "error": null,
+    "latency_sec": 6.57
+  },
+  {
+    "qa_id": "conv-50_q46",
+    "question": "What is Dave's favorite activity?",
+    "reference": "Restoring cars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "car restoration and modification",
+    "error": null,
+    "latency_sec": 7.718
+  },
+  {
+    "qa_id": "conv-50_q48",
+    "question": "What was Dave doing in the first weekend of October 2023?",
+    "reference": "attending a car show",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Attended a concert",
+    "error": null,
+    "latency_sec": 10.706
+  },
+  {
+    "qa_id": "conv-50_q50",
+    "question": "When did Calvin buy his second Ferrari?",
+    "reference": "first week of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "15 October 2023",
+    "error": null,
+    "latency_sec": 7.974
+  },
+  {
+    "qa_id": "conv-50_q54",
+    "question": "What does help Calvin stay connected to the creative process?",
+    "reference": "Calvin stays connected to the creative process by always staying up-to-date on world events and watching documentaries about artists.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "working on an album with a team in a studio, engaging with current events",
+    "error": null,
+    "latency_sec": 9.764
+  },
+  {
+    "qa_id": "conv-50_q56",
+    "question": "Which cities did Dave travel to in 2023?",
+    "reference": "San Francsico, Detroit",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "mountainous region, July 2023",
+    "error": null,
+    "latency_sec": 9.147
+  },
+  {
+    "qa_id": "conv-50_q85",
+    "question": "What is Dave doing to relax on weekends?",
+    "reference": "exploring parks",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave enjoys taking walks on weekends",
+    "error": null,
+    "latency_sec": 8.699
+  },
+  {
+    "qa_id": "conv-50_q97",
+    "question": "What does Dave say is important for making his custom cars unique?",
+    "reference": "attention to small details",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave values the craftsmanship and uniqueness of classic cars, which he applies to his custom cars.",
+    "error": null,
+    "latency_sec": 8.68
+  },
+  {
+    "qa_id": "conv-50_q104",
+    "question": "Why did Calvin get his guitar customized with a shiny finish?",
+    "reference": "unique look",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Calvin customized his guitar with a shiny purple finish on August 31st, 2023.",
+    "error": null,
+    "latency_sec": 7.857
+  },
+  {
+    "qa_id": "conv-50_q114",
+    "question": "Which song from the childhood of Calvin brings back memories of a road trip with his dad?",
+    "reference": "\"California Love\"",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "California Love",
+    "error": null,
+    "latency_sec": 5.79
+  },
+  {
+    "qa_id": "conv-50_q143",
+    "question": "What did Dave recently start a blog about?",
+    "reference": "Car mods",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "car mods",
+    "error": null,
+    "latency_sec": 3.688
+  }
+]

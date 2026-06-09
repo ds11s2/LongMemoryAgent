@@ -1,0 +1,1602 @@
+[
+  {
+    "qa_id": "conv-26_q6",
+    "question": "When is Melanie planning on going camping?",
+    "reference": "June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie is planning to go camping in the summer of 2023, as she has a tradition of camping with her family and marshmallows and stories as a highlight of the summer.",
+    "error": null,
+    "latency_sec": 20.572
+  },
+  {
+    "qa_id": "conv-26_q15",
+    "question": "What activities does Melanie partake in?",
+    "reference": "pottery, camping, painting, swimming",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Melanie partakes in pottery, running, painting, and music. These activities are mentioned frequently in her memory logs and are significant to her emotional and creative expression.",
+    "error": null,
+    "latency_sec": 20.615
+  },
+  {
+    "qa_id": "conv-26_q25",
+    "question": "When did Caroline go to the LGBTQ conference?",
+    "reference": "10 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Caroline attended the LGBTQ conference on July 10, 2023.",
+    "error": null,
+    "latency_sec": 11.619
+  },
+  {
+    "qa_id": "conv-26_q26",
+    "question": "When did Melanie read the book \"nothing is impossible\"?",
+    "reference": 2022,
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie likely read the book 'nothing is impossible' in July or August 2023, as it was a motivational read that reminded her to pursue dreams.",
+    "error": null,
+    "latency_sec": 22.311
+  },
+  {
+    "qa_id": "conv-26_q29",
+    "question": "When did Melanie go to the pottery workshop?",
+    "reference": "The Friday before 15 July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Melanie went to the pottery workshop on July 14, 2023.",
+    "error": null,
+    "latency_sec": 14.637
+  },
+  {
+    "qa_id": "conv-26_q31",
+    "question": "When did Melanie go camping in June?",
+    "reference": "The week before 27 June 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "She likely went camping around July 8-9, 2023, as the closest camping trip in June is not mentioned and the next camping trip in June is not specified.",
+    "error": null,
+    "latency_sec": 19.117
+  },
+  {
+    "qa_id": "conv-26_q42",
+    "question": "Would Melanie be more interested in going to a national park or a theme park?",
+    "reference": "National park; she likes the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, she would likely enjoy it because she enjoys outdoor activities and bonding with her family, and national parks offer natural beauty and outdoor experiences similar to her preferences.",
+    "error": null,
+    "latency_sec": 16.557
+  },
+  {
+    "qa_id": "conv-26_q43",
+    "question": "What kind of art does Caroline make?",
+    "reference": "abstract art",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Caroline makes paintings, which she uses to express her trans experience and identity.",
+    "error": null,
+    "latency_sec": 13.765
+  },
+  {
+    "qa_id": "conv-26_q45",
+    "question": "When did Caroline attend a pride parade in August?",
+    "reference": "The Friday before 14 August 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Caroline attended a pride parade in the last week of August 2023. The context of the last week of June and the mention of the last week of August suggest this was likely the August parade.",
+    "error": null,
+    "latency_sec": 16.554
+  },
+  {
+    "qa_id": "conv-26_q59",
+    "question": "Would Caroline be considered religious?",
+    "reference": "Somewhat, but not extremely religious",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, Caroline would likely not be considered religious. Her advocacy for the LGBTQ+ community and support for transgender individuals suggests she is not aligned with religious groups that oppose these rights.",
+    "error": null,
+    "latency_sec": 23.66
+  },
+  {
+    "qa_id": "conv-26_q61",
+    "question": "What musical artists/bands has Melanie seen?",
+    "reference": "Summer Sounds, Matt Patterson",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Melanie has seen the band 'Summer Sounds'. She attended a concert of this band on August 28th, 2023, and enjoys live music.",
+    "error": null,
+    "latency_sec": 14.584
+  },
+  {
+    "qa_id": "conv-26_q64",
+    "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+    "reference": "Yes; it's classical music",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She might enjoy 'The Four Seasons' by Vivaldi because she appreciates classical music, even though she attended a pop concert recently.",
+    "error": null,
+    "latency_sec": 16.443
+  },
+  {
+    "qa_id": "conv-26_q69",
+    "question": "What personality traits might Melanie say Caroline has?",
+    "reference": "Thoughtful, authentic, driven",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Melanie would likely say that Caroline is resilient and self-accepting.",
+    "error": null,
+    "latency_sec": 7.363
+  },
+  {
+    "qa_id": "conv-26_q71",
+    "question": "What book did Melanie read from Caroline's suggestion?",
+    "reference": "\"Becoming Nicole\"",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "The book Caroline suggested to Melanie was 'Becoming Nicole' by Amy Ellis Nutt.",
+    "error": null,
+    "latency_sec": 12.319
+  },
+  {
+    "qa_id": "conv-26_q81",
+    "question": "Would Caroline want to move back to her home country soon?",
+    "reference": "No; she's in the process of adopting children.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, she would likely not want to move back soon. The memories suggest a focus on her current life in China, where she is pursuing her counseling career and adopting children. The necklace and her Swedish heritage indicate a connection to her home country, but there is no indication of a desire to move back soon.",
+    "error": null,
+    "latency_sec": 23.269
+  },
+  {
+    "qa_id": "conv-26_q82",
+    "question": "What did the charity race raise awareness for?",
+    "reference": "mental health",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The charity race raised awareness for mental health.",
+    "error": null,
+    "latency_sec": 10.229
+  },
+  {
+    "qa_id": "conv-26_q85",
+    "question": "What are Caroline's plans for the summer?",
+    "reference": "researching adoption agencies",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Caroline and Melanie plan to do a family outing or a special trip for two in the summer of 2023.",
+    "error": null,
+    "latency_sec": 10.745
+  },
+  {
+    "qa_id": "conv-26_q101",
+    "question": "Did Melanie make the black and white bowl in the photo?",
+    "reference": "Yes",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Unknown, but based on the pottery class and the later photo showing yellow leaves, it is likely she made the black and white bowl in the class.",
+    "error": null,
+    "latency_sec": 15.559
+  },
+  {
+    "qa_id": "conv-26_q141",
+    "question": "What does Caroline's drawing symbolize for her?",
+    "reference": "Freedom and being true to herself.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Her drawing symbolizes finding comfort and love in being authentic, as evidenced by her painting titled 'Embracing Identity' and her art helping people understand the trans community.",
+    "error": null,
+    "latency_sec": 14.595
+  },
+  {
+    "qa_id": "conv-30_q3",
+    "question": "What do Jon and Gina both have in common?",
+    "reference": "They lost their jobs and decided to start their own businesses.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Both Jon and Gina have a strong dance background and have put their hearts into their dreams, indicating a shared passion for dance and a drive to succeed.",
+    "error": null,
+    "latency_sec": 13.07
+  },
+  {
+    "qa_id": "conv-30_q5",
+    "question": "What Jon thinks the ideal dance studio should look like?",
+    "reference": "By the water, with natural light and Marley flooring",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Jon's ideal dance studio would likely look like a cozy, vibrant space with a variety of dance styles represented, similar to the dance-inspired pieces in Gina's online clothing store, where people can come to express themselves and enjoy dance.",
+    "error": null,
+    "latency_sec": 15.022
+  },
+  {
+    "qa_id": "conv-30_q12",
+    "question": "When did Jon start to go to the gym?",
+    "reference": "March, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon started going to the gym last week.",
+    "error": null,
+    "latency_sec": 6.592
+  },
+  {
+    "qa_id": "conv-30_q15",
+    "question": "When did Jon host a dance competition?",
+    "reference": "May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon hosted a dance competition in May 2023.",
+    "error": null,
+    "latency_sec": 8.45
+  },
+  {
+    "qa_id": "conv-30_q19",
+    "question": "When did Gina interview for a design internship?",
+    "reference": "10 May, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Gina interviewed for a design internship on May 11th, 2023.",
+    "error": null,
+    "latency_sec": 6.818
+  },
+  {
+    "qa_id": "conv-30_q22",
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "reference": "June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 21.27
+  },
+  {
+    "qa_id": "conv-30_q33",
+    "question": "When did Jon visit networking events for his store?",
+    "reference": "20 June, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jon attended networking events on June 20, 2023, and July 21, 2023. Based on the context of his business development and the need to seek investors and learn marketing, these dates are the most relevant for his networking efforts.",
+    "error": null,
+    "latency_sec": 15.752
+  },
+  {
+    "qa_id": "conv-30_q75",
+    "question": "What does Gina say to Jon about the grand opening?",
+    "reference": "Let's live it up and make some great memories",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Gina will support Jon and encourage him to stay motivated during the grand opening. (June 19th, 2023)",
+    "error": null,
+    "latency_sec": 18.704
+  },
+  {
+    "qa_id": "conv-41_q7",
+    "question": "What items des John mention having as a child?",
+    "reference": "A doll, a film camera",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John mentions having a childhood doll as an item from his childhood.",
+    "error": null,
+    "latency_sec": 8.61
+  },
+  {
+    "qa_id": "conv-41_q14",
+    "question": "Would John be considered a patriotic person?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, John would likely be considered a patriotic person due to his dedication to improving his community and his military background.",
+    "error": null,
+    "latency_sec": 13.421
+  },
+  {
+    "qa_id": "conv-41_q17",
+    "question": "What might John's degree be in?",
+    "reference": "Political science, Public administration, Public affairs",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "John's degree is likely in urban planning or education policy.",
+    "error": null,
+    "latency_sec": 10.661
+  },
+  {
+    "qa_id": "conv-41_q22",
+    "question": "When did John go to a convention with colleagues?",
+    "reference": "March 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John went to a convention with colleagues on April 18th, 2023.",
+    "error": null,
+    "latency_sec": 7.682
+  },
+  {
+    "qa_id": "conv-41_q26",
+    "question": "What has Maria done to feel closer to her faith?",
+    "reference": "Join a local church, buy a cross necklace",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria felt closer to her faith by joining the church on May 6th, 2023.",
+    "error": null,
+    "latency_sec": 9.499
+  },
+  {
+    "qa_id": "conv-41_q29",
+    "question": "What events is Maria planning for the homeless shelter funraiser?",
+    "reference": "Chili cook-off, ring-toss tournament",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Maria is planning a fundraiser for the homeless shelter next week.",
+    "error": null,
+    "latency_sec": 6.686
+  },
+  {
+    "qa_id": "conv-41_q41",
+    "question": "Does John live close to a beach or the mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, John likely lives close to the mountains where he reached the summit and saw the sunset, indicating a preference for outdoor activities near nature.",
+    "error": null,
+    "latency_sec": 14.798
+  },
+  {
+    "qa_id": "conv-41_q48",
+    "question": "When did John have his first firefighter call-out?",
+    "reference": "The sunday before 3` July 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John had his first firefighter call-out on Sunday, 30 July 2023.",
+    "error": null,
+    "latency_sec": 9.516
+  },
+  {
+    "qa_id": "conv-41_q52",
+    "question": "Who have written notes of gratitude to Maria?",
+    "reference": "Cindy, Laura",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Cindy, a resident at the shelter, wrote a note of gratitude to Maria.",
+    "error": null,
+    "latency_sec": 12.548
+  },
+  {
+    "qa_id": "conv-41_q53",
+    "question": "When did John help renovate his hometown community center?",
+    "reference": "2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John helped renovate his hometown community center on August 5th, 2023.",
+    "error": null,
+    "latency_sec": 13.1
+  },
+  {
+    "qa_id": "conv-41_q57",
+    "question": "What causes has John done events for?",
+    "reference": "Toy drive, Community food drive, veterans, domestic violence",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has organized walks, picnics, and local events for family bonding, which indicates his preference for family-oriented community activities.",
+    "error": null,
+    "latency_sec": 16.094
+  },
+  {
+    "qa_id": "conv-41_q62",
+    "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Unknown. There is no specific mention of Maria adopting a dog from the dog shelter she volunteers at.",
+    "error": null,
+    "latency_sec": 13.446
+  },
+  {
+    "qa_id": "conv-41_q64",
+    "question": "What job might Maria pursue in the future?",
+    "reference": "Shelter coordinator, Counselor",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Maria might pursue a job in environmental conservation or a community outreach program, combining her passion for helping others with her love for nature.",
+    "error": null,
+    "latency_sec": 17.142
+  },
+  {
+    "qa_id": "conv-41_q65",
+    "question": "What is John's main focus in local politics?",
+    "reference": "Improving education and infrastructure",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's main focus in local politics is improving education and infrastructure, driven by his childhood experiences and family support.",
+    "error": null,
+    "latency_sec": 13.482
+  },
+  {
+    "qa_id": "conv-41_q108",
+    "question": "What did Maria say it was like being at the waterfall in Oregon?",
+    "reference": "Like being in a fairy tale",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Maria found the waterfall scene magical and calming, indicating a preference for natural beauty and peaceful settings.",
+    "error": null,
+    "latency_sec": 10.128
+  },
+  {
+    "qa_id": "conv-41_q113",
+    "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+    "reference": "self-doubt",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John faced a significant job loss due to the company failure (August 5th, 2023) before he was promoted to assistant manager. This setback likely required him to reapply and demonstrate his skills, leading to his promotion.",
+    "error": null,
+    "latency_sec": 21.124
+  },
+  {
+    "qa_id": "conv-41_q117",
+    "question": "What event did John participate in to show support for veterans' rights?",
+    "reference": "marching event",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John participated in a veterans' rights march on July 3rd, 2023 to show support for veterans' rights.",
+    "error": null,
+    "latency_sec": 8.667
+  },
+  {
+    "qa_id": "conv-41_q134",
+    "question": "How did John describe his kids' reaction at the military memorial?",
+    "reference": "awestruck and humbled",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's children were awestruck and humbled by the memorial visit, indicating a strong emotional response to the experience.",
+    "error": null,
+    "latency_sec": 9.228
+  },
+  {
+    "qa_id": "conv-42_q0",
+    "question": "Is it likely that Nate has friends besides Joanna?",
+    "reference": "Yesteammates on hisvideo game team.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, it is likely that Nate has friends besides Joanna. Their deeply supportive friendship and mutual encouragement suggest a strong bond, but it is reasonable to deduce that Nate has other friends who share similar interests and support each other in their creative endeavors.",
+    "error": null,
+    "latency_sec": 15.183
+  },
+  {
+    "qa_id": "conv-42_q14",
+    "question": "What nickname does Nate use for Joanna?",
+    "reference": "Jo",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nate likely uses the nickname 'Writer's Nest' for Joanna. This nickname connects to her deep passion for writing and her appreciation of nature, which are core aspects of her persona.",
+    "error": null,
+    "latency_sec": 18.576
+  },
+  {
+    "qa_id": "conv-42_q19",
+    "question": "How many times has Joanna found new hiking trails?",
+    "reference": "twice",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Joanna found new hiking trails once, on May 12th, 2022.",
+    "error": null,
+    "latency_sec": 20.359
+  },
+  {
+    "qa_id": "conv-42_q20",
+    "question": "When did Nate adopt Max?",
+    "reference": "May 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate adopted Max on May 20th, 2022.",
+    "error": null,
+    "latency_sec": 8.444
+  },
+  {
+    "qa_id": "conv-42_q30",
+    "question": "What kind of writings does Joanna do?",
+    "reference": "Screenplays,books, online blog posts, journal",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Joanna primarily writes personal narratives and stories of loss and self-discovery.",
+    "error": null,
+    "latency_sec": 11.032
+  },
+  {
+    "qa_id": "conv-42_q32",
+    "question": "Where did Joanna travel to in July 2022?",
+    "reference": "Woodhaven",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Joanna traveled to a location for her next movie research around 8 July 2022.",
+    "error": null,
+    "latency_sec": 8.076
+  },
+  {
+    "qa_id": "conv-42_q33",
+    "question": "When did someone write Joanna a touching letter?",
+    "reference": "The week before 14August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Someone wrote Joanna a touching letter on August 14th, 2022. This date is mentioned in the memory log, and it aligns with Joanna's deep passion for writing, suggesting the letter was likely from a supportive friend or mentor who appreciates her work.",
+    "error": null,
+    "latency_sec": 16.211
+  },
+  {
+    "qa_id": "conv-42_q35",
+    "question": "When did Nate take time off to chill with his pets?",
+    "reference": "The weekend of 22August, 2022.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate plans to take time off this weekend (27-28 August 2022) to chill with pets.",
+    "error": null,
+    "latency_sec": 10.439
+  },
+  {
+    "qa_id": "conv-42_q37",
+    "question": "When did Nate win an international tournament?",
+    "reference": "21 August, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate won an international tournament on August 22nd, 2022.",
+    "error": null,
+    "latency_sec": 7.859
+  },
+  {
+    "qa_id": "conv-42_q43",
+    "question": "How long did it take for Joanna to finish writing her book?",
+    "reference": "four months",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Based on the timeline, Joanna likely spent around 3-6 months to finish writing her book.",
+    "error": null,
+    "latency_sec": 13.569
+  },
+  {
+    "qa_id": "conv-42_q64",
+    "question": "When did Nate win a big Valorant tourney?",
+    "reference": "The Saturday before 7November, 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Nate won a big Valorant tourney around August 22nd, 2022, during the international tournament he won.",
+    "error": null,
+    "latency_sec": 14.726
+  },
+  {
+    "qa_id": "conv-42_q66",
+    "question": "What alternative career might Nate consider after gaming?",
+    "reference": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nate might consider a career in content creation or writing, possibly in the gaming or film industry, as he enjoys making gaming videos and supports Joanna's writing ambitions.",
+    "error": null,
+    "latency_sec": 16.215
+  },
+  {
+    "qa_id": "conv-42_q81",
+    "question": "What recipes has Joanna made?",
+    "reference": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Based on the memory logs, Joanna has made family recipes and recipes that inspire her, but the specific recipes are not mentioned.",
+    "error": null,
+    "latency_sec": 13.385
+  },
+  {
+    "qa_id": "conv-42_q84",
+    "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+    "reference": "No; because both of them faced setbacks in their career",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, the first half of September 2022 does not seem to be a good month for either Nate or Joanna based on the available memories. Nate's major tournament win is the only relevant career-related event mentioned, and it occurred in late September, not the first half. Joanna's script pitch to producers was in November, which is outside the first half of September.",
+    "error": null,
+    "latency_sec": 25.317
+  },
+  {
+    "qa_id": "conv-42_q87",
+    "question": "What state did Nate visit?",
+    "reference": "Florida",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nate visited Summer Sounds, a state known for its music festivals and cultural events.",
+    "error": null,
+    "latency_sec": 13.765
+  },
+  {
+    "qa_id": "conv-42_q91",
+    "question": "What is Nate's favorite book series about?",
+    "reference": "dragons",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Nate's favorite book series is one with adventures, magic, and great characters.",
+    "error": null,
+    "latency_sec": 8.733
+  },
+  {
+    "qa_id": "conv-42_q133",
+    "question": "How many people attended the gaming party hosted by Nate in June 2022?",
+    "reference": "7",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "A moderate-sized party likely had around 15 attendees, given Nate's social nature and the context of conventions and tournaments.",
+    "error": null,
+    "latency_sec": 20.149
+  },
+  {
+    "qa_id": "conv-42_q157",
+    "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+    "reference": "chocolate raspberry tart",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The dessert Joanna shared a photo of is likely the dairy-free chocolate coconut cupcakes, as it matches the closest ingredients to the description provided.",
+    "error": null,
+    "latency_sec": 15.012
+  },
+  {
+    "qa_id": "conv-42_q161",
+    "question": "What did Joanna make for one of the ladies at her writing club?",
+    "reference": "a bookmark",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "A bookmark. Joanna loves DIY crafts, and she makes desserts for everyone's diets, so it's likely she made a bookmark for her writing club member.",
+    "error": null,
+    "latency_sec": 11.441
+  },
+  {
+    "qa_id": "conv-42_q188",
+    "question": "What is Nate creating for YouTube on 9 November, 2022?",
+    "reference": "gaming content",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Nate is creating a new video for YouTube about his experiences at the game convention.",
+    "error": null,
+    "latency_sec": 10.445
+  },
+  {
+    "qa_id": "conv-42_q193",
+    "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+    "reference": "The incredible sunset and surrounding beauty",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She took the sunset photo during a hike near Fort Wayne in summer 2022, likely inspired by the serene and peaceful setting of the sunset, which aligns with her appreciation for nature and creative moments.",
+    "error": null,
+    "latency_sec": 13.425
+  },
+  {
+    "qa_id": "conv-43_q1",
+    "question": "What are John's goals for his career that are not related to his basketball skills?",
+    "reference": "get endorsements, build his brand, do charity work",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John's goals for his career that are not related to his basketball skills include actively pursuing endorsements and charitable initiatives, aiming to win a championship, and planning for life after basketball to leave a positive legacy.",
+    "error": null,
+    "latency_sec": 12.336
+  },
+  {
+    "qa_id": "conv-43_q8",
+    "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+    "reference": "Under Armour",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "REI (The Outdoor Company) likely signed John up for an endorsement deal. John enjoys reconnecting with nature and his outdoor activities, which aligns with REI's focus on outdoor gear and activities.",
+    "error": null,
+    "latency_sec": 17.135
+  },
+  {
+    "qa_id": "conv-43_q11",
+    "question": "What sports does John like besides basketball?",
+    "reference": "surfing",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John likely enjoys running, as he values personal growth and community involvement, and running is a common activity that can be done for personal improvement and community impact, such as participating in local races and charity runs.",
+    "error": null,
+    "latency_sec": 15.081
+  },
+  {
+    "qa_id": "conv-43_q15",
+    "question": "Who is Anthony?",
+    "reference": "likely John's friend, colleague or family",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Anthony is likely another player on John's Minnesota Wolves basketball team.",
+    "error": null,
+    "latency_sec": 10.431
+  },
+  {
+    "qa_id": "conv-43_q22",
+    "question": "When did John meet with his teammates after returning from Chicago?",
+    "reference": "August 15, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John met with his teammates after returning from Chicago shortly after the post-game celebration on July 16th, 2023.",
+    "error": null,
+    "latency_sec": 15.973
+  },
+  {
+    "qa_id": "conv-43_q27",
+    "question": "Which popular time management technique does Tim use to prepare for exams?",
+    "reference": "Pomodoro technique",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Tim uses a 25-minute study and 5-minute break technique to prepare for exams.",
+    "error": null,
+    "latency_sec": 8.461
+  },
+  {
+    "qa_id": "conv-43_q30",
+    "question": "Which cities has John been to?",
+    "reference": "Seattle, Chicago, New York, and Paris.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has visited Paris and Edinburgh based on his bucket list and enjoyment of exploring new cities.",
+    "error": null,
+    "latency_sec": 11.945
+  },
+  {
+    "qa_id": "conv-43_q34",
+    "question": "What could John do after his basketball career?",
+    "reference": "become a basketball coach since he likes giving back and leadership",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "John might pursue a career in sports management or coaching, leveraging his platform and mentorship skills to inspire and guide younger athletes.",
+    "error": null,
+    "latency_sec": 13.786
+  },
+  {
+    "qa_id": "conv-43_q36",
+    "question": "Who is Tim and John's favorite basketball player?",
+    "reference": "LeBron James",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim and John's favorite basketball player is LeBron James. Both have a basketball signed by LeBron James, indicating a strong preference for him, and John has a basketball shoe deal with Nike, which is associated with LeBron James.",
+    "error": null,
+    "latency_sec": 21.786
+  },
+  {
+    "qa_id": "conv-43_q37",
+    "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+    "reference": "The week before October 13th, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Tim visited the UK for the Harry Potter Conference in the week before October 13, 2023.",
+    "error": null,
+    "latency_sec": 11.024
+  },
+  {
+    "qa_id": "conv-43_q40",
+    "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+    "reference": "Yes",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Unknown, but it's possible that Tim attended a Harry Potter party in North Carolina or Tennessee, though this is not explicitly mentioned in the memories provided.",
+    "error": null,
+    "latency_sec": 17.185
+  },
+  {
+    "qa_id": "conv-43_q49",
+    "question": "How many times has John injured his ankle?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John has injured his ankle 2 times, based on the memories of an injury during the previous season and a current season injury.",
+    "error": null,
+    "latency_sec": 22.571
+  },
+  {
+    "qa_id": "conv-43_q50",
+    "question": "Which book was John reading during his recovery from an ankle injury?",
+    "reference": "The Alchemist",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "John was reading 'The Name of the Wind' by Patrick Rothfuss during his recovery from the ankle injury.",
+    "error": null,
+    "latency_sec": 11.791
+  },
+  {
+    "qa_id": "conv-43_q57",
+    "question": "What instruments does Tim play?",
+    "reference": "piano, violin",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Tim likely plays the violin and enjoys classical music, as he has been learning piano and expressed a desire to explore jazz and film scores.",
+    "error": null,
+    "latency_sec": 10.584
+  },
+  {
+    "qa_id": "conv-43_q66",
+    "question": "What is a Star Wars book that Tim might enjoy?",
+    "reference": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A Star Wars book that Tim might enjoy is 'The Child' (also known as 'The Force Awakens'), as it is a well-known novel in the Star Wars universe and Tim has a deep appreciation for fantasy literature and magical worlds.",
+    "error": null,
+    "latency_sec": 11.479
+  },
+  {
+    "qa_id": "conv-43_q67",
+    "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+    "reference": "Writing a travel blog.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Tim might enjoy reading travel guides or books about different cultures and places, which aligns with his travel dreams and enjoyment of fantasy literature.",
+    "error": null,
+    "latency_sec": 13.574
+  },
+  {
+    "qa_id": "conv-43_q70",
+    "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+    "reference": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Tim would likely enjoy visiting the Disneyland Paris theme park, as it aligns with his interest in fantasy and movies.",
+    "error": null,
+    "latency_sec": 9.554
+  },
+  {
+    "qa_id": "conv-43_q74",
+    "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+    "reference": "characters, spells, magical creatures",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Their fan project collaborations will likely explore themes such as friendship, bravery, and the power of love, as well as the impact of the Harry Potter phenomenon on their lives and communities.",
+    "error": null,
+    "latency_sec": 19.771
+  },
+  {
+    "qa_id": "conv-43_q91",
+    "question": "When did John meet back up with his teammates after his trip in August 2023?",
+    "reference": "Aug 15th",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John met his basketball teammates on August 15, 2023, after his trip in August 2023.",
+    "error": null,
+    "latency_sec": 11.967
+  },
+  {
+    "qa_id": "conv-43_q108",
+    "question": "What does John want to do after his basketball career?",
+    "reference": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John wants to continue impacting people's lives through sports and charity after his basketball career.",
+    "error": null,
+    "latency_sec": 14.202
+  },
+  {
+    "qa_id": "conv-43_q131",
+    "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+    "reference": "a basketball signed by his favorite player",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Tim's signed basketball is his prized possession and a reminder of hard work.",
+    "error": null,
+    "latency_sec": 10.619
+  },
+  {
+    "qa_id": "conv-43_q142",
+    "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+    "reference": "made him think again about following dreams and searching for personal legends",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's love for 'The Alchemist' and its positive impact on him suggests that the book reinforced his belief in the power of following one's dreams and the importance of perseverance. He likely found it inspiring and motivational, aligning with his growth mindset and values of resilience and personal growth.",
+    "error": null,
+    "latency_sec": 17.873
+  },
+  {
+    "qa_id": "conv-44_q19",
+    "question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+    "reference": "cook dog treats",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Andrew would enjoy making a dog-themed puzzle or toy. This activity aligns with his love for nature and outdoor activities, which he enjoys with his dogs.",
+    "error": null,
+    "latency_sec": 11.937
+  },
+  {
+    "qa_id": "conv-44_q20",
+    "question": "Which meat does Audrey prefer eating more than others?",
+    "reference": "chicken",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "She might prefer plant-based meats due to her sustainability values and dedication to pets and nature.",
+    "error": null,
+    "latency_sec": 14.126
+  },
+  {
+    "qa_id": "conv-44_q33",
+    "question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+    "reference": "Change to a hybrid or remote job so he can move away from the city to the suburbs to have a larger living space and be closer to nature.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Andrew might consider joining a local hiking club or a dog walking group to find a pet-friendly apartment and meet other dog owners. This would provide him with a community and potentially help him find a suitable living situation for his dogs.",
+    "error": null,
+    "latency_sec": 18.758
+  },
+  {
+    "qa_id": "conv-44_q38",
+    "question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+    "reference": "the weekend before October 24, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Andrew and his girlfriend went on a wine tasting trip from October 21-22, 2023.",
+    "error": null,
+    "latency_sec": 9.43
+  },
+  {
+    "qa_id": "conv-44_q39",
+    "question": "What did Audrey get wtih having so many dogs?",
+    "reference": "Companionship",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Audrey likely enjoys the companionship and joy her dogs bring her, as well as the opportunity to share her knowledge and support with Andrew. Her deep emotional connection to her dogs allows her to be a nurturing friend and advocate for responsible pet ownership.",
+    "error": null,
+    "latency_sec": 15.708
+  },
+  {
+    "qa_id": "conv-44_q46",
+    "question": "How many pets did Andrew have, as of September 2023?",
+    "reference": "one",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "As of September 2023, Andrew had one pet, Scout.",
+    "error": null,
+    "latency_sec": 13.659
+  },
+  {
+    "qa_id": "conv-44_q49",
+    "question": "What does Audrey view her pets as?",
+    "reference": "Family",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Audrey views her pets as her family and universe, indicating they are central to her life and she considers them as part of her family and her world.",
+    "error": null,
+    "latency_sec": 10.021
+  },
+  {
+    "qa_id": "conv-44_q55",
+    "question": "When did Andrew make his dogs a fun indoor area?",
+    "reference": "few days before November 22, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Andrew likely made a fun indoor area for his dogs around the time he was determined to find a pet-friendly apartment and adopt a dog, showing his preference for a comfortable living space for his pets.",
+    "error": null,
+    "latency_sec": 21.88
+  },
+  {
+    "qa_id": "conv-44_q88",
+    "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+    "reference": "Grooming slowly and gently, paying attention to sensitive areas like ears and paws. And remember to stay patient and positive throughout the grooming process.",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She encouraged Andrew to take Toby to a groomer, as she has been supportive of his goals and shared activities.",
+    "error": null,
+    "latency_sec": 15.586
+  },
+  {
+    "qa_id": "conv-44_q107",
+    "question": "How do Audrey's dogs react to snow?",
+    "reference": "Confused",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Audrey's dogs hate snow. This is directly stated in the memory log where Audrey's dogs were confused when taken to a snowy park last winter.",
+    "error": null,
+    "latency_sec": 14.095
+  },
+  {
+    "qa_id": "conv-47_q11",
+    "question": "How was John feeling on April 10, 2022?",
+    "reference": "seeking solitude",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John was feeling positive and motivated on April 10, 2022, as he felt a huge confidence booster and a real achievement after winning the chess tournament.",
+    "error": null,
+    "latency_sec": 14.816
+  },
+  {
+    "qa_id": "conv-47_q17",
+    "question": "What is the board game where you have to find the imposter that John mentions to James?",
+    "reference": "Mafia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The board game where John mentions finding impostors with friends is likely a strategy board game, possibly a game like 'Impostor' or 'Spyfall', which fits the context of playing with friends and finding impostors.",
+    "error": null,
+    "latency_sec": 17.818
+  },
+  {
+    "qa_id": "conv-47_q19",
+    "question": "Was James feeling lonely before meeting Samantha?",
+    "reference": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, he likely wasn't feeling lonely before meeting Samantha. The clue about John's younger siblings throwing a gaming marathon that bonded them suggests James was part of a social group, but there's no direct mention of his feelings of loneliness.",
+    "error": null,
+    "latency_sec": 18.843
+  },
+  {
+    "qa_id": "conv-47_q36",
+    "question": "Who is Jill?",
+    "reference": "Most likely John's partner.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jill is John's partner.",
+    "error": null,
+    "latency_sec": 7.92
+  },
+  {
+    "qa_id": "conv-47_q39",
+    "question": "When did John start his job in IT?",
+    "reference": "2019",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "John started his job in IT 3 years before August 6th, 2022. Therefore, he started his IT job on June 13th, 2019.",
+    "error": null,
+    "latency_sec": 15.968
+  },
+  {
+    "qa_id": "conv-47_q40",
+    "question": "What kind of tricks do James's pets know?",
+    "reference": "swimming, catching frisbees, balancing on a skateboard, sit, stay, paw, and rollover",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "James's pets can do tricks such as sit, stay, paw, and rollover.",
+    "error": null,
+    "latency_sec": 9.888
+  },
+  {
+    "qa_id": "conv-47_q87",
+    "question": "What type of pizza is John's favorite?",
+    "reference": "Hawaiian",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John's favorite pizza is prosciutto. He was recommended this type of pizza by James, indicating John's interest in trying it.",
+    "error": null,
+    "latency_sec": 20.095
+  },
+  {
+    "qa_id": "conv-47_q99",
+    "question": "What is the main focus of the organization that James volunteered with?",
+    "reference": "providing necessary items to those who are less fortunate",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The organization that James volunteered with is likely focused on providing basic necessities to the less fortunate, such as food, clothing, or shelter.",
+    "error": null,
+    "latency_sec": 13.786
+  },
+  {
+    "qa_id": "conv-47_q106",
+    "question": "What online game did John start playing recently for improving strategy?",
+    "reference": "Chess",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "John started playing a strategy game online recently for improving strategy, likely a game that combines gaming with a good cause, similar to the charity gaming events he organizes.",
+    "error": null,
+    "latency_sec": 24.137
+  },
+  {
+    "qa_id": "conv-47_q130",
+    "question": "What instrument did James used to play when he was younger?",
+    "reference": "guitar",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "James likely started playing the guitar when he was younger, as he began learning a musical instrument on March 27th, 2022, and was actively pursuing multiple disciplines at that time.",
+    "error": null,
+    "latency_sec": 19.721
+  },
+  {
+    "qa_id": "conv-47_q139",
+    "question": "What sparked James' passion for gaming when he was a kid?",
+    "reference": "Super Mario and The Legend of Zelda games",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "James' passion for gaming was sparked when he played Nintendo games as a child. The simple controls and engaging stories of early Nintendo games likely captured his interest and set the foundation for his future love of gaming.",
+    "error": null,
+    "latency_sec": 19.898
+  },
+  {
+    "qa_id": "conv-48_q0",
+    "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+    "reference": "electricity engineering project",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jolene was working on a robotics project in the beginning of January 2023.",
+    "error": null,
+    "latency_sec": 9.477
+  },
+  {
+    "qa_id": "conv-48_q3",
+    "question": "When did Jolene`s mother pass away?",
+    "reference": "in 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Jolene's mother passed away on January 23rd, 2023.",
+    "error": null,
+    "latency_sec": 9.136
+  },
+  {
+    "qa_id": "conv-48_q13",
+    "question": "What places give Deborah peace?",
+    "reference": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "A meaningful bench near her mother's old house and nature are places that give Deborah peace.",
+    "error": null,
+    "latency_sec": 11.444
+  },
+  {
+    "qa_id": "conv-48_q18",
+    "question": "In what country did Jolene buy snake Seraphim?",
+    "reference": "In France",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene bought snake Seraphim in Paris, France.",
+    "error": null,
+    "latency_sec": 7.014
+  },
+  {
+    "qa_id": "conv-48_q19",
+    "question": "How many times has Jolene been to France?",
+    "reference": "two times",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Jolene has been to France once, specifically in 2010 when she received her mother's pendant in Paris.",
+    "error": null,
+    "latency_sec": 15.731
+  },
+  {
+    "qa_id": "conv-48_q28",
+    "question": "In what country was Jolene during summer 2022?",
+    "reference": "Colombia",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene was vacationing in Bogota during summer 2022.",
+    "error": null,
+    "latency_sec": 8.858
+  },
+  {
+    "qa_id": "conv-48_q31",
+    "question": "When was the last photo of Deborah and Karlie taken?",
+    "reference": "in summer 2022",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "The last photo of Deborah and Karlie was taken in summer 2022.",
+    "error": null,
+    "latency_sec": 8.88
+  },
+  {
+    "qa_id": "conv-48_q43",
+    "question": "When did Deborah go for a bicycle ride with Anna?",
+    "reference": "first week of April, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "She went for a bicycle ride with Anna around 2-8 April 2023, as they recently sat by the sea watching a sunset together.",
+    "error": null,
+    "latency_sec": 18.584
+  },
+  {
+    "qa_id": "conv-48_q48",
+    "question": "Which US state did Jolene visit during her internship?",
+    "reference": "Alaska",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Jolene likely visited California during her internship. California is a popular state for tech companies and has a significant presence of engineering firms.",
+    "error": null,
+    "latency_sec": 14.624
+  },
+  {
+    "qa_id": "conv-48_q73",
+    "question": "Did Jolene teach herself how to play the console?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she likely taught herself how to play the console, as she is known to have taught herself video games.",
+    "error": null,
+    "latency_sec": 11.473
+  },
+  {
+    "qa_id": "conv-48_q79",
+    "question": "Has Deborah tried surfing?",
+    "reference": "yes",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she has tried surfing. She encouraged Jolene to pursue surfing dreams on March 22nd, 2023, and has tried it herself, as Jolene has started learning about surfing on September 17th, 2023.",
+    "error": null,
+    "latency_sec": 16.792
+  },
+  {
+    "qa_id": "conv-48_q80",
+    "question": "Has Jolene tried surfing?",
+    "reference": "no",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Yes, she would likely enjoy it because her pendant symbolizes freedom and encourages her to pursue her goals without hesitation. Additionally, she has expressed interest in learning about surfing and plans to continue pushing to make surfing happen.",
+    "error": null,
+    "latency_sec": 18.436
+  },
+  {
+    "qa_id": "conv-48_q123",
+    "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+    "reference": "They realized they inspire each other",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "They likely discussed their shared love for nature and the impact of their work on the community. They might have also talked about their personal reflections and plans for the future.",
+    "error": null,
+    "latency_sec": 13.313
+  },
+  {
+    "qa_id": "conv-48_q133",
+    "question": "What is Jolene currently doing in June 2023?",
+    "reference": "interning at a well-known engineering firm",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Jolene is likely working on her engineering studies and internship, focusing on her project and internship assignments, which are challenging and progressing but with obstacles.",
+    "error": null,
+    "latency_sec": 14.974
+  },
+  {
+    "qa_id": "conv-48_q150",
+    "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+    "reference": "Zelda BOTW",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Zelda Breath of the Wild. Jolene was the one who suggested this game for the Nintendo Switch, as it was mentioned in her memory logs.",
+    "error": null,
+    "latency_sec": 9.621
+  },
+  {
+    "qa_id": "conv-48_q164",
+    "question": "How old is Max?",
+    "reference": "8 years old",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Max is 8 years old.",
+    "error": null,
+    "latency_sec": 7.039
+  },
+  {
+    "qa_id": "conv-48_q166",
+    "question": "What type of place does Jolene visit to meditate?",
+    "reference": "A tranquil spot by a pond",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "She likely visits a park or nature reserve with a bench or a quiet spot, similar to Deborah's meaningful bench, to meditate. The serene environment helps her find inner peace and focus on her goals.",
+    "error": null,
+    "latency_sec": 16.465
+  },
+  {
+    "qa_id": "conv-49_q3",
+    "question": "How many Prius has Evan owned?",
+    "reference": "two",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan has owned two Priuses.",
+    "error": null,
+    "latency_sec": 14.596
+  },
+  {
+    "qa_id": "conv-49_q5",
+    "question": "Which country was Evan visiting in May 2023?",
+    "reference": "Canada",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "The country Evan visited in May 2023 was Canada.",
+    "error": null,
+    "latency_sec": 11.142
+  },
+  {
+    "qa_id": "conv-49_q8",
+    "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
+    "reference": "Watercolor painting",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan started painting as a hobby a few years ago, inspired by a friend who gave him an inspiring painting.",
+    "error": null,
+    "latency_sec": 11.666
+  },
+  {
+    "qa_id": "conv-49_q10",
+    "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
+    "reference": "camping trip in the outdoors",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Evan would prefer a camping trip in the outdoors over a walking tour in metropolitan cities because he values staying active and finding peace in nature, as evidenced by his history of hiking and camping trips.",
+    "error": null,
+    "latency_sec": 18.367
+  },
+  {
+    "qa_id": "conv-49_q12",
+    "question": "When did Sam first go to the doctor and find out he had a weight problem?",
+    "reference": "A few days before May 24, 2023.",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Sam first went to the doctor on May 24th, 2023, to find out he had a weight problem.",
+    "error": null,
+    "latency_sec": 12.486
+  },
+  {
+    "qa_id": "conv-49_q20",
+    "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
+    "reference": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A set of high-quality hiking boots and a beginner's watercolor set would be an appropriate gift for both Evan and Sam, as it supports their hiking activities and provides a creative outlet for stress relief and emotional expression, aligning with their philosophy of progress over perfection.",
+    "error": null,
+    "latency_sec": 18.106
+  },
+  {
+    "qa_id": "conv-49_q27",
+    "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
+    "reference": "fitness tracker",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "A smartwatch with fitness tracking and creative apps would be a suitable gift for Sam, as it can help with fitness tracking and also offer creative apps for stress relief.",
+    "error": null,
+    "latency_sec": 16.711
+  },
+  {
+    "qa_id": "conv-49_q38",
+    "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+    "reference": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Nature plays a crucial role in Evan and Sam's mental well-being as they find it calming, refreshing, and a great healer. They often use nature for stress relief and express a deep appreciation for its ability to bring peace and clarity.",
+    "error": null,
+    "latency_sec": 14.515
+  },
+  {
+    "qa_id": "conv-49_q42",
+    "question": "How did Evan get into painting?",
+    "reference": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan got into painting after a friend gave him an inspiring painting several years ago.",
+    "error": null,
+    "latency_sec": 10.938
+  },
+  {
+    "qa_id": "conv-49_q54",
+    "question": "What personal health incidents does Evan face in 2023?",
+    "reference": "heart palpitations, twisted ankle, twisted ankle",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Evan faces a health scare in November 21st, 2023, and experiences health woes in August 7th, 2023, which motivate him to make significant lifestyle changes including dietary improvements and starting exercise.",
+    "error": null,
+    "latency_sec": 15.736
+  },
+  {
+    "qa_id": "conv-49_q57",
+    "question": "Which US state was Sam travelling in during October 2023?",
+    "reference": "California",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Sam was likely traveling in Canada during October 2023, based on the planned December trip and the Canada vacation mentioned in the memories.",
+    "error": null,
+    "latency_sec": 20.707
+  },
+  {
+    "qa_id": "conv-49_q65",
+    "question": "Does Evan live close to a beach or mountains?",
+    "reference": "beach",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Evan likely lives close to a beach or mountains, as he finds peace and inspiration in both coastal and mountainous environments.",
+    "error": null,
+    "latency_sec": 13.787
+  },
+  {
+    "qa_id": "conv-49_q66",
+    "question": "When did Evan lose his job?",
+    "reference": "end of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Evan lost his job in October 2023.",
+    "error": null,
+    "latency_sec": 5.798
+  },
+  {
+    "qa_id": "conv-49_q79",
+    "question": "When will Evan and his partner have their honeymoon in Canada?",
+    "reference": "February 2024",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Evan and his partner will have their honeymoon in Canada on January 6th, 2024.",
+    "error": null,
+    "latency_sec": 7.041
+  },
+  {
+    "qa_id": "conv-49_q138",
+    "question": "What did Sam recently start enjoying to clear his head?",
+    "reference": "running in the mornings",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Sam recently started enjoying painting to clear his head, as it aligns with his interest in creative activities and his father's hiking experiences.",
+    "error": null,
+    "latency_sec": 10.433
+  },
+  {
+    "qa_id": "conv-49_q141",
+    "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+    "reference": "Keep trying new things",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Evan suggested Sam to step out of his comfort zone to find his own version of love.",
+    "error": null,
+    "latency_sec": 11.277
+  },
+  {
+    "qa_id": "conv-50_q5",
+    "question": "What are Dave's dreams?",
+    "reference": "open a car maintenance shop, work on classic cars, build a custom car from scratch",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's primary dream is to continue working on classic cars and restoring them to their former glory, as well as sharing his passion with others through his blog and car mod projects.",
+    "error": null,
+    "latency_sec": 16.464
+  },
+  {
+    "qa_id": "conv-50_q7",
+    "question": "Does Dave's shop employ a lot of people?",
+    "reference": "Yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "No, Dave's shop does not employ a lot of people. His dedication to his car restoration projects and his focus on personal projects rather than a large team suggest a high level of personal investment rather than hiring others.",
+    "error": null,
+    "latency_sec": 17.518
+  },
+  {
+    "qa_id": "conv-50_q15",
+    "question": "Why does Dave regularly visit parks?",
+    "reference": "because it relaxes and calms him",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave regularly visits parks for social interaction and relaxation, as evidenced by arranging regular walks with friends and expressing fondness for serene parks.",
+    "error": null,
+    "latency_sec": 11.299
+  },
+  {
+    "qa_id": "conv-50_q21",
+    "question": "Does Calvin wish to become more popular?",
+    "reference": "Yes; he want's to grow his fanbase",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, Calvin wishes to become more popular as he aims to expand his music internationally and reach a global audience.",
+    "error": null,
+    "latency_sec": 12.09
+  },
+  {
+    "qa_id": "conv-50_q23",
+    "question": "What is Dave's main passion?",
+    "reference": "auto engineering",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's main passion is classic car restoration. The consistent theme of deep fulfillment, therapeutic aspects, and therapeutic ties to his father's influence are the strongest clues pointing to this passion.",
+    "error": null,
+    "latency_sec": 16.152
+  },
+  {
+    "qa_id": "conv-50_q31",
+    "question": "Where was Dave in the last two weeks of August 2023?",
+    "reference": "San Francisco",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave was in San Francisco during the last two weeks of August 2023.",
+    "error": null,
+    "latency_sec": 14.623
+  },
+  {
+    "qa_id": "conv-50_q34",
+    "question": "When did Dave return from San Francisco?",
+    "reference": "September 1, 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave returned from San Francisco on September 2nd, 2023.",
+    "error": null,
+    "latency_sec": 6.756
+  },
+  {
+    "qa_id": "conv-50_q37",
+    "question": "Does Calvin love music tours?",
+    "reference": "yes",
+    "category": 3,
+    "category_name": "multi_hop",
+    "prediction": "Yes, he would likely enjoy it because he is an ambitious touring musician with global aspirations and has expressed a desire to collaborate with international artists and expand his brand through tours.",
+    "error": null,
+    "latency_sec": 12.401
+  },
+  {
+    "qa_id": "conv-50_q46",
+    "question": "What is Dave's favorite activity?",
+    "reference": "Restoring cars",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's favorite activity is classic car restoration, which he finds therapeutic and rooted in memories with his father.",
+    "error": null,
+    "latency_sec": 12.396
+  },
+  {
+    "qa_id": "conv-50_q48",
+    "question": "What was Dave doing in the first weekend of October 2023?",
+    "reference": "attending a car show",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "Dave attended a music festival shortly before October 15th, 2023, which was likely the first weekend of October 2023.",
+    "error": null,
+    "latency_sec": 10.889
+  },
+  {
+    "qa_id": "conv-50_q50",
+    "question": "When did Calvin buy his second Ferrari?",
+    "reference": "first week of October 2023",
+    "category": 2,
+    "category_name": "temporal",
+    "prediction": "unknown",
+    "error": null,
+    "latency_sec": 7.173
+  },
+  {
+    "qa_id": "conv-50_q54",
+    "question": "What does help Calvin stay connected to the creative process?",
+    "reference": "Calvin stays connected to the creative process by always staying up-to-date on world events and watching documentaries about artists.",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave's support and friendship are key to Calvin staying connected to the creative process, as evidenced by their agreement to keep inspiring each other and pursuing goals on October 4th, 2023.",
+    "error": null,
+    "latency_sec": 9.029
+  },
+  {
+    "qa_id": "conv-50_q56",
+    "question": "Which cities did Dave travel to in 2023?",
+    "reference": "San Francsico, Detroit",
+    "category": 1,
+    "category_name": "single_hop",
+    "prediction": "Dave traveled to San Francisco and the bench spot in 2023. The road trip recharged Dave and he invited Calvin to visit the bench spot, suggesting these were destinations he visited.",
+    "error": null,
+    "latency_sec": 8.456
+  },
+  {
+    "qa_id": "conv-50_q85",
+    "question": "What is Dave doing to relax on weekends?",
+    "reference": "exploring parks",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave walks weekends, which is his primary method of relaxation. He also enjoys hiking, indicating that walking is a common weekend activity for him.",
+    "error": null,
+    "latency_sec": 7.633
+  },
+  {
+    "qa_id": "conv-50_q97",
+    "question": "What does Dave say is important for making his custom cars unique?",
+    "reference": "attention to small details",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave says it is important for making his custom cars unique to give them a modern twist and show style like a work of art on wheels.",
+    "error": null,
+    "latency_sec": 6.063
+  },
+  {
+    "qa_id": "conv-50_q104",
+    "question": "Why did Calvin get his guitar customized with a shiny finish?",
+    "reference": "unique look",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Calvin got his guitar customized with a shiny finish to reflect his admiration for Japanese culture and craftsmanship, which he values deeply. The shiny finish symbolizes his connection to his heritage and artistic roots.",
+    "error": null,
+    "latency_sec": 5.498
+  },
+  {
+    "qa_id": "conv-50_q114",
+    "question": "Which song from the childhood of Calvin brings back memories of a road trip with his dad?",
+    "reference": "\"California Love\"",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "The song from Calvin's childhood that brings back memories of a road trip with his dad is 'California Love'.",
+    "error": null,
+    "latency_sec": 4.229
+  },
+  {
+    "qa_id": "conv-50_q143",
+    "question": "What did Dave recently start a blog about?",
+    "reference": "Car mods",
+    "category": 4,
+    "category_name": "open_domain",
+    "prediction": "Dave recently started a car mod blog.",
+    "error": null,
+    "latency_sec": 2.456
+  }
+]
